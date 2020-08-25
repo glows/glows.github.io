@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hans,en,default">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Glow">
+
+
+    <meta name="subtitle" content="Building things on web!">
+
+
+    <meta name="description" content="Building things on web!">
+
+
+
+<title>Reactjs笔记 | Glow</title>
+
+
+
+    <link rel="icon" href="/myavatar.jpeg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<link rel="alternate" href="/atom.xml" title="Glow" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Glows&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Glows&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Reactjs笔记</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Glow</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">January 29, 2019&nbsp;&nbsp;14:30:41</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="umiJs-antd-mobile-dvaJs"><a href="#umiJs-antd-mobile-dvaJs" class="headerlink" title="umiJs + antd_mobile + dvaJs"></a>umiJs + antd_mobile + dvaJs</h1><p>多类名及动态加载样式方法</p>
+<h2 id="覆盖组件样式"><a href="#覆盖组件样式" class="headerlink" title="覆盖组件样式"></a>覆盖组件样式</h2><p>方法很简单，有两点需要注意：</p>
+<ol>
+<li><p>引入的 antd 组件类名没有被 CSS Modules 转化，所以被覆盖的类名 .ant-select-selection 必须放到 :global 中。</p>
+</li>
+<li><p>因为上一条的关系，覆盖是全局性的。为了防止对其他 Select 组件造成影响，所以需要包裹额外的 className 限制样式的生效范围。<br>e.g.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.customSelect</span> &#123;</span><br><span class="line">  :global &#123;</span><br><span class="line">    <span class="selector-class">.ant-select-selection</span> &#123;</span><br><span class="line">      <span class="attribute">max-height</span>: <span class="number">51px</span>;</span><br><span class="line">      <span class="attribute">overflow</span>: auto;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>model：模型</p>
+<pre><code>模型通常认为是视图(view)的内核，模型就是指视图的数据
+</code></pre><a id="more"></a>
+<p>// ES7新标准:装饰器（Decorator）<br>@connect(state =&gt; ({<br>    user: state.user,<br>}))</p>
+<p>// 如果您不喜欢ES7装饰器，那好办，我就帮您写一个不用的<br>export default connect(state =&gt; ({<br>    user: state.user,<br>}))(User);</p>
+<h2 id="dva的model-注意点："><a href="#dva的model-注意点：" class="headerlink" title="dva的model 注意点："></a>dva的model 注意点：</h2><p>reducers  命名需正确，注意加s<br>effects</p>
+<h2 id="子组件显示父组件穿过来的props有两种方式："><a href="#子组件显示父组件穿过来的props有两种方式：" class="headerlink" title="子组件显示父组件穿过来的props有两种方式："></a>子组件显示父组件穿过来的props有两种方式：</h2><p>1、直接使用<br>这种方式，父组件改变props后，子组件重新渲染，由于直接使用的props，所以我们不需要做什么就可以正常显示最新的props</p>
+<p>class Child extends Component {<br>    render() {<br>        return <div>{this.props.someThings}</div><br>    }<br>}<br>2、转换成自己的state<br>这种方式，由于我们使用的是state，所以每当父组件每次重新传递props时，我们需要重新处理下，将props转换成自己的state，这里就用到了 componentWillReceiveProps。</p>
+<p>关于你提到的不会二次渲染是这样的：每次子组件接收到新的props，都会重新渲染一次，除非你做了处理来阻止（比如使用：shouldComponentUpdate），但是你可以在这次渲染前，根据新的props更新state，更新state也会触发一次重新渲染，但react不会这么傻，所以只会渲染一次，这对应用的性能是有利的。</p>
+<p>class Child extends Component {<br>    constructor(props) {<br>        super(props);<br>        this.state = {<br>            someThings: props.someThings<br>        };<br>    }<br>    componentWillReceiveProps(nextProps) {<br>        this.setState({someThings: nextProps.someThings});<br>    }<br>    render() {<br>        return <div>{this.state.someThings}</div><br>    }<br>}</p>
+<h2 id="react-jsx语法中如何遍历对象能同时拿到对象中的key和value？"><a href="#react-jsx语法中如何遍历对象能同时拿到对象中的key和value？" class="headerlink" title="react jsx语法中如何遍历对象能同时拿到对象中的key和value？"></a>react jsx语法中如何遍历对象能同时拿到对象中的key和value？</h2><p>const obj = {‘a’: 1, ‘b’: 2}</p>
+<p>Object.keys(obj); //[“a”, “b”]</p>
+<p>Object.values(obj); //[1, 2]</p>
+<p>Object.keys(obj).forEach(key =&gt; console.log(key, obj[key]));<br>//a 1<br>// b 2</p>
+<h2 id="yield-call-put-的使用"><a href="#yield-call-put-的使用" class="headerlink" title="yield call put 的使用"></a>yield call put 的使用</h2><p>call( fuc, arg )</p>
+<h2 id="父组件-需要-setState-组件才会-传递异步的-数据到-props"><a href="#父组件-需要-setState-组件才会-传递异步的-数据到-props" class="headerlink" title="父组件 需要 setState 组件才会 传递异步的 数据到 props"></a>父组件 需要 setState 组件才会 传递异步的 数据到 props</h2><p>前后端路由差别<br>1.后端每次路由请求都是重新访问服务器<br>2.前端路由实际上只是JS根据URL来操作DOM元素，<br>根据每个页面需要的去服务端请求数据，返回数据后和模板进行组合。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://glows.github.io/2019/01/29/ReactJs笔记/">https://glows.github.io/2019/01/29/ReactJs笔记/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/React/"># React</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/02/12/2020-2-12-学会React-Hooks/">React-Hooks 学习</a>
+            
+            
+            <a class="next" rel="next" href="/2019/01/29/函数式编程os/">函数式编程</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Glow | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

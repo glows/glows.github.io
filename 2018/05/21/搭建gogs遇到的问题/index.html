@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-Hans,en,default">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Glow">
+
+
+    <meta name="subtitle" content="Building things on web!">
+
+
+    <meta name="description" content="Building things on web!">
+
+
+
+<title>搭建gogs遇到的问题 | Glow</title>
+
+
+
+    <link rel="icon" href="/myavatar.jpeg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<link rel="alternate" href="/atom.xml" title="Glow" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Glows&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Glows&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">搭建gogs遇到的问题</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Glow</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 21, 2018&nbsp;&nbsp;10:25:55</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>关键词：git gogs<br><a id="more"></a></p>
+<h3 id="mysql数据库"><a href="#mysql数据库" class="headerlink" title="mysql数据库"></a>mysql数据库</h3><p>客户端找不到 caching_sha2_password 插件，于是登录不上，本来是要这种插件的，但是其实<br>ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘root’; 就行<br>因为客户端支持的这种native加密方式，然后还是连接不上？这时候改一下登录密码就行</p>
+<h2 id="搭建gogs遇到的坑"><a href="#搭建gogs遇到的坑" class="headerlink" title="搭建gogs遇到的坑"></a>搭建gogs遇到的坑</h2><p>1.无法连接ssh，显示connection refuse。</p>
+<pre><code>原因是“custom/conf/app.ini”没有开启ssh功能，改为以下配置就行了
+</code></pre><p>START_SSH_SERVER = true</p>
+<p>2.配置了ssh后，gogs无法启动，错误信息是：Fail to start SSH server: listen tcp 0.0.0.0:22: bind: permission denied<br>       这个错误是用于服务器使用了端口22，所以要更改服务器gogs的端口号，<br>SSH_PORT         = 1111</p>
+<p>3.使用ssh提示没有权限<br>     这是由于没有添加公共钥的原因，按下面方法添加即可</p>
+<p>在本机生成公钥</p>
+<p>ssh-keygen -t rsa -b 4096 -C “your_email@example.com”<br>拷贝公钥里面的内容   cat /home/user/.ssh/id_rsa.pub，在gogs的用户设置里面的“SSH 密钥”栏目就可以添加了。<br>git config –global user.name “Your Name”<br>git config –global user.email “email@example.com”</p>
+<p>4.gogs无法开机启动</p>
+<p>按照常规的方式添加脚本到 “/etc/init.d/”下竟然没有开机启动。在网上发现其他方式可以实现，主要是修改”/etc/rc.local”文件，在最后一行添加以下内容</p>
+<p>/bin/su - git -c “/usr/bin/nohup /home/soft/gogs/gogs web”</p>
+<p>5.在使用gogs的时候遇到各种各样的奇怪问题不知道怎样入手<br>gogs是有日志系统，通过查看日志文件就能知道哪里出错了，日志的路径在/gogs/log/，动态查看日志使用下面的命令很方便</p>
+<p>tail -F /gogs/log/serv.log</p>
+<p>tail -F /gogs/log/gogs.log</p>
+<p>6.gogs默认使用本地配置，但是在vps上不知道怎样配置。</p>
+<pre><code>使用vpn使服务器和本地处于同一网段，再利用： “http://0.0.0.0:3000” ，进行配置。
+</code></pre><p>7.如何通过公网ip访问搭建在vps上的gogs</p>
+<pre><code>只需要配置“custom/conf/app.ini”文件“ROOT_URL“ 
+</code></pre><p>ROOT_URL         = <a href="http://vps的ip地址/" target="_blank" rel="noopener">http://vps的ip地址/</a></p>
+<p>8.如何通过域名访问gogs网站<br>需要利用nginx反向代理就可以实现，简单来说是通过访问vps的网址会指向nginx，而nginx又将访问间接指向gogs。</p>
+<p>通过配置nginx的配置文件可以实现“/usr/local/nginx/conf/nginx.conf”，修改如下：</p>
+<pre><code>location / {
+        proxy_pass http://127.0.0.1:3000/;
+        proxy_redirect default;
+   }
+</code></pre><p>9.centos上面没有安装nginx，通过命令也无法安装（解决不了依赖关系）</p>
+<pre><code>最好的方法是通过yum install来安装nginx，但是安装不了只能自己编译nginx了。编译方式如下：
+</code></pre><p>yum install gcc-c++<br>yum install -y pcre pcre-devel<br>yum install -y zlib zlib-devel<br>yum install -y openssl openssl-devel</p>
+<p>wget <a href="https://nginx.org/download/nginx-1.12.2.tar.gz" target="_blank" rel="noopener">https://nginx.org/download/nginx-1.12.2.tar.gz</a><br>tar -zxvf <a href="https://nginx.org/download/nginx-1.12.2.tar.gz" target="_blank" rel="noopener">https://nginx.org/download/nginx-1.12.2.tar.gz</a><br>cd nginx-1.12.2<br>./configure<br>make<br>make install<br>最后在”/etc/rc.local/“添加开机启动项<br>/usr/local/nginx/sbin/nginx</p>
+<p>10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的</p>
+<pre><code>反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
+</code></pre>
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://glows.github.io/2018/05/21/搭建gogs遇到的问题/">https://glows.github.io/2018/05/21/搭建gogs遇到的问题/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/git/"># git</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/05/24/JavaScript模块规范-Commonjs、AMD、CMD、es6-modules/">JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</a>
+            
+            
+            <a class="next" rel="next" href="/2018/05/17/reactjs&redux一些问题/">reactjs&redux一些问题</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Glow | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hans,en,default">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Glow">
+
+
+    <meta name="subtitle" content="Building things on web!">
+
+
+    <meta name="description" content="Building things on web!">
+
+
+
+<title>开发中遇到的问题记录 | Glow</title>
+
+
+
+    <link rel="icon" href="/myavatar.jpeg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<link rel="alternate" href="/atom.xml" title="Glow" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Glows&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Glows&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">开发中遇到的问题记录</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Glow</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">January 22, 2018&nbsp;&nbsp;15:12:38</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="开发中遇到的问题记录"><a href="#开发中遇到的问题记录" class="headerlink" title="开发中遇到的问题记录"></a>开发中遇到的问题记录</h1><h3 id="js去重-基本数组-与-对象那个数组"><a href="#js去重-基本数组-与-对象那个数组" class="headerlink" title="js去重(基本数组 与 对象那个数组)"></a>js去重(基本数组 与 对象那个数组)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> unique = &#123;&#125;;</span><br><span class="line">obarr = [</span><br><span class="line">  &#123;<span class="attr">name</span>: <span class="string">'sdsd'</span>,<span class="attr">key</span>: <span class="string">'zc'</span>&#125;</span><br><span class="line">]</span><br><span class="line">obarr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">gpa</span>) </span>&#123;</span><br><span class="line">     unique[<span class="built_in">JSON</span>.stringify(gpa)] = gpa</span><br><span class="line"> &#125;);</span><br><span class="line">obarr = <span class="built_in">Object</span>.keys(unique).map(<span class="function"><span class="keyword">function</span>(<span class="params">u</span>) </span>&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="built_in">JSON</span>.parse(u)</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure>
+<p>##<br>POST application/json 适用于传递多层的json<br>本来以为自己写了那么多post请求，ajax已经难不住了呢，<br>结果现实无比的残酷，<br>后台换成了java，发多层级的json，后台就取不到了，<br>虽然到最后还是配置正确了，。。记录下来，引以为戒，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">"POST"</span>, <span class="string">"/URL"</span>, <span class="keyword">this</span>.state.datas, &#123;<span class="attr">headers</span>: &#123;<span class="string">"Content-Type"</span>: <span class="string">"application/json"</span>&#125;&#125;)</span><br><span class="line">    .then( <span class="function"><span class="params">res</span> =&gt;</span> &#123;  </span><br><span class="line">               <span class="built_in">console</span>.log(res.data)     </span><br><span class="line">           &#125;)</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(err)</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 来一个原生版的</span></span><br><span class="line">    <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (xhr.readyState == <span class="number">4</span> &amp;&amp; xhr.status == <span class="number">200</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> res = <span class="built_in">JSON</span>.parse(xhr.responseText);</span><br><span class="line">              </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    xhr.open(<span class="string">"POST"</span>, <span class="string">"./toLogin.do"</span>, <span class="literal">true</span>);</span><br><span class="line">    xhr.setRequestHeader(<span class="string">"Content-Type"</span>, <span class="string">"application/json; charset=UTF-8"</span>);</span><br><span class="line">    xhr.send(&#123;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>其实重点就是请求头信息<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Content-Type"</span>: <span class="string">"application/json"</span></span><br><span class="line"><span class="comment">// 顺便一提</span></span><br><span class="line"><span class="string">"Content-Type"</span>: <span class="string">"application/x-www-form-urlencoded"</span> <span class="comment">// 适用于大部分情况</span></span><br><span class="line"><span class="string">"Content-Type"</span>: <span class="string">"multipart/form-data"</span> <span class="comment">// 适用于文件上传</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="为什么在vue的组件中，data要用function返回对象呢？"><a href="#为什么在vue的组件中，data要用function返回对象呢？" class="headerlink" title="为什么在vue的组件中，data要用function返回对象呢？"></a>为什么在vue的组件中，data要用function返回对象呢？</h3><p>类比与引用数据类型。js在赋值object对象时，是直接一个相同的内存地址<br>如果不用function return 每个组件的data都是内存的同一个地址，那一个数据改变其他也改变了，这当然就不是我们想要的。<br>用function return 其实就相当于申明了新的变量，相互独立，自然就不会有这样的问题  </p>
+<a id="more"></a>
+<p><a href="https://www.talkingcoder.com/article/6421767197575348224" target="_blank" rel="noopener">[转载]</a>Vue 组件data为什么必须是函数？<br>在创建或注册模板的时候，传入一个data属性作为用来绑定的数据。但是在组件中，data必须是一个函数，而不能直接把一个对象赋值给它。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component'</span>, &#123;</span><br><span class="line">  template: <span class="string">'&lt;div&gt;OK&lt;/div&gt;'</span>,</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;&#125; <span class="comment">// 返回一个唯一的对象，不要和其他组件共用一个对象进行返回</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>你在前面看到，在new Vue()的时候，是可以给data直接赋值为一个对象的。这是怎么回事，为什么到了组件这里就不行了。</p>
+<p>你要理解，上面这个操作是一个简易操作，实际上，它首先需要创建一个组件构造器，然后注册组件。注册组件的本质其实就是建立一个组件构造器的引用。使用组件才是真正创建一个组件实例。所以，注册组件其实并不产生新的组件类，但会产生一个可以用来实例化的新方式。</p>
+<p>理解这点之后，再理解js的原型链：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MyComponent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">MyComponent.prototype.data = &#123;</span><br><span class="line">  a: <span class="number">1</span>,</span><br><span class="line">  b: <span class="number">2</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 上面是一个虚拟的组件构造器，真实的组件构造器方法很多</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> component1 = <span class="keyword">new</span> MyComponent()</span><br><span class="line"><span class="keyword">var</span> component2 = <span class="keyword">new</span> MyComponent()</span><br><span class="line"><span class="comment">// 上面实例化出来两个组件实例，也就是通过&lt;my-component&gt;调用，创建的两个实例</span></span><br><span class="line"></span><br><span class="line">component1.data.a === component2.data.a <span class="comment">// true</span></span><br><span class="line">component1.data.b = <span class="number">5</span></span><br><span class="line">component2.data.b <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<p>可以看到上面代码中最后三句，这就比较坑爹了，如果两个实例同时引用一个对象，那么当你修改其中一个属性的时候，另外一个实例也会跟着改。这怎么可以，两个实例应该有自己各自的域才对。所以，需要通过下面方法来进行处理：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MyComponent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = <span class="keyword">this</span>.data()</span><br><span class="line">&#125;</span><br><span class="line">MyComponent.prototype.data = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">2</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MyComponent = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = <span class="keyword">this</span>.data()</span><br><span class="line">&#125;</span><br><span class="line">MyComponent.prototype.data = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">2</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">2</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> component1 = <span class="keyword">new</span> MyComponent()</span><br><span class="line"><span class="keyword">var</span> component2 = <span class="keyword">new</span> MyComponent()</span><br><span class="line"><span class="literal">undefined</span></span><br><span class="line">component1.data===component2.data</span><br><span class="line"><span class="literal">false</span></span><br><span class="line">component1.data</span><br><span class="line"><span class="built_in">Object</span> &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125; </span><br><span class="line"><span class="string">``</span><span class="string">`   </span></span><br><span class="line"><span class="string">这样每一个实例的data属性都是独立的，不会相互影响了。所以，你现在知道为什么vue组件的data必须是函数了吧。这都是因为js本身的特性带来的，跟vue本身设计无关。其实vue不应该把这个方法名取为data()，应该叫setData或其他更容易立即的方法名。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## axios 请求中文传输返回乱码</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">前后端需使用相同的编码解码方式，默认是UTF-8, axios 使用以下代码处理</span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line">axios.defaults.headers.put[<span class="string">'Content-Type'</span>] = <span class="string">'application/x-www-form-urlencoded;charset=utf-8'</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="axios-post、put请求传递不了参数"><a href="#axios-post、put请求传递不了参数" class="headerlink" title="axios, post、put请求传递不了参数?"></a>axios, post、put请求传递不了参数?</h2><p>首先，可以试着把axios请求部分换成：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">'post.php'</span>, &#123;</span><br><span class="line">    a: <span class="string">'1'</span></span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">    alert(response.data);</span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    alert(error);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>另外，由于axios默认发送数据时，数据格式是Request Payload，而并非我们常用的Form Data格式，PHP后端未必能正常获取到，所以在发送之前，需要使用qs模块对其进行处理。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> qs <span class="keyword">from</span> <span class="string">'qs'</span>;</span><br><span class="line">...</span><br><span class="line">axios.post(<span class="string">'post.php'</span>, qs.stringify(&#123;</span><br><span class="line">    a: <span class="string">'1'</span></span><br><span class="line">&#125;))</span><br><span class="line">.then( ... )</span><br><span class="line">.catch( ... );</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://glows.github.io/2018/01/22/开发中遇到的问题记录/">https://glows.github.io/2018/01/22/开发中遇到的问题记录/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/JavaScript/"># JavaScript</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/01/30/Javascript基础数据结构/">Javascript基础数据结构</a>
+            
+            
+            <a class="next" rel="next" href="/2018/01/18/Vuejs过渡动效-赋设计以生命/">Vuejs过渡动效(赋设计以生命)</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Glow | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

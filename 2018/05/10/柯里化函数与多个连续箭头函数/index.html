@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-Hans,en,default">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Glow">
+
+
+    <meta name="subtitle" content="Building things on web!">
+
+
+    <meta name="description" content="Building things on web!">
+
+
+
+<title>柯里化函数与多个连续箭头函数 | Glow</title>
+
+
+
+    <link rel="icon" href="/myavatar.jpeg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<link rel="alternate" href="/atom.xml" title="Glow" type="application/atom+xml">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Glows&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Glows&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">柯里化函数与多个连续箭头函数</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Glow</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 10, 2018&nbsp;&nbsp;15:27:36</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="柯里化函数与多个连续箭头函数"><a href="#柯里化函数与多个连续箭头函数" class="headerlink" title="柯里化函数与多个连续箭头函数"></a>柯里化函数与多个连续箭头函数</h2><h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><p>在计算机科学中，柯里化（英语：Currying），又译为卡瑞化或加里化，<br>是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，<br>并且返回接受余下的参数而且返回结果的新函数的技术。<br>这个技术由克里斯托弗·斯特雷奇以逻辑学家哈斯凯尔·加里命名的，<br>尽管它是Moses Schönfinkel和戈特洛布·弗雷格发明的。</p>
+<p>说的明白一点就是，给函数传递一部分参数，让它返回一个函数去处理其他参数，举个例子，求三个数之和：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> addOne = <span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">y</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">z</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> x + y + z</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> one = addOne(<span class="number">3</span>)   <span class="comment">// 函数工厂  : 创造函数的工厂  创建一个one 函数</span></span><br><span class="line"><span class="built_in">console</span>.log(one) <span class="comment">//ƒ (y) &#123;return function (z) &#123;return x + y + z&#125;&#125;</span></span><br><span class="line"><span class="keyword">let</span> two = one(<span class="number">4</span>)</span><br><span class="line"><span class="built_in">console</span>.log(two) <span class="comment">//ƒ (z) &#123;return x + y + z&#125;</span></span><br><span class="line"><span class="keyword">let</span> three = two(<span class="number">5</span>)</span><br><span class="line"><span class="built_in">console</span>.log(three) <span class="comment">//12</span></span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="多个连续箭头函数"><a href="#多个连续箭头函数" class="headerlink" title="多个连续箭头函数"></a>多个连续箭头函数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> add3 = add(<span class="number">3</span>)</span><br><span class="line">add3(<span class="number">4</span>) === <span class="number">3</span> + <span class="number">4</span> <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<p>add 函数 在 es6 里的写法等价为</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> add = <span class="function"><span class="params">a</span> =&gt;</span> b =&gt; a + b</span><br></pre></td></tr></table></figure>
+<p>其实以上就是 柯里化函数 只不过用 es6 写，变了一个样子，后面详细介绍它的原理和特点。</p>
+<p>关键就是理解柯里化，其实可以把它理解成，柯里化后，将第一个参数变量存在函数里面了(闭包–返回一个函数，可访问私有方法和变量)，然后本来需要n个参数的函数可以变成只需要剩下的（n - 1个）参数就可以调用，比如<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> add = <span class="function"><span class="params">x</span> =&gt;</span> y =&gt; x + y</span><br><span class="line"><span class="keyword">let</span> add2 = add(<span class="number">2</span>)</span><br></pre></td></tr></table></figure></p>
+<p>本来完成 add 这个操作，应该是<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> add = <span class="function">(<span class="params">x, y</span>) =&gt;</span> x + y</span><br></pre></td></tr></table></figure></p>
+<p>它需要俩参数，而现在 add2 函数完成同样操作只需要一个参数，这在函数式编程中广泛应用。</p>
+<p>详细解释一下，就是 add2 函数 等价于 有了 x 这个闭包变量的 y =&gt; x + y 函数</p>
+<p>并且此时 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```js</span><br><span class="line">add2(3) === 2 + 3</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://glows.github.io/2018/05/10/柯里化函数与多个连续箭头函数/">https://glows.github.io/2018/05/10/柯里化函数与多个连续箭头函数/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/函数编程/"># 函数编程</a>
+                    
+                        <a href="/tags/柯里化/"># 柯里化</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/05/11/JS函数式编程记录/">JS函数式编程记录 </a>
+            
+            
+            <a class="next" rel="next" href="/2018/05/07/ECMAScript-ES6-新语法/">ECMAScript(ES6)新语法 </a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Glow | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
