@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>函数式编程 on Glow's Blog</title><link>https://example.com/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link><description>Recent content in 函数式编程 on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Tue, 29 Jan 2019 14:30:41 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>函数式编程</title><link>https://example.com/_posts/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8Bos/</link><pubDate>Tue, 29 Jan 2019 14:30:41 +0000</pubDate><guid>https://example.com/_posts/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8Bos/</guid><description>与面向对象的区别 与面向对象方法将问题分解成多组&amp;quot;名词&amp;quot;或对象不同，函数式方法将相同的问题分解成多组&amp;quot;动词&amp;quot;或者函数。
+与面向对象类似的是，函数式编程也通过&amp;quot;粘结&amp;quot;或&amp;quot;组合&amp;quot;其他函数的方式构建更大的函数，以实现更抽象的行为。
+函数式：通过把功能拆解成一个个小函数组件，再用函数讲各个组件结合完成需求。
+多种JS编程方式 命令式编程
+通过详细描述行为的编程方式
+基于原型的对象编程
+基于原型对象和实例的编程方式
+元编程
+基于模型数据进行编写和操作的编程方式
+函数式编程
+基于函数进行操作的编程方式
+Applicative编程函数作为参数的编程方式 集合中心编程对数据进行操作，包括对象和数组的编程方式
+其他编程：
+面向类型
+事件编程</description></item></channel></rss>

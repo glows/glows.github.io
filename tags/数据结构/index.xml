@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数据结构 on Glow's Blog</title><link>https://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><description>Recent content in 数据结构 on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Wed, 15 Apr 2020 14:41:47 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml"/><item><title>常见数据结构</title><link>https://example.com/_posts/2020-4-15-%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Wed, 15 Apr 2020 14:41:47 +0000</pubDate><guid>https://example.com/_posts/2020-4-15-%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>回到最初，计算机科学
+基础学科内容，比如：网络知识、数据结构算法 编程思想
+时间复杂度
+常数时间 O(1) 代表这个操作和数据量没关系，是一个固定时间的操作，比如说四则运算。
+栈 栈是一种LIFO(Last-In-First-Out，后进先出)的 数据结构
+class Stack { constructor() { this.stack = [] } push(item) { this.stack.push(item) } pop() { this.stack.pop() } peek() { return this.stack[this.getCount() - 1] } getCount() { return this.stack.length } isEmpty() { return this.getCount() === 0 } } 队列 队列数据结构的访问 规则是FIFO(First-In-First-Out，先进先出)。
+this.stack.push(item) this.stack.shift() //移除数组中的第一个项并返回该项 链表 单向链表
+class Node { constructor(v, next) { this.value = v this.next = next } } class LinkList { constructor() { // 链表长度 this.</description></item></channel></rss>

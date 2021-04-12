@@ -1,0 +1,30 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>搭建gogs遇到的问题 | Glow's Blog</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:title" content="搭建gogs遇到的问题"><meta property="og:description" content="关键词：git gogs"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/_posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"><meta property="article:section" content="_posts"><meta property="article:published_time" content="2018-05-21T10:25:55+00:00"><meta property="article:modified_time" content="2018-05-21T10:25:55+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="搭建gogs遇到的问题"><meta name=twitter:description content="关键词：git gogs"><link rel=stylesheet href=https://example.com/css/style-white.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://example.com/images/favicon.ico></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><header id=header><a href=https://example.com><div id=logo style=background-image:url(https://example.com/images/logo.png)></div><div id=title><h1>Glow's Blog</h1></div></a><div id=nav><ul><li class=icon><a href=#><i class="fas fa-bars fa-2x"></i></a></li><li><a href=/>Home</a></li><li><a href=/_posts>Writings</a></li><li><a href=/tags>Tags</a></li><li><a href=/about>About</a></li></ul></div></header><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class=content itemprop=articleBody><p>关键词：git gogs</p><h3 id=mysql数据库>mysql数据库</h3><p>客户端找不到 caching_sha2_password 插件，于是登录不上，本来是要这种插件的，但是其实
+ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘root’; 就行
+因为客户端支持的这种native加密方式，然后还是连接不上？这时候改一下登录密码就行</p><h2 id=搭建gogs遇到的坑>搭建gogs遇到的坑</h2><p>1.无法连接ssh，显示connection refuse。</p><pre><code>原因是“custom/conf/app.ini”没有开启ssh功能，改为以下配置就行了
+</code></pre><p>START_SSH_SERVER = true</p><p>2.配置了ssh后，gogs无法启动，错误信息是：Fail to start SSH server: listen tcp 0.0.0.0:22: bind: permission denied
+这个错误是用于服务器使用了端口22，所以要更改服务器gogs的端口号，
+SSH_PORT = 1111</p><p>3.使用ssh提示没有权限
+这是由于没有添加公共钥的原因，按下面方法添加即可</p><p>在本机生成公钥</p><p>ssh-keygen -t rsa -b 4096 -C &ldquo;<a href=mailto:your_email@example.com>your_email@example.com</a>&rdquo;
+拷贝公钥里面的内容 cat /home/user/.ssh/id_rsa.pub，在gogs的用户设置里面的“SSH 密钥”栏目就可以添加了。
+git config &ndash;global user.name &ldquo;Your Name&rdquo;
+git config &ndash;global user.email &ldquo;<a href=mailto:email@example.com>email@example.com</a>&rdquo;</p><p>4.gogs无法开机启动</p><p>按照常规的方式添加脚本到 “/etc/init.d/”下竟然没有开机启动。在网上发现其他方式可以实现，主要是修改"/etc/rc.local"文件，在最后一行添加以下内容</p><p>/bin/su - git -c &ldquo;/usr/bin/nohup /home/soft/gogs/gogs web&rdquo;</p><p>5.在使用gogs的时候遇到各种各样的奇怪问题不知道怎样入手
+gogs是有日志系统，通过查看日志文件就能知道哪里出错了，日志的路径在/gogs/log/，动态查看日志使用下面的命令很方便</p><p>tail -F /gogs/log/serv.log</p><p>tail -F /gogs/log/gogs.log</p><p>6.gogs默认使用本地配置，但是在vps上不知道怎样配置。</p><pre><code>  使用vpn使服务器和本地处于同一网段，再利用： “http://0.0.0.0:3000” ，进行配置。
+</code></pre><p>7.如何通过公网ip访问搭建在vps上的gogs</p><pre><code>   只需要配置“custom/conf/app.ini”文件“ROOT_URL“ 
+</code></pre><p>ROOT_URL = http://vps的ip地址/</p><p>8.如何通过域名访问gogs网站
+需要利用nginx反向代理就可以实现，简单来说是通过访问vps的网址会指向nginx，而nginx又将访问间接指向gogs。</p><p>通过配置nginx的配置文件可以实现“/usr/local/nginx/conf/nginx.conf”，修改如下：</p><pre><code>    location / {
+            proxy_pass http://127.0.0.1:3000/;
+            proxy_redirect default;
+       }
+</code></pre><p>9.centos上面没有安装nginx，通过命令也无法安装（解决不了依赖关系）</p><pre><code>  最好的方法是通过yum install来安装nginx，但是安装不了只能自己编译nginx了。编译方式如下：
+</code></pre><p>yum install gcc-c++
+yum install -y pcre pcre-devel
+yum install -y zlib zlib-devel
+yum install -y openssl openssl-devel</p><p>wget <a href=https://nginx.org/download/nginx-1.12.2.tar.gz>https://nginx.org/download/nginx-1.12.2.tar.gz</a>
+tar -zxvf <a href=https://nginx.org/download/nginx-1.12.2.tar.gz>https://nginx.org/download/nginx-1.12.2.tar.gz</a>
+cd nginx-1.12.2
+./configure
+make
+make install
+最后在"/etc/rc.local/&ldquo;添加开机启动项
+/usr/local/nginx/sbin/nginx</p><p>10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的</p><pre><code>  反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
+</code></pre></div></article><footer id=footer><div class=footer-left>Copyright &copy; 2021 glows</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/_posts>Writings</a></li><li><a href=/tags>Tags</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script></html>
