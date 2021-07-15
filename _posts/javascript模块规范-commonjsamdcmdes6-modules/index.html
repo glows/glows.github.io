@@ -7,7 +7,7 @@
   function bar() {
      console.log('bar()'+data)
   }
-        
+
   window.module = {foo}
 })(window, module2)
 </code></pre></li></ul></li></ul></li><li>模块化规范<ul><li>CommonJS<ul><li>Node.js : 服务器端</li><li>Browserify : 浏览器端 也称为js的打包工具</li><li>基本语法:<ul><li>定义暴露模块 : exports<pre><code>exports.xxx = value
@@ -43,7 +43,7 @@ module.exports = value
 </code></pre></li><li>使用模块seajs.use([&lsquo;模块1&rsquo;, &lsquo;模块2&rsquo;])</li></ul></li></ul></li><li>ES6<ul><li>ES6内置了模块化的实现</li><li>基本语法<ul><li><p>定义暴露模块 : export</p><ul><li>暴露一个对象:<pre><code>export default 对象
 </code></pre></li><li>暴露多个:<pre><code>export var xxx = value1
 export let yyy = value2
-          
+
 var xxx = value1
 let yyy = value2
 export {xxx, yyy}

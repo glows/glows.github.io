@@ -35,18 +35,18 @@
         <span style=color:#e6db74>&#39;ramda&#39;</span>,
         <span style=color:#e6db74>&#39;jquery&#39;</span>
     ],
-    <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>$</span>) {
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>trace</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>tag</span>, <span style=color:#a6e22e>x</span>) {
+    <span style=color:#66d9ef>function</span>(<span style=color:#ae81ff>_</span>, <span style=color:#a6e22e>$</span>) {
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>trace</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>tag</span>, <span style=color:#a6e22e>x</span>) {
             <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>tag</span>, <span style=color:#a6e22e>x</span>);
             <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span>;
         })
 
         <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>Impure</span> <span style=color:#f92672>=</span> {
-            <span style=color:#a6e22e>getJSON</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>callback</span>, <span style=color:#a6e22e>url</span>) {
+            <span style=color:#a6e22e>getJSON</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>callback</span>, <span style=color:#a6e22e>url</span>) {
                 <span style=color:#a6e22e>$</span>.<span style=color:#a6e22e>getJSON</span>(<span style=color:#a6e22e>url</span>, <span style=color:#a6e22e>callback</span>)
             }),
 
-            <span style=color:#a6e22e>setHtml</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>sel</span>, <span style=color:#a6e22e>html</span>) {
+            <span style=color:#a6e22e>setHtml</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>curry</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>sel</span>, <span style=color:#a6e22e>html</span>) {
                 <span style=color:#a6e22e>$</span>(<span style=color:#a6e22e>sel</span>).<span style=color:#a6e22e>html</span>(<span style=color:#a6e22e>html</span>)
             })
 
@@ -61,16 +61,16 @@
             <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;https://api.flickr.com/services/feeds/photos_public.gne?tags=&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>term</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;&amp;format=json&amp;jsoncallback=?&#39;</span>;
         }
 
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>app</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>Impure</span>.<span style=color:#a6e22e>getJSON</span>(<span style=color:#a6e22e>trace</span>(<span style=color:#e6db74>&#34;response&#34;</span>)), <span style=color:#a6e22e>url</span>);
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>mediaUrl</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;m&#39;</span>), <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;media&#39;</span>));
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>app</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>Impure</span>.<span style=color:#a6e22e>getJSON</span>(<span style=color:#a6e22e>trace</span>(<span style=color:#e6db74>&#34;response&#34;</span>)), <span style=color:#a6e22e>url</span>);
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>mediaUrl</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;m&#39;</span>), <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;media&#39;</span>));
 
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>srcs</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>map</span>(<span style=color:#a6e22e>mediaUrl</span>), <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;items&#39;</span>));
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>srcs</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>map</span>(<span style=color:#a6e22e>mediaUrl</span>), <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>prop</span>(<span style=color:#e6db74>&#39;items&#39;</span>));
 
         <span style=color:#75715e>// var renderImages = _.compose(Impure.setHtml(body), srcs);
 </span><span style=color:#75715e></span>        <span style=color:#75715e>// var app = _.compose(Impure.getJSON(renderImages), url);
 </span><span style=color:#75715e></span>
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>images</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>map</span>(<span style=color:#a6e22e>img</span>), <span style=color:#a6e22e>srcs</span>);
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>renderImages</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>Impure</span>.<span style=color:#a6e22e>setHtml</span>(<span style=color:#e6db74>&#34;body&#34;</span>), <span style=color:#a6e22e>images</span>);
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>images</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>map</span>(<span style=color:#a6e22e>img</span>), <span style=color:#a6e22e>srcs</span>);
+        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>renderImages</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>_</span>.<span style=color:#a6e22e>compose</span>(<span style=color:#a6e22e>Impure</span>.<span style=color:#a6e22e>setHtml</span>(<span style=color:#e6db74>&#34;body&#34;</span>), <span style=color:#a6e22e>images</span>);
         <span style=color:#75715e>// var app = _.compose(Impure.getJSON(renderImages), url);
 </span><span style=color:#75715e></span>
         <span style=color:#a6e22e>app</span>(<span style=color:#e6db74>&#34;cats&#34;</span>);
