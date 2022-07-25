@@ -78,15 +78,19 @@ docker-machine start [machine name] 执行
 docker-machine env [machine name] 运行成功，会出现如下的代码：
 @FOR /f &amp;#34;tokens=*&amp;#34; %i IN (&amp;#39;docker-machine env box&amp;#39;) DO @%i 按提示拷贝在shell中执行
 下一步，输入docker version便会显示有Client和Server,如下
-Client: Version: 17.10.0-ce API version: 1.33 Go version: go1.8.3 Git commit: f4ffd25 Built: Tue Oct 17 19:00:02 2017 OS/Arch: windows/amd64 Server: Version: 17.</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</guid><description>&lt;p>关键词: import require javascript module&lt;/p></description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p>关键词：git gogs&lt;/p></description></item><item><title>about</title><link>https://glows.github.io/about/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>My languages HTML/CSS/Some Javascript Go Python
-English and Japanese
+Client: Version: 17.10.0-ce API version: 1.33 Go version: go1.8.3 Git commit: f4ffd25 Built: Tue Oct 17 19:00:02 2017 OS/Arch: windows/amd64 Server: Version: 17.</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</guid><description>&lt;p>关键词: import require javascript module&lt;/p></description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p>关键词：git gogs&lt;/p></description></item><item><title>about</title><link>https://glows.github.io/about/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>My languages HTML/CSS/Some
+Javascript
+Go
+Python English and Japanese
 I use&amp;hellip; MacOS
 Git
 Vim or Vscode
 Emacs
 GitLab/Hub
 Thanks!
-Biography Server-Side &amp;amp; Front-end Developer. Currently working as a Fullstack Engineer in ShenZhen. In my spare time I enjoy playing video games, or working on various side projects.</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
+Biography Server-Side &amp;amp; Front-end Developer. Currently working as a Fullstack Engineer in ShenZhen. In my spare time I enjoy playing video games, or working on various side projects.
+开拓视野，冲破艰险，洞悉所有，贴近生活，寻找真爱，感受彼此 。
+&amp;gt; ——白日梦想家</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p>
