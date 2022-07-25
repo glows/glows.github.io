@@ -8,7 +8,27 @@ Golang 默认的 time.time 时间类型表示具有纳秒精度的时间瞬间�
 Go web 框架 Gin (https://gin-gonic.com/) (https://github.com/gin-gonic/gin)
 use the below Go command to install Gin.
 go get -u github.com/gin-gonic/gin Import it in your code:
-import &amp;#34;github.com/gin-gonic/gin&amp;#34; 1package main 2import &amp;#34;github.com/gin-gonic/gin&amp;#34; 3func main() { 4 r := gin.Default() 5 r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { 6 c.JSON(200, gin.H{ 7 &amp;#34;message&amp;#34;: &amp;#34;pong, hello world!&amp;#34;, 8 }) 9 }) 10 r.</description></item><item><title>OpenCV With Network Cameras</title><link>https://glows.github.io/_posts/opencv-with-network-cameras/</link><pubDate>Tue, 27 Apr 2021 15:14:40 +0000</pubDate><guid>https://glows.github.io/_posts/opencv-with-network-cameras/</guid><description>OpenCV with Network Cameras How do I access an IP Camera? #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;opencv2/opencv.hpp&amp;gt; #include &amp;lt;iostream&amp;gt; int main(int, char**) { cv::VideoCapture vcap; cv::Mat image; // This works on a D-Link CDS-932L const std::string videoStreamAddress = &amp;#34;http://&amp;lt;username:password&amp;gt;@&amp;lt;ip_address&amp;gt;/video.cgi?.mjpg&amp;#34;; //open the video stream and make sure it&amp;#39;s opened if(!vcap.open(videoStreamAddress)) { std::cout &amp;lt;&amp;lt; &amp;#34;Error opening video stream or file&amp;#34; &amp;lt;&amp;lt; std::endl; return -1; } for(;;) { if(!vcap.read(image)) { std::cout &amp;lt;&amp;lt; &amp;#34;No frame&amp;#34; &amp;lt;&amp;lt; std::endl; cv::waitKey(); } cv::imshow(&amp;#34;Output Window&amp;#34;, image); if(cv::waitKey(1) &amp;gt;= 0) break; } }```</description></item><item><title>Docker Checklist</title><link>https://glows.github.io/_posts/2020-11-04-docker-checklist/</link><pubDate>Wed, 04 Nov 2020 09:24:04 +0000</pubDate><guid>https://glows.github.io/_posts/2020-11-04-docker-checklist/</guid><description> [ x ] 创建 1docker build -t &amp;lt;name&amp;gt; &amp;lt;dir&amp;gt; [ x ] 打包 添加 tag
+import &amp;#34;github.com/gin-gonic/gin&amp;#34; 1package main 2import &amp;#34;github.com/gin-gonic/gin&amp;#34; 3func main() { 4 r := gin.Default() 5 r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { 6 c.JSON(200, gin.H{ 7 &amp;#34;message&amp;#34;: &amp;#34;pong, hello world!&amp;#34;, 8 }) 9 }) 10 r.</description></item><item><title>OpenCV With Network Cameras</title><link>https://glows.github.io/_posts/opencv-with-network-cameras/</link><pubDate>Tue, 27 Apr 2021 15:14:40 +0000</pubDate><guid>https://glows.github.io/_posts/opencv-with-network-cameras/</guid><description>OpenCV with Network Cameras How do I access an IP Camera? #include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;opencv2/opencv.hpp&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+int main(int, char**) {
+cv::VideoCapture vcap;
+cv::Mat image;
+// This works on a D-Link CDS-932L
+const std::string videoStreamAddress = &amp;#34;http://&amp;lt;username:password&amp;gt;@&amp;lt;ip_address&amp;gt;/video.cgi?.mjpg&amp;#34;;
+//open the video stream and make sure it&amp;#39;s opened
+if(!vcap.open(videoStreamAddress)) {
+std::cout &amp;lt;&amp;lt; &amp;#34;Error opening video stream or file&amp;#34; &amp;lt;&amp;lt; std::endl;
+return -1;
+}
+for(;;) {
+if(!vcap.read(image)) {
+std::cout &amp;lt;&amp;lt; &amp;#34;No frame&amp;#34; &amp;lt;&amp;lt; std::endl;
+cv::waitKey();
+}
+cv::imshow(&amp;#34;Output Window&amp;#34;, image);
+if(cv::waitKey(1) &amp;gt;= 0) break;
+} }```</description></item><item><title>Docker Checklist</title><link>https://glows.github.io/_posts/2020-11-04-docker-checklist/</link><pubDate>Wed, 04 Nov 2020 09:24:04 +0000</pubDate><guid>https://glows.github.io/_posts/2020-11-04-docker-checklist/</guid><description> [ x ] 创建 1docker build -t &amp;lt;name&amp;gt; &amp;lt;dir&amp;gt; [ x ] 打包 添加 tag
 1docker tag &amp;lt;image name&amp;gt; &amp;lt;new image name:new tag&amp;gt; 1docker save -o &amp;lt;file name&amp;gt; &amp;lt;image name&amp;gt; [ x ] 发布 dokcer push or
 docker load &amp;lt;image name</description></item><item><title>typescript学习</title><link>https://glows.github.io/_posts/2020-10-13-typescript%E5%AD%A6%E4%B9%A0/</link><pubDate>Tue, 13 Oct 2020 11:34:25 +0000</pubDate><guid>https://glows.github.io/_posts/2020-10-13-typescript%E5%AD%A6%E4%B9%A0/</guid><description>类型断言 在文件packages/shared/src/index.ts中第22行至第26行
 export const babelParserDefaultPlugins = [ &amp;lsquo;bigInt&amp;rsquo;, &amp;lsquo;optionalChaining&amp;rsquo;, &amp;rsquo;nullishCoalescingOperator&amp;rsquo; ] as const 上面代码中的as是类型断言之一，
@@ -43,7 +63,8 @@ React 默认提供的四个最常用的钩子 1useState() //状态 2 3useEffect(
 引入的 antd 组件类名没有被 CSS Modules 转化，所以被覆盖的类名 .ant-select-selection 必须放到 :global 中。
 因为上一条的关系，覆盖是全局性的。为了防止对其他 Select 组件造成影响，所以需要包裹额外的 className 限制样式的生效范围。 e.g.
 1.customSelect { 2 :global { 3 .ant-select-selection { 4 max-height: 51px; 5 overflow: auto; 6 } 7 } 8} model：模型
-模型通常认为是视图(view)的内核，模型就是指视图的数据 // ES7新标准:装饰器（Decorator） @connect(state =&amp;gt; ({ user: state.user, }))
+模型通常认为是视图(view)的内核，模型就是指视图的数据
+// ES7新标准:装饰器（Decorator） @connect(state =&amp;gt; ({ user: state.user, }))
 // 如果您不喜欢ES7装饰器，那好办，我就帮您写一个不用的 export default connect(state =&amp;gt; ({ user: state.user, }))(User);
 dva的model 注意点： reducers 命名需正确，注意加s effects
 子组件显示父组件穿过来的props有两种方式： 1、直接使用 这种方式，父组件改变props后，子组件重新渲染，由于直接使用的props，所以我们不需要做什么就可以正常显示最新的props</description></item><item><title>函数式编程</title><link>https://glows.github.io/_posts/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8Bos/</link><pubDate>Tue, 29 Jan 2019 14:30:41 +0000</pubDate><guid>https://glows.github.io/_posts/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8Bos/</guid><description>与面向对象的区别 与面向对象方法将问题分解成多组&amp;quot;名词&amp;quot;或对象不同，函数式方法将相同的问题分解成多组&amp;quot;动词&amp;quot;或者函数。
@@ -61,7 +82,13 @@ Applicative编程函数作为参数的编程方式 集合中心编程对数据�
 其他编程：
 面向类型
 事件编程</description></item><item><title>解决VSCode保存时自动格式化</title><link>https://glows.github.io/_posts/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</link><pubDate>Wed, 15 Aug 2018 14:57:24 +0000</pubDate><guid>https://glows.github.io/_posts/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</guid><description>把JS-CS-HTML Formatter这个插件禁用</description></item><item><title>理解CSS属性：touch-action</title><link>https://glows.github.io/_posts/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</link><pubDate>Thu, 09 Aug 2018 11:15:23 +0000</pubDate><guid>https://glows.github.io/_posts/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</guid><description>CSS属性 touch-action 用于指定某个给定的区域是否允许用户操作，以及如何响应用户操作（比如浏览器自带的划动、缩放等）。
-1/* Keyword values */ 2touch-action: auto; 3touch-action: none; 4touch-action: pan-x; 5touch-action: pan-left; 6touch-action: pan-right; 7touch-action: pan-y; 8touch-action: pan-up; 9touch-action: pan-down; 10touch-action: pinch-zoom; 11touch-action: manipulation; 12 13/* Global values */ 14touch-action: inherit; 15touch-action: initial; 16touch-action: unset; 初始值 auto 适用元素 all elements except: non-replaced inline elements, table rows, row groups, table columns, and column groups 是否是继承属性 否 适用媒体 visual 计算值 as specified Animation type discrete 正规顺序 the unique non-ambiguous order defined by the formal grammar 默认情况下，平移（滚动）和缩放手势由浏览器专门处理。 使用 Pointer_events 的应用程序将在浏览器开始处理触摸手势时收到一个 pointercancel 事件。 通过明确指定浏览器应该处理哪些手势，应用程序可以在 pointermove 和 pointerup 监听器中为其余的手势提供自己的行为。 使用 Touch_events 的应用程序通过调用 preventDefault() 禁用浏览器处理手势，但也应使用触摸操作确保浏览器在调用任何事件侦听器之前，了解应用程序的意图。</description></item><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/_posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/_posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：
+1/* Keyword values */ 2touch-action: auto; 3touch-action: none; 4touch-action: pan-x; 5touch-action: pan-left; 6touch-action: pan-right; 7touch-action: pan-y; 8touch-action: pan-up; 9touch-action: pan-down; 10touch-action: pinch-zoom; 11touch-action: manipulation; 12 13/* Global values */ 14touch-action: inherit; 15touch-action: initial; 16touch-action: unset; 初始值 auto
+适用元素 all elements except: non-replaced inline elements, table rows, row groups, table columns, and column groups
+是否是继承属性 否
+适用媒体 visual
+计算值 as specified
+Animation type discrete
+正规顺序 the unique non-ambiguous order defined by the formal grammar 默认情况下，平移（滚动）和缩放手势由浏览器专门处理。 使用 Pointer_events 的应用程序将在浏览器开始处理触摸手势时收到一个 pointercancel 事件。 通过明确指定浏览器应该处理哪些手势，应用程序可以在 pointermove 和 pointerup 监听器中为其余的手势提供自己的行为。 使用 Touch_events 的应用程序通过调用 preventDefault() 禁用浏览器处理手势，但也应使用触摸操作确保浏览器在调用任何事件侦听器之前，了解应用程序的意图。</description></item><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/_posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/_posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：
 查看官方文档后了解到：受到javascript的限制，Vue不能检测到对象属性的添加或删除。因为Vue利用的是Object的defineProperty()方法，在初始化实列时将属性转为getter/setter，所以属性必须在data对象上才能让vue转换它。 后通过查找资料修改为使用$set来设定修改值，js如下： 我们可以使用 Vue.set(object, key, value) 方法将响应属性添加到数组里的对象上。 所以将
 1this.stuList[index].checked=true; 改成
 1Vue.set(this.stuList[index], &amp;#39;checked&amp;#39;, true); 还可以使用 vm.$set实例方法，这也是全局 Vue.set方法的别名:
@@ -73,12 +100,22 @@ Applicative编程函数作为参数的编程方式 集合中心编程对数据�
 1# uname -a # 查看内核/操作系统/CPU信息 2 3# head -n 1 /etc/issue # 查看操作系统版本 4 5# cat /proc/cpuinfo # 查看CPU信息 6 7# hostname # 查看计算机名 8 9# lspci -tv # 列出所有PCI设备 10 11# lsusb -tv # 列出所有USB设备 12 13# lsmod # 列出加载的内核模块 14 15# env # 查看环境变量 资源
 1 2# free -m # 查看内存使用量和交换区使用量 3 4# df -h # 查看各分区使用情况 5 6# du -sh &amp;lt;目录名&amp;gt; # 查看指定目录的大小 7 8# grep MemTotal /proc/meminfo # 查看内存总量 9 10# grep MemFree /proc/meminfo # 查看空闲内存量 11 12# uptime # 查看系统运行时间、用户数、负载 13 14# cat /proc/loadavg # 查看系统负载 磁盘和分区</description></item><item><title>React与Redux</title><link>https://glows.github.io/_posts/react%E4%B8%8Eredux/</link><pubDate>Thu, 28 Jun 2018 14:09:12 +0000</pubDate><guid>https://glows.github.io/_posts/react%E4%B8%8Eredux/</guid><description>React与Redux Redux 的设计思想很简单，就两句话。 （1）Web 应用是一个状态机，视图与状态是一一对应的。 （2）所有的状态，保存在一个对象里面。</description></item><item><title>vue问题收集</title><link>https://glows.github.io/_posts/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</link><pubDate>Wed, 20 Jun 2018 11:43:39 +0000</pubDate><guid>https://glows.github.io/_posts/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</guid><description>1、Why is Vue.js Chrome Devtools not detecting Vue.js? 打开本地文件vueDevtools 无法检测到Vue.js, 需要打开Chrome vueDevtools配置允许本地文件访问 One alternative is to set up a local web server, as the OP already stated. The other - which IMHO is faster and less harassing - is letting the extension have access to file URLs, which is disabled by default.
 Simply go to chrome://extensions and leave the &amp;ldquo;Allow access to file URLs&amp;rdquo; box checked for Vue.js devtools.</description></item><item><title>docker使用指南</title><link>https://glows.github.io/_posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link><pubDate>Tue, 29 May 2018 14:03:46 +0000</pubDate><guid>https://glows.github.io/_posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid><description>命令提示：
-docker --version Docker version docker-compose --version docker-machine --version docker ps docker version docker info 首先 Windows 下启动docker machine(更多命令 docker-machine -h), 使用dokcer-machine ls 查看已安装的机器
+docker --version Docker version docker-compose --version docker-machine --version docker ps
+docker version
+docker info 首先 Windows 下启动docker machine(更多命令 docker-machine -h), 使用dokcer-machine ls 查看已安装的机器
 docker-machine start [machine name] 执行
 docker-machine env [machine name] 运行成功，会出现如下的代码：
 @FOR /f &amp;#34;tokens=*&amp;#34; %i IN (&amp;#39;docker-machine env box&amp;#39;) DO @%i 按提示拷贝在shell中执行
 下一步，输入docker version便会显示有Client和Server,如下
-Client: Version: 17.10.0-ce API version: 1.33 Go version: go1.8.3 Git commit: f4ffd25 Built: Tue Oct 17 19:00:02 2017 OS/Arch: windows/amd64 Server: Version: 17.</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/_posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/_posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</guid><description>&lt;p>关键词: import require javascript module&lt;/p></description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/_posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/_posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p>关键词：git gogs&lt;/p></description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
+Client:
+Version: 17.10.0-ce
+API version: 1.33
+Go version: go1.8.3
+Git commit: f4ffd25
+Built: Tue Oct 17 19:00:02 2017
+OS/Arch: windows/amd64
+Server:
+Version: 17.</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/_posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/_posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</guid><description>&lt;p>关键词: import require javascript module&lt;/p></description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/_posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/_posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p>关键词：git gogs&lt;/p></description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p>
@@ -247,15 +284,38 @@ Bulma Easy to learn syntax, No JS Zurb Foundation Alternative to Bootstrap Skele
 npm init 1、新建 index.js 作为项目入口文件， 使用MVC架构。
 引入框架和组件，添加中间件（如connect-flash、） 设置模板目录设置模板引擎为 ejs
 2、创建路由文件夹 &amp;ldquo;routes&amp;rdquo; 和文件 &amp;ldquo;/routes/index.js&amp;rdquo;, 核心代码编辑如下：
-module.exports = function (app) { app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; { res.send(&amp;#34;hello, express&amp;#34;); }) app.use(&amp;#39;/posts&amp;#39;, require(&amp;#39;./posts&amp;#39;)); // routes文件夹下 模块路由 app.use(function(req, res){ if(!res.headerSent){ res.render(&amp;#39;404&amp;#39;); } }); }; 模块路由代码示例：
-// GET /posts 所有用户或者特定用户的文章页 // eg: GET /posts?author=xxx router.get(&amp;#39;/&amp;#39;, function(req, res, next) { // res.</description></item><item><title>react-native-初探</title><link>https://glows.github.io/_posts/react-native-%E5%88%9D%E6%8E%A2/</link><pubDate>Mon, 25 Dec 2017 16:46:00 +0000</pubDate><guid>https://glows.github.io/_posts/react-native-%E5%88%9D%E6%8E%A2/</guid><description>环境搭建 -Android开发环境 / MacOS Xcode 开发环境 -Node.js -npm -react native -编辑器 Visual Code
+module.exports = function (app) {
+app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; {
+res.send(&amp;#34;hello, express&amp;#34;);
+})
+app.use(&amp;#39;/posts&amp;#39;, require(&amp;#39;./posts&amp;#39;)); // routes文件夹下 模块路由
+app.use(function(req, res){
+if(!res.headerSent){
+res.render(&amp;#39;404&amp;#39;);
+}
+});
+}; 模块路由代码示例：
+// GET /posts 所有用户或者特定用户的文章页
+// eg: GET /posts?author=xxx
+router.get(&amp;#39;/&amp;#39;, function(req, res, next) {
+// res.</description></item><item><title>react-native-初探</title><link>https://glows.github.io/_posts/react-native-%E5%88%9D%E6%8E%A2/</link><pubDate>Mon, 25 Dec 2017 16:46:00 +0000</pubDate><guid>https://glows.github.io/_posts/react-native-%E5%88%9D%E6%8E%A2/</guid><description>环境搭建 -Android开发环境 / MacOS Xcode 开发环境 -Node.js -npm -react native -编辑器 Visual Code
 包依赖 基本：
 react react-native
 导航： react-navigation
 Api获取： jsonwebtoken 运行项目 在此就默认 Android开发环境 / MacOS Xcode 开发环境 已搭建完成，继续执行下面的命令
 react-native init myProject 测试安装
-react-native init AwesomeProject cd AwesomeProject react-native run-android 写一个“hello world”&amp;mdash;-
-import React, { Component } from &amp;#39;react&amp;#39;; import { Text } from &amp;#39;react-native&amp;#39;; export default class HelloWorldApp extends Component { render() { return ( &amp;lt;Text&amp;gt;Hello world!&amp;lt;/Text&amp;gt; ); } }</description></item><item><title>learning</title><link>https://glows.github.io/_posts/learning/</link><pubDate>Mon, 25 Dec 2017 16:14:32 +0000</pubDate><guid>https://glows.github.io/_posts/learning/</guid><description>Learning Hey, Wake up!
+react-native init AwesomeProject
+cd AwesomeProject
+react-native run-android 写一个“hello world”&amp;mdash;-
+import React, { Component } from &amp;#39;react&amp;#39;;
+import { Text } from &amp;#39;react-native&amp;#39;;
+export default class HelloWorldApp extends Component {
+render() {
+return (
+&amp;lt;Text&amp;gt;Hello world!&amp;lt;/Text&amp;gt;
+);
+}
+}</description></item><item><title>learning</title><link>https://glows.github.io/_posts/learning/</link><pubDate>Mon, 25 Dec 2017 16:14:32 +0000</pubDate><guid>https://glows.github.io/_posts/learning/</guid><description>Learning Hey, Wake up!
 许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了；那不是成熟，而是精神的早衰和个性的夭亡！ 真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。 ——《在世纪的转折点上》尼采（哲学家）
 你要看一个国家的文明，只需考察三件事： 第一，看他们怎样待小孩子 第二，看他们怎样待女人 第三，看他们怎样利用闲暇的时间 ——胡适 （思想家）
 好的程序员是那种过单行道马路都要往两边看的人 ——Doug Linder
