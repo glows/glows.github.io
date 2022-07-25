@@ -2,5 +2,5 @@
 npm init 1、新建 index.js 作为项目入口文件， 使用MVC架构。
 引入框架和组件，添加中间件（如connect-flash、） 设置模板目录设置模板引擎为 ejs
 2、创建路由文件夹 &amp;ldquo;routes&amp;rdquo; 和文件 &amp;ldquo;/routes/index.js&amp;rdquo;, 核心代码编辑如下：
-module.exports = function (app) { app.get('/', (req, res) =&amp;gt; { res.send(&amp;quot;hello, express&amp;quot;); }) app.use('/posts', require('./posts')); // routes文件夹下 模块路由 app.use(function(req, res){ if(!res.headerSent){ res.render('404'); } }); }; 模块路由代码示例：
-// GET /posts 所有用户或者特定用户的文章页 // eg: GET /posts?author=xxx router.</description></item></channel></rss>
+module.exports = function (app) { app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; { res.send(&amp;#34;hello, express&amp;#34;); }) app.use(&amp;#39;/posts&amp;#39;, require(&amp;#39;./posts&amp;#39;)); // routes文件夹下 模块路由 app.use(function(req, res){ if(!res.headerSent){ res.render(&amp;#39;404&amp;#39;); } }); }; 模块路由代码示例：
+// GET /posts 所有用户或者特定用户的文章页 // eg: GET /posts?author=xxx router.get(&amp;#39;/&amp;#39;, function(req, res, next) { // res.</description></item></channel></rss>

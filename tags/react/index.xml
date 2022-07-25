@@ -7,7 +7,9 @@ export interface MyInputHandles { focus(): void; } const MyInput: RefForwardingC
 .customSelect { :global { .ant-select-selection { max-height: 51px; overflow: auto; } } } model：模型
 模型通常认为是视图(view)的内核，模型就是指视图的数据 // ES7新标准:装饰器（Decorator） @connect(state =&amp;gt; ({ user: state.user, }))
 // 如果您不喜欢ES7装饰器，那好办，我就帮您写一个不用的 export default connect(state =&amp;gt; ({ user: state.user, }))(User);
-dva的model 注意点： reducers 命名需正确，注意加s effects</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
+dva的model 注意点： reducers 命名需正确，注意加s effects
+子组件显示父组件穿过来的props有两种方式： 1、直接使用 这种方式，父组件改变props后，子组件重新渲染，由于直接使用的props，所以我们不需要做什么就可以正常显示最新的props
+class Child extends Component { render() { return {this.</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/_posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题">reactjs&amp;amp;redux一些问题&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p>
@@ -29,4 +31,4 @@ react react-native
 Api获取： jsonwebtoken 运行项目 在此就默认 Android开发环境 / MacOS Xcode 开发环境 已搭建完成，继续执行下面的命令
 react-native init myProject 测试安装
 react-native init AwesomeProject cd AwesomeProject react-native run-android 写一个“hello world”&amp;mdash;-
-import React, { Component } from 'react'; import { Text } from 'react-native'; export default class HelloWorldApp extends Component { render() { return ( &amp;lt;Text&amp;gt;Hello world!&amp;lt;/Text&amp;gt; ); } }</description></item></channel></rss>
+import React, { Component } from &amp;#39;react&amp;#39;; import { Text } from &amp;#39;react-native&amp;#39;; export default class HelloWorldApp extends Component { render() { return ( &amp;lt;Text&amp;gt;Hello world!&amp;lt;/Text&amp;gt; ); } }</description></item></channel></rss>

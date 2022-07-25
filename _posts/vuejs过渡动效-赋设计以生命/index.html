@@ -1,63 +1,65 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Vuejs过渡动效(赋设计以生命) | Glow's Blog</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:title" content="Vuejs过渡动效(赋设计以生命)"><meta property="og:description" content="一个好的交互应该是顺畅的、礼貌的、理智的
 Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。 包括以下工具：
- 在 CSS 过渡和动画中自动应用 class 可以配合使用第三方 CSS 动画库，如 Animate.css 在过渡钩子函数中使用 JavaScript 直接操作 DOM 可以配合使用第三方 JavaScript 动画库，如 Velocity.js  这里是一个典型的例子：
+在 CSS 过渡和动画中自动应用 class 可以配合使用第三方 CSS 动画库，如 Animate.css 在过渡钩子函数中使用 JavaScript 直接操作 DOM 可以配合使用第三方 JavaScript 动画库，如 Velocity.js 这里是一个典型的例子：
 <div id=&#34;demo&#34;> <button v-on:click=&#34;show = !show&#34;> Toggle </button> <transition name=&#34;fade&#34;> <p v-if=&#34;show&#34;>hello</p> </transition> </div> new Vue({ el: '#demo', data: { show: true } }) .fade-enter-active, .fade-leave-active { transition: opacity .5s; } .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ { opacity: 0; } 过渡的类名 下面这段对理解比较重要 在进入/离开的过渡中，会有 6 个 class 切换。"><meta property="og:type" content="article"><meta property="og:url" content="https://glows.github.io/_posts/vuejs%E8%BF%87%E6%B8%A1%E5%8A%A8%E6%95%88-%E8%B5%8B%E8%AE%BE%E8%AE%A1%E4%BB%A5%E7%94%9F%E5%91%BD/"><meta property="article:section" content="_posts"><meta property="article:published_time" content="2018-01-18T10:51:19+00:00"><meta property="article:modified_time" content="2018-01-18T10:51:19+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Vuejs过渡动效(赋设计以生命)"><meta name=twitter:description content="一个好的交互应该是顺畅的、礼貌的、理智的
 Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。 包括以下工具：
- 在 CSS 过渡和动画中自动应用 class 可以配合使用第三方 CSS 动画库，如 Animate.css 在过渡钩子函数中使用 JavaScript 直接操作 DOM 可以配合使用第三方 JavaScript 动画库，如 Velocity.js  这里是一个典型的例子：
-<div id=&#34;demo&#34;> <button v-on:click=&#34;show = !show&#34;> Toggle </button> <transition name=&#34;fade&#34;> <p v-if=&#34;show&#34;>hello</p> </transition> </div> new Vue({ el: '#demo', data: { show: true } }) .fade-enter-active, .fade-leave-active { transition: opacity .5s; } .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ { opacity: 0; } 过渡的类名 下面这段对理解比较重要 在进入/离开的过渡中，会有 6 个 class 切换。"><link rel=stylesheet href=https://glows.github.io/css/style-white.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://glows.github.io/images/favicon.ico></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><header id=header><a href=https://glows.github.io><div id=logo style=background-image:url(https://glows.github.io/images/logo.png)></div><div id=title><h1>Glow's Blog</h1></div></a><div id=nav><ul><li class=icon><a href=#><i class="fas fa-bars fa-2x"></i></a></li><li><a href=/>Home</a></li><li><a href=/_posts/>Writings</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about>About</a></li></ul></div></header><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class=content itemprop=articleBody><p>一个好的交互应该是顺畅的、礼貌的、理智的</p><p>Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。
-包括以下工具：</p><ul><li>在 CSS 过渡和动画中自动应用 class</li><li>可以配合使用第三方 CSS 动画库，如 Animate.css</li><li>在过渡钩子函数中使用 JavaScript 直接操作 DOM</li><li>可以配合使用第三方 JavaScript 动画库，如 Velocity.js</li></ul><p>这里是一个典型的例子：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;demo&#34;</span>&gt;
-  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-on:click</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;show = !show&#34;</span>&gt;
-    Toggle
-  &lt;/<span style=color:#f92672>button</span>&gt;
-  &lt;<span style=color:#f92672>transition</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fade&#34;</span>&gt;
-    &lt;<span style=color:#f92672>p</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;show&#34;</span>&gt;hello&lt;/<span style=color:#f92672>p</span>&gt;
-  &lt;/<span style=color:#f92672>transition</span>&gt;
-&lt;/<span style=color:#f92672>div</span>&gt;
-</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Vue</span>({
-  <span style=color:#a6e22e>el</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;#demo&#39;</span>,
-  <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> {
-    <span style=color:#a6e22e>show</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>
-  }
-})
-</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css>.<span style=color:#a6e22e>fade-enter-active</span><span style=color:#f92672>,</span> .<span style=color:#a6e22e>fade-leave-active</span> {
-  <span style=color:#66d9ef>transition</span>: <span style=color:#66d9ef>opacity</span> <span style=color:#ae81ff>.5</span><span style=color:#66d9ef>s</span>;
-}
-.<span style=color:#a6e22e>fade-enter</span><span style=color:#f92672>,</span> .<span style=color:#a6e22e>fade-leave-to</span> <span style=color:#75715e>/* .fade-leave-active below version 2.1.8 */</span> {
-  <span style=color:#66d9ef>opacity</span>: <span style=color:#ae81ff>0</span>;
-}
-</code></pre></div><h2 id=过渡的类名>过渡的类名</h2><p>下面这段对理解比较重要</p><p>在进入/离开的过渡中，会有 6 个 class 切换。</p><ol><li><p>v-enter：定义进入过渡的开始状态。在元素被插入时生效，在下一个帧移除。</p></li><li><p>v-enter-active：定义过渡的状态。在元素整个过渡过程中作用，在元素被插入时生效，在 transition/animation 完成之后移除。这个类可以被用来定义过渡的过程时间，延迟和曲线函数。</p></li><li><p>v-enter-to: 2.1.8版及以上 定义进入过渡的结束状态。在元素被插入一帧后生效 (与此同时 v-enter 被删除)，在 transition/animation 完成之后移除。</p></li><li><p>v-leave: 定义离开过渡的开始状态。在离开过渡被触发时生效，在下一个帧移除。</p></li><li><p>v-leave-active：定义过渡的状态。在元素整个过渡过程中作用，在离开过渡被触发后立即生效，在 transition/animation 完成之后移除。这个类可以被用来定义过渡的过程时间，延迟和曲线函数。</p></li><li><p>v-leave-to: 2.1.8版及以上 定义离开过渡的结束状态。在离开过渡被触发一帧后生效 (与此同时 v-leave 被删除)，在 transition/animation 完成之后移除。
-<img src=/images/transition.png alt=transition></p></li></ol><p>对于这些在 enter/leave 过渡中切换的类名，v- 是这些类名的前缀。使用 可以重置前缀，比如 v-enter 替换为 my-transition-enter。</p><h2 id=初始渲染的过渡>初始渲染的过渡</h2><p>通过 appear 特性设置节点在初始渲染的过渡</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>transition</span> <span style=color:#a6e22e>appear</span>&gt;
-  <span style=color:#75715e>&lt;!-- ... --&gt;</span>
-&lt;/<span style=color:#f92672>transition</span>&gt;
-</code></pre></div><h2 id=多个元素的过渡>多个元素的过渡</h2><h3 id=1利用-属性-key-推荐>1.利用 属性 key (推荐)</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>transition</span>&gt;
-  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;saved&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;saved&#34;</span>&gt;
-    Edit
-  &lt;/<span style=color:#f92672>button</span>&gt;
-  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;edited&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;edited&#34;</span>&gt;
-    Save
-  &lt;/<span style=color:#f92672>button</span>&gt;
-  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;editing&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;editing&#34;</span>&gt;
-    Cancel
-  &lt;/<span style=color:#f92672>button</span>&gt;
-&lt;/<span style=color:#f92672>transition</span>&gt;
-</code></pre></div><p>可以重写为：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>transition</span>&gt;
-  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-bind:key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState&#34;</span>&gt;
-    {{ buttonMessage }}
-  &lt;/<span style=color:#f92672>button</span>&gt;
-&lt;/<span style=color:#f92672>transition</span>&gt;
-</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#75715e>// ...
-</span><span style=color:#75715e></span><span style=color:#a6e22e>computed</span><span style=color:#f92672>:</span> {
-  <span style=color:#a6e22e>buttonMessage</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>function</span> () {
-    <span style=color:#66d9ef>switch</span> (<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>docState</span>) {
-      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;saved&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Edit&#39;</span>
-      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;edited&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Save&#39;</span>
-      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;editing&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Cancel&#39;</span>
-    }
-  }
-}
-</code></pre></div><h3 id=2过渡模式>2.过渡模式</h3><p>在多个元素过渡时，这些元素会同时出发，vue 提供了两个属性，在 中加入 mode 属性，它有两个值</p><p>A.in-out: 新元素先进行过渡，完成之后当前元素过渡离开。</p><p>B.out-in: 当前元素先进行过渡，完成之后新元素过渡进入。
+在 CSS 过渡和动画中自动应用 class 可以配合使用第三方 CSS 动画库，如 Animate.css 在过渡钩子函数中使用 JavaScript 直接操作 DOM 可以配合使用第三方 JavaScript 动画库，如 Velocity.js 这里是一个典型的例子：
+<div id=&#34;demo&#34;> <button v-on:click=&#34;show = !show&#34;> Toggle </button> <transition name=&#34;fade&#34;> <p v-if=&#34;show&#34;>hello</p> </transition> </div> new Vue({ el: '#demo', data: { show: true } }) .fade-enter-active, .fade-leave-active { transition: opacity .5s; } .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ { opacity: 0; } 过渡的类名 下面这段对理解比较重要 在进入/离开的过渡中，会有 6 个 class 切换。"><link rel=stylesheet href=https://glows.github.io/css/style-white.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://glows.github.io/images/favicon.ico></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><header id=header><a href=https://glows.github.io><div id=logo style=background-image:url(https://glows.github.io/images/logo.png)></div><div id=title><h1>Glow's Blog</h1></div></a><div id=nav><ul><li class=icon><a href=#><i class="fas fa-bars fa-2x"></i></a></li><li><a href=/>Home</a></li><li><a href=/_posts/>Writings</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about>About</a></li></ul></div></header><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class=content itemprop=articleBody><p>一个好的交互应该是顺畅的、礼貌的、理智的</p><p>Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。
+包括以下工具：</p><ul><li>在 CSS 过渡和动画中自动应用 class</li><li>可以配合使用第三方 CSS 动画库，如 Animate.css</li><li>在过渡钩子函数中使用 JavaScript 直接操作 DOM</li><li>可以配合使用第三方 JavaScript 动画库，如 Velocity.js</li></ul><p>这里是一个典型的例子：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;demo&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-on:click</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;show = !show&#34;</span>&gt;
+</span></span><span style=display:flex><span>    Toggle
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>transition</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;fade&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>p</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;show&#34;</span>&gt;hello&lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>transition</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>div</span>&gt;
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Vue</span>({
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>el</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;#demo&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>show</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>})
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>.<span style=color:#a6e22e>fade-enter-active</span><span style=color:#f92672>,</span> .<span style=color:#a6e22e>fade-leave-active</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>transition</span>: <span style=color:#66d9ef>opacity</span> <span style=color:#ae81ff>.5</span><span style=color:#66d9ef>s</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>.<span style=color:#a6e22e>fade-enter</span><span style=color:#f92672>,</span> .<span style=color:#a6e22e>fade-leave-to</span> <span style=color:#75715e>/* .fade-leave-active below version 2.1.8 */</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>opacity</span>: <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=过渡的类名>过渡的类名</h2><p>下面这段对理解比较重要</p><p>在进入/离开的过渡中，会有 6 个 class 切换。</p><ol><li><p>v-enter：定义进入过渡的开始状态。在元素被插入时生效，在下一个帧移除。</p></li><li><p>v-enter-active：定义过渡的状态。在元素整个过渡过程中作用，在元素被插入时生效，在 transition/animation 完成之后移除。这个类可以被用来定义过渡的过程时间，延迟和曲线函数。</p></li><li><p>v-enter-to: 2.1.8版及以上 定义进入过渡的结束状态。在元素被插入一帧后生效 (与此同时 v-enter 被删除)，在 transition/animation 完成之后移除。</p></li><li><p>v-leave: 定义离开过渡的开始状态。在离开过渡被触发时生效，在下一个帧移除。</p></li><li><p>v-leave-active：定义过渡的状态。在元素整个过渡过程中作用，在离开过渡被触发后立即生效，在 transition/animation 完成之后移除。这个类可以被用来定义过渡的过程时间，延迟和曲线函数。</p></li><li><p>v-leave-to: 2.1.8版及以上 定义离开过渡的结束状态。在离开过渡被触发一帧后生效 (与此同时 v-leave 被删除)，在 transition/animation 完成之后移除。
+<img src=/images/transition.png alt=transition></p></li></ol><p>对于这些在 enter/leave 过渡中切换的类名，v- 是这些类名的前缀。使用 可以重置前缀，比如 v-enter 替换为 my-transition-enter。</p><h2 id=初始渲染的过渡>初始渲染的过渡</h2><p>通过 appear 特性设置节点在初始渲染的过渡</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>transition</span> <span style=color:#a6e22e>appear</span>&gt;
+</span></span><span style=display:flex><span>  <span style=color:#75715e>&lt;!-- ... --&gt;</span>
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>transition</span>&gt;
+</span></span></code></pre></div><h2 id=多个元素的过渡>多个元素的过渡</h2><h3 id=1利用-属性-key-推荐>1.利用 属性 key (推荐)</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>transition</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;saved&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;saved&#34;</span>&gt;
+</span></span><span style=display:flex><span>    Edit
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;edited&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;edited&#34;</span>&gt;
+</span></span><span style=display:flex><span>    Save
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-if</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState === &#39;editing&#39;&#34;</span> <span style=color:#a6e22e>key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;editing&#34;</span>&gt;
+</span></span><span style=display:flex><span>    Cancel
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>transition</span>&gt;
+</span></span></code></pre></div><p>可以重写为：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>transition</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>v-bind:key</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;docState&#34;</span>&gt;
+</span></span><span style=display:flex><span>    {{ buttonMessage }}
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>button</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>transition</span>&gt;
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>computed</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>buttonMessage</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>function</span> () {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>switch</span> (<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>docState</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;saved&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Edit&#39;</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;edited&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Save&#39;</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;editing&#39;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Cancel&#39;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=2过渡模式>2.过渡模式</h3><p>在多个元素过渡时，这些元素会同时出发，vue 提供了两个属性，在 中加入 mode 属性，它有两个值</p><p>A.in-out: 新元素先进行过渡，完成之后当前元素过渡离开。</p><p>B.out-in: 当前元素先进行过渡，完成之后新元素过渡进入。
 当把上面例子中mode=&ldquo;in-out&rdquo;</p><p>改为mode=&ldquo;out-in"时，效果是不一样。</p><h2 id=列表过渡>列表过渡</h2><p>列表的进入/离开过渡,<br>列表的排序过渡(FLIP 动画不仅可以实现单列过渡，多维网格也同样可以过渡),<br>列表的交错过渡</p><p><code>&lt;transition-group></code> 组件。了解关于这个组件的几个特点：</p><p>不同于 ，它会以一个真实元素呈现：默认为一个 。你也可以通过 tag 特性更换为其他元素。
-内部元素 总是需要 提供唯一的 key 属性值</p><h2 id=路由过渡动效>路由过渡动效</h2><p><code>&lt;router-view></code> 是基本的动态组件，所以我们可以用 组件给它添加一些过渡效果：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>transition</span>&gt;
-  &lt;<span style=color:#f92672>router-view</span>&gt;&lt;/<span style=color:#f92672>router-view</span>&gt;
-&lt;/<span style=color:#f92672>transition</span>&gt;
-</code></pre></div><p>这里是一个<a href=https://codepen.io/glows/pen/KZOpPB/>codepen例子</a>：</p><h2 id=参考>参考</h2><p>Vue过渡 & 动画<a href=https://cn.vuejs.org/v2/guide/transitions.html>Transition</a><br><a href=http://blog.csdn.net/gao_xu_520/article/details/76904055>Vue.js学习笔记：过渡效果（含列表过渡）</a></p></div></article><footer id=footer><div class=footer-left>Copyright &copy; 2021 glows</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/_posts/>Writings</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script></html>
+内部元素 总是需要 提供唯一的 key 属性值</p><h2 id=路由过渡动效>路由过渡动效</h2><p><code>&lt;router-view></code> 是基本的动态组件，所以我们可以用 组件给它添加一些过渡效果：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>transition</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>router-view</span>&gt;&lt;/<span style=color:#f92672>router-view</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>transition</span>&gt;
+</span></span></code></pre></div><p>这里是一个<a href=https://codepen.io/glows/pen/KZOpPB/>codepen例子</a>：</p><h2 id=参考>参考</h2><p>Vue过渡 & 动画<a href=https://cn.vuejs.org/v2/guide/transitions.html>Transition</a><br><a href=http://blog.csdn.net/gao_xu_520/article/details/76904055>Vue.js学习笔记：过渡效果（含列表过渡）</a></p></div></article><footer id=footer><div class=footer-left>Copyright &copy; 2022 glows</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/_posts/>Writings</a></li><li><a href=/tags/>Tags</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script></html>
