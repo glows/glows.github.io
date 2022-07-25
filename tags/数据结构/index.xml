@@ -3,6 +3,5 @@
 时间复杂度
 常数时间 O(1) 代表这个操作和数据量没关系，是一个固定时间的操作，比如说四则运算。
 栈 栈是一种LIFO(Last-In-First-Out，后进先出)的 数据结构
-class Stack { constructor() { this.stack = [] } push(item) { this.stack.push(item) } pop() { this.stack.pop() } peek() { return this.stack[this.getCount() - 1] } getCount() { return this.stack.length } isEmpty() { return this.getCount() === 0 } } 队列 队列数据结构的访问 规则是FIFO(First-In-First-Out，先进先出)。
-this.stack.push(item) this.stack.shift() //移除数组中的第一个项并返回该项 链表 单向链表
-class Node { constructor(v, next) { this.value = v this.next = next } } class LinkList { constructor() { // 链表长度 this.</description></item></channel></rss>
+1class Stack { 2 constructor() { 3 this.stack = [] 4 } 5 push(item) { 6 this.stack.push(item) 7 } 8 pop() { 9 this.stack.pop() 10 } 11 peek() { 12 return this.stack[this.getCount() - 1] 13 } 14 getCount() { 15 return this.stack.length 16 } 17 isEmpty() { 18 return this.getCount() === 0 19 } 20} 队列 队列数据结构的访问 规则是FIFO(First-In-First-Out，先进先出)。
+1this.stack.push(item) 2 3this.</description></item></channel></rss>

@@ -3,6 +3,5 @@
 npm instal i vuex &amp;ndash;save 修改配置文件
 store
 新建文件夹store（与router同级） 然后在store目录下新建index.js
-import Vue from &amp;#39;vue&amp;#39;; import Vuex from &amp;#39;vuex&amp;#39;; Vue.use(Vuex); export default new Vuex.Store({ strict: process.env.NODE_ENV !== &amp;#39;production&amp;#39;, modules: { }, getters: { }, actions: { }, }); main.js
-import Vue from &amp;#39;vue&amp;#39; import router from &amp;#39;./router&amp;#39; import store from &amp;#39;./store&amp;#39; Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ router, store }).$mount(&amp;#39;#app&amp;#39;) index.html
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;vue-cli&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;router-view&amp;gt;&amp;lt;/router-view&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;</description></item></channel></rss>
+1import Vue from &amp;#39;vue&amp;#39;; 2import Vuex from &amp;#39;vuex&amp;#39;; 3 4Vue.use(Vuex); 5export default new Vuex.Store({ 6 strict: process.env.NODE_ENV !== &amp;#39;production&amp;#39;, 7 modules: { 8 9 }, 10 getters: { 11 12 }, 13 actions: { 14 15 }, 16}); main.js
+1import Vue from &amp;#39;vue&amp;#39; 2import router from &amp;#39;./router&amp;#39; 3import store from &amp;#39;./store&amp;#39; 4 5Vue.config.productionTip = false 6/* eslint-disable no-new */ 7new Vue({ 8 router, 9 store 10}).</description></item></channel></rss>
