@@ -2,4 +2,8 @@
 Golang 默认的 time.time 时间类型表示具有纳秒精度的时间瞬间。它是一个没有导出字段的结构，这意味着您永远不需要使用点运算符来访问不同的字段。相反，可以使用各种方法来获得所需的数据。
 如何得到当前的系统时间？ 这是最常出现的问题之一。作为开发人员，我们遇到了许多这样的情况，需要获得系统的当前时间。观察下面的代码，了解如何得到当前的系统时间。
 1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5 &amp;#34;time&amp;#34; 6) 7 8func main() { 9 now := time.Now() 10 fmt.Println(&amp;#34;Current time is:&amp;#34;, now) 11} 1$ go run current_time.go 2Current time is: 2021-11-03 20:57:06.294753357 +0530 IST m=+0.000030078 正如我们所知，UTC (Universal Coordinated time)被选为主要的时间标准，它避免了时区、夏时制等的混淆。在 Golang中，我们也可以得到当前系统时间(UTC)。让我们通过示例来了解如何以 UTC 表示当前系统时间。
-1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5 &amp;#34;time&amp;#34; 6) 7 8func main() { 9 now := time.</description></item></channel></rss>
+1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5 &amp;#34;time&amp;#34; 6) 7 8func main() { 9 now := time.</description></item><item><title>Golang Maps(Aka HashMap)及示例</title><link>https://glows.github.io/posts/2022-06-01-go/</link><pubDate>Mon, 01 Jun 2020 09:00:00 +0000</pubDate><guid>https://glows.github.io/posts/2022-06-01-go/</guid><description>Golang Maps(Aka HashMap)及示例 Go 提供了实现哈希表的内置映射类型Map。Golang 映射是无序的数据集，可以用来存储键/值对中的数据。因为它是一个无序集合，这意味着无法预测 键/值 对返回的顺序。
+一个简单的 map 声明如下所示-
+1map[KeyType]ValueType 其中 KeyType 可以是任何可比较(comparable) 的类型。 ValueType 可以是任何类型。
+让我们看一个使用 Golang Map 的简单示例。
+1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5) 6 7func main() { 8 9 // Creating a HashMap of String and Integer 10 var animal = make(map[string]int) 11 12 // Inserting values in hashmap 13 animal[&amp;#34;Dog&amp;#34;] = 10 14 animal[&amp;#34;Cat&amp;#34;] = 13 15 animal[&amp;#34;Fish&amp;#34;] = 20 16 17 // Iterating Hashmap 18 for key, value := range animal { 19 fmt.</description></item></channel></rss>
