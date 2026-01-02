@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web前端 on Glow's Blog</title><link>https://glows.github.io/categories/web%E5%89%8D%E7%AB%AF/</link><description>Recent content in Web前端 on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Thu, 17 May 2018 11:12:16 +0000</lastBuildDate><atom:link href="https://glows.github.io/categories/web%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web前端 on Glow's Blog</title><link>https://glows.github.io/categories/web%E5%89%8D%E7%AB%AF/</link><description>Recent content in Web前端 on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Thu, 17 May 2018 11:12:16 +0000</lastBuildDate><atom:link href="https://glows.github.io/categories/web%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p&gt;
@@ -34,7 +34,7 @@ hello:{ data.world } = &lt;span&gt;hello:&lt;/span&gt;&lt;span&gt;world&lt;/span
 Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &lt;p&gt;. See OrderPayInfoView &amp;gt; p &amp;gt; … &amp;gt; div.c&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>React.js 记录</title><link>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 04 May 2018 11:34:48 +0000</pubDate><guid>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</guid><description>&lt;h1 id="reactjs-记录"&gt;React.js 记录
+&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>React.js 记录</title><link>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 04 May 2018 11:34:48 +0000</pubDate><guid>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post React.js 记录" /&gt;&lt;h1 id="reactjs-记录"&gt;React.js 记录
 &lt;/h1&gt;&lt;h2 id="概要"&gt;概要
 &lt;/h2&gt;&lt;p&gt;用了一段时间的 Reactjs，其实大部分的框架原理和 Vuejs 都很相似，包括响应式、足够轻量级、基于 Virtual-DOM 等特性。从整体上来看，Vuejs 是基于模版进行应用构建的，在中小型应用中有一定的优势。而 Reactjs 则需要我们在 JS 中使用 JSX 手动的来创建 DOM。&lt;/p&gt;
 &lt;p&gt;开始一个新的 Reactjs 项目，我们通过自动化的脚手架创建工具 create-react-app 来创建一个初始化的 Reactjs 工程。&lt;/p&gt;
@@ -44,7 +44,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 &lt;/h3&gt;&lt;p&gt;所有的React组件必须像纯函数那样使用它们的props。&lt;/p&gt;
 &lt;h2 id="组件通讯"&gt;组件通讯
 &lt;/h2&gt;&lt;p&gt;当你遇到需要同时获取多个子组件数据，或者两个组件之间需要相互通讯的情况时，把子组件的 state 数据提升至其共同的父组件当中保存。之后父组件可以通过 props 将状态数据传递到子组件当中。这样应用当中的状态数据就能够更方便地交流共享了。&lt;/p&gt;
-&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>vue 组件通信</title><link>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</link><pubDate>Thu, 12 Apr 2018 11:35:44 +0000</pubDate><guid>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</guid><description>&lt;p&gt;在 Vue 中，父子组件的关系可以总结为 prop 向下传递，事件向上传递。
+&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>vue 组件通信</title><link>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</link><pubDate>Thu, 12 Apr 2018 11:35:44 +0000</pubDate><guid>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post vue 组件通信" /&gt;&lt;p&gt;在 Vue 中，父子组件的关系可以总结为 prop 向下传递，事件向上传递。
 父组件通过 prop 给子组件下发数据，子组件通过事件给父组件发送消息。看看它们是怎么工作的。
 &lt;img src="https://glows.github.io/images/props-events.png"
 loading="lazy"
@@ -287,7 +287,7 @@ app.js&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>webpack初探</title><link>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</link><pubDate>Thu, 01 Feb 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</guid><description>&lt;h2 id="基本设置"&gt;基本设置
+&lt;/div&gt;</description></item><item><title>webpack初探</title><link>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</link><pubDate>Thu, 01 Feb 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post webpack初探" /&gt;&lt;h2 id="基本设置"&gt;基本设置
 &lt;/h2&gt;&lt;p&gt;入口文件&lt;/p&gt;
 &lt;p&gt;多入口&lt;/p&gt;
 &lt;h2 id="设置hot-module-replacementhmr"&gt;设置Hot Module Replacement(HMR)
