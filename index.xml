@@ -34,7 +34,43 @@
 &lt;p&gt;The &amp;ldquo;Silicon Stoa&amp;rdquo; is not a place of cold calculation, but a space where ancient wisdom and modern technology meet to define what it means to be a rational being in a complex universe.&lt;/p&gt;
 &lt;p&gt;“硅基廊下”不是一个冰冷计算的场所，而是一个古老智慧与现代技术交汇的空间，在这里，我们重新定义在复杂的宇宙中作为一个理性存在意味着什么。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Author: Glow / 作者：Glow&lt;/em&gt;&lt;/p&gt;</description></item><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/webgl-react.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
+&lt;p&gt;&lt;em&gt;Author: Glow / 作者：Glow&lt;/em&gt;&lt;/p&gt;</description></item><item><title>About</title><link>https://glows.github.io/about/</link><pubDate>Tue, 17 Dec 2024 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>&lt;h3 id="-tech-stack--技术版图"&gt;🛠 Tech Stack / 技术版图
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Languages &amp;amp; Systems / 编程与系统&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Core&lt;/strong&gt;: Go, Python, TypeScript/JavaScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Human&lt;/strong&gt;: English, Japanese, Chinese&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI-Native&lt;/strong&gt;: Prompt Engineering, Agentic Workflows, LLM Orchestration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Tools &amp;amp; Environment / 工具与环境&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS&lt;/strong&gt;: macOS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor&lt;/strong&gt;: Cursor / VS Code (AI-Augmented) / Emacs / Vim&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Core&lt;/strong&gt;: Claude, GPT-4o, DeepSeek&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VCS&lt;/strong&gt;: Git (GitHub/GitLab)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="-biography--个人简介"&gt;👤 Biography / 个人简介
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;AI-Augmented Fullstack Engineer / AI 增强型全栈工程师&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based in &lt;strong&gt;ShenZhen&lt;/strong&gt;, I explore the intersection of traditional software craftsmanship and the emerging frontier of Artificial Intelligence. I believe that in the AI era, the role of an engineer shifts from a &amp;ldquo;code constructor&amp;rdquo; to an &amp;ldquo;intent translator and system architect.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;我目前在&lt;strong&gt;深圳&lt;/strong&gt;工作，致力于将传统的软件工匠精神与人工智能的前沿技术相结合。我认为在 AI 时代，工程师的角色已从“代码构建者”转变为“意图翻译官与系统架构师”。&lt;/p&gt;
+&lt;p&gt;In my spare time, I am a digital philosopher, a video game enthusiast, and a builder of side projects that aim to simplify complexity.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="-motto--座右铭"&gt;📜 Motto / 座右铭
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Γνῶθι σεαυτόν&lt;/strong&gt;&lt;br&gt;
+(Know Thyself / 认识你自己)&lt;br&gt;
+—— &lt;em&gt;Ancient Greek / 古希腊&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Amor Fati&lt;/strong&gt;&lt;br&gt;
+(Love of Fate / 热爱命运)&lt;br&gt;
+—— &lt;em&gt;Ancient Roman / 古罗马&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Memento Mori&lt;/strong&gt;&lt;br&gt;
+(Remember Death / 谨记死亡)&lt;br&gt;
+—— &lt;em&gt;Stoicism / 斯多葛学派&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/webgl-react.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
 &lt;/h2&gt;&lt;p&gt;在这篇文章中，我们简要介绍了在 Web 上实现 3D 表现时，
 前端工程师应该使用哪些库。请详细阅读各个库的官方文档以获取更多信息&lt;/p&gt;
 &lt;h3 id="threejs"&gt;three.js
@@ -3758,43 +3794,7 @@ make install
 /usr/local/nginx/sbin/nginx&lt;/p&gt;
 &lt;p&gt;10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>About</title><link>https://glows.github.io/about/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>&lt;h3 id="-tech-stack--技术版图"&gt;🛠 Tech Stack / 技术版图
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Languages &amp;amp; Systems / 编程与系统&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Core&lt;/strong&gt;: Go, Python, TypeScript/JavaScript&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Human&lt;/strong&gt;: English, Japanese, Chinese&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AI-Native&lt;/strong&gt;: Prompt Engineering, Agentic Workflows, LLM Orchestration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Tools &amp;amp; Environment / 工具与环境&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;OS&lt;/strong&gt;: macOS&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Editor&lt;/strong&gt;: Cursor / VS Code (AI-Augmented) / Emacs / Vim&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AI Core&lt;/strong&gt;: Claude, GPT-4o, DeepSeek&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;VCS&lt;/strong&gt;: Git (GitHub/GitLab)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id="-biography--个人简介"&gt;👤 Biography / 个人简介
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;AI-Augmented Fullstack Engineer / AI 增强型全栈工程师&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Based in &lt;strong&gt;ShenZhen&lt;/strong&gt;, I explore the intersection of traditional software craftsmanship and the emerging frontier of Artificial Intelligence. I believe that in the AI era, the role of an engineer shifts from a &amp;ldquo;code constructor&amp;rdquo; to an &amp;ldquo;intent translator and system architect.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;我目前在&lt;strong&gt;深圳&lt;/strong&gt;工作，致力于将传统的软件工匠精神与人工智能的前沿技术相结合。我认为在 AI 时代，工程师的角色已从“代码构建者”转变为“意图翻译官与系统架构师”。&lt;/p&gt;
-&lt;p&gt;In my spare time, I am a digital philosopher, a video game enthusiast, and a builder of side projects that aim to simplify complexity.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id="-motto--座右铭"&gt;📜 Motto / 座右铭
-&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Γνῶθι σεαυτόν&lt;/strong&gt;&lt;br&gt;
-(Know Thyself / 认识你自己)&lt;br&gt;
-—— &lt;em&gt;Ancient Greek / 古希腊&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Amor Fati&lt;/strong&gt;&lt;br&gt;
-(Love of Fate / 热爱命运)&lt;br&gt;
-—— &lt;em&gt;Ancient Roman / 古罗马&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Memento Mori&lt;/strong&gt;&lt;br&gt;
-(Remember Death / 谨记死亡)&lt;br&gt;
-—— &lt;em&gt;Stoicism / 斯多葛学派&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p&gt;
