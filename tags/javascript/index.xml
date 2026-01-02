@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on Glow's Blog</title><link>https://glows.github.io/tags/javascript/</link><description>Recent content in Javascript on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 19 Aug 2020 10:03:07 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>WebSocket 使用</title><link>https://glows.github.io/posts/2020-8-19-websocket-%E5%B0%81%E8%A3%85/</link><pubDate>Wed, 19 Aug 2020 10:03:07 +0000</pubDate><guid>https://glows.github.io/posts/2020-8-19-websocket-%E5%B0%81%E8%A3%85/</guid><description>&lt;h2 id="websocket-封装"&gt;WebSocket 封装
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on Glow's Blog</title><link>https://glows.github.io/tags/javascript/</link><description>Recent content in Javascript on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 19 Aug 2020 10:03:07 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>WebSocket 使用</title><link>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</link><pubDate>Wed, 19 Aug 2020 10:03:07 +0000</pubDate><guid>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="websocket-封装"&gt;WebSocket 封装
 &lt;/h2&gt;&lt;p&gt;WebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信，位于OSI模型的应用层。&lt;/p&gt;
 &lt;p&gt;WebSocket使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在WebSocket API中，浏览器和服务器只需要完成一次握手，两者之间就可以创建持久性的连接，并进行双向数据传输。&lt;/p&gt;
 &lt;p&gt;WebSocket协议规范将ws（WebSocket）和wss（WebSocket Secure）定义为两个新的统一资源标识符（URI）方案，分别对应明文和加密连接。&lt;/p&gt;
@@ -201,7 +201,7 @@
 &lt;/div&gt;&lt;p&gt;参考： &lt;br&gt;
 &lt;a class="link" href="https://www.codenong.com/cs105794108/" target="_blank" rel="noopener"
 &gt;封装websocket请求—–vue项目实战&lt;/a&gt;
-&lt;a class="link" href="" &gt;回调函数&lt;/a&gt;&lt;/p&gt;</description></item><item><title>常见数据结构</title><link>https://glows.github.io/posts/2020-4-15-%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Wed, 15 Apr 2020 14:41:47 +0000</pubDate><guid>https://glows.github.io/posts/2020-4-15-%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;p&gt;回到最初，计算机科学&lt;/p&gt;
+&lt;a class="link" href="" &gt;回调函数&lt;/a&gt;&lt;/p&gt;</description></item><item><title>常见数据结构</title><link>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Wed, 15 Apr 2020 14:41:47 +0000</pubDate><guid>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;p&gt;回到最初，计算机科学&lt;/p&gt;
 &lt;p&gt;基础学科内容，比如：网络知识、数据结构算法
 编程思想&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -502,7 +502,7 @@
 &lt;p&gt;简单点来说，这个结构的作用大多是为了方便搜索字符串，该树有以下几个特点&lt;/p&gt;
 &lt;p&gt;根节点代表空字符串，每个节点都有 N（假如搜索英文字符，就有 26 条） 条链接，每条链接代表一个字符
 节点不存储字符，只有路径才存储，这点和其他的树结构不同
-从根节点开始到任意一个节点，将沿途经过的字符连接起来就是该节点对应的字符串&lt;/p&gt;</description></item><item><title>React-Hooks 指南</title><link>https://glows.github.io/posts/2020-2-12-%E5%AD%A6%E4%BC%9Areact-hooks/</link><pubDate>Wed, 12 Feb 2020 10:41:47 +0000</pubDate><guid>https://glows.github.io/posts/2020-2-12-%E5%AD%A6%E4%BC%9Areact-hooks/</guid><description>&lt;h2 id="react-hooks-含义"&gt;React Hooks 含义
+从根节点开始到任意一个节点，将沿途经过的字符连接起来就是该节点对应的字符串&lt;/p&gt;</description></item><item><title>React-Hooks 指南</title><link>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</link><pubDate>Wed, 12 Feb 2020 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</guid><description>&lt;h2 id="react-hooks-含义"&gt;React Hooks 含义
 &lt;/h2&gt;&lt;p&gt;为函数组件提供钩子以实现外部功能，如添加状态&lt;/p&gt;
 &lt;h3 id="react-默认提供的四个最常用的钩子"&gt;React 默认提供的四个最常用的钩子
 &lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -693,7 +693,7 @@ import { useRef,forwardRef,MutableRefObject,useImperativeHandle,Ref} from &amp;l
 &lt;a class="link" href="https://my.oschina.net/yj1993/blog/4327889" target="_blank" rel="noopener"
 &gt;&lt;/a&gt;
 &lt;a class="link" href="https://zh-hans.reactjs.org/docs/hooks-faq.html" target="_blank" rel="noopener"
-&gt;React Hook FAQ&lt;/a&gt;&lt;/p&gt;</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/posts/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83-commonjsamdcmdes6-modules/</guid><description>&lt;p&gt;关键词: import require javascript module&lt;/p&gt;
+&gt;React Hook FAQ&lt;/a&gt;&lt;/p&gt;</description></item><item><title>JavaScript模块规范 --- Commonjs、AMD、CMD、es6 modules</title><link>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83---commonjsamdcmdes6-modules/</link><pubDate>Thu, 24 May 2018 10:37:24 +0000</pubDate><guid>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83---commonjsamdcmdes6-modules/</guid><description>&lt;p&gt;关键词: import require javascript module&lt;/p&gt;
 &lt;h2 id="js模块化"&gt;JS模块化
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;模块化的理解&lt;/li&gt;
@@ -978,7 +978,7 @@ import { useRef,forwardRef,MutableRefObject,useImperativeHandle,Ref} from &amp;l
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/posts/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
+&lt;/ul&gt;</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p&gt;
@@ -1014,7 +1014,7 @@ hello:{ data.world } = &lt;span&gt;hello:&lt;/span&gt;&lt;span&gt;world&lt;/span
 Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &lt;p&gt;. See OrderPayInfoView &amp;gt; p &amp;gt; … &amp;gt; div.c&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>Javascript基础数据结构</title><link>https://glows.github.io/posts/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Tue, 30 Jan 2018 10:41:47 +0000</pubDate><guid>https://glows.github.io/posts/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;h2 id="数据结构和类型"&gt;数据结构和类型
+&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>Javascript基础数据结构</title><link>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Tue, 30 Jan 2018 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;h2 id="数据结构和类型"&gt;数据结构和类型
 &lt;/h2&gt;&lt;p&gt;JavaScript语言可以识别下面 7 种不同类型的值：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;六种 原型 数据类型:&lt;/li&gt;
@@ -1032,7 +1032,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 &lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;仅凭这些为数不多的数据类型，你就可以在你的应用程序中执行有用的功能。&lt;/p&gt;
-&lt;p&gt;Objects 和 functions 是本语言的其他两个基本要素。你可以将对象视为存放值的命名容器，而将函数视为你的应用程序能够执行的过程(procedures)。&lt;/p&gt;</description></item><item><title>开发中遇到的问题记录</title><link>https://glows.github.io/posts/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link><pubDate>Mon, 22 Jan 2018 15:12:38 +0000</pubDate><guid>https://glows.github.io/posts/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid><description>&lt;h1 id="开发中遇到的问题记录"&gt;开发中遇到的问题记录
+&lt;p&gt;Objects 和 functions 是本语言的其他两个基本要素。你可以将对象视为存放值的命名容器，而将函数视为你的应用程序能够执行的过程(procedures)。&lt;/p&gt;</description></item><item><title>开发中遇到的问题记录</title><link>https://glows.github.io/p/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link><pubDate>Mon, 22 Jan 2018 15:12:38 +0000</pubDate><guid>https://glows.github.io/p/%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid><description>&lt;h1 id="开发中遇到的问题记录"&gt;开发中遇到的问题记录
 &lt;/h1&gt;&lt;h3 id="js去重基本数组-与-对象那个数组"&gt;js去重(基本数组 与 对象那个数组)
 &lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
 &lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
@@ -1319,7 +1319,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;catch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>react-native-初探</title><link>https://glows.github.io/posts/react-native-%E5%88%9D%E6%8E%A2/</link><pubDate>Mon, 25 Dec 2017 16:46:00 +0000</pubDate><guid>https://glows.github.io/posts/react-native-%E5%88%9D%E6%8E%A2/</guid><description>&lt;h2 id="环境搭建"&gt;环境搭建
+&lt;/div&gt;</description></item><item><title>react-native-初探</title><link>https://glows.github.io/p/react-native-%E5%88%9D%E6%8E%A2/</link><pubDate>Mon, 25 Dec 2017 16:46:00 +0000</pubDate><guid>https://glows.github.io/p/react-native-%E5%88%9D%E6%8E%A2/</guid><description>&lt;h2 id="环境搭建"&gt;环境搭建
 &lt;/h2&gt;&lt;p&gt;-Android开发环境 / MacOS Xcode 开发环境
 -Node.js
 -npm

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue on Glow's Blog</title><link>https://glows.github.io/tags/vue/</link><description>Recent content in Vue on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 25 Jul 2018 10:37:01 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/posts/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue on Glow's Blog</title><link>https://glows.github.io/tags/vue/</link><description>Recent content in Vue on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 25 Jul 2018 10:37:01 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：&lt;/p&gt;
 &lt;p&gt;查看官方文档后了解到：&lt;strong&gt;受到javascript的限制，Vue不能检测到对象属性的添加或删除。因为Vue利用的是Object的defineProperty()方法，在初始化实列时将属性转为getter/setter，所以属性必须在data对象上才能让vue转换它。&lt;/strong&gt;
 后通过查找资料修改为使用$set来设定修改值，js如下：
 我们可以使用 Vue.set(object, key, value) 方法将响应属性添加到数组里的对象上。
@@ -58,7 +58,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>vue 组件通信</title><link>https://glows.github.io/posts/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</link><pubDate>Thu, 12 Apr 2018 11:35:44 +0000</pubDate><guid>https://glows.github.io/posts/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</guid><description>&lt;p&gt;在 Vue 中，父子组件的关系可以总结为 prop 向下传递，事件向上传递。
+&lt;/div&gt;</description></item><item><title>vue 组件通信</title><link>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</link><pubDate>Thu, 12 Apr 2018 11:35:44 +0000</pubDate><guid>https://glows.github.io/p/vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/</guid><description>&lt;p&gt;在 Vue 中，父子组件的关系可以总结为 prop 向下传递，事件向上传递。
 父组件通过 prop 给子组件下发数据，子组件通过事件给父组件发送消息。看看它们是怎么工作的。
 &lt;img src="https://glows.github.io/images/props-events.png"
 loading="lazy"
@@ -301,7 +301,7 @@ app.js&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>vue项目下vuex的配置</title><link>https://glows.github.io/posts/vue%E9%A1%B9%E7%9B%AE%E4%B8%8Bvuex%E7%9A%84%E9%85%8D%E7%BD%AE/</link><pubDate>Wed, 29 Nov 2017 10:14:06 +0000</pubDate><guid>https://glows.github.io/posts/vue%E9%A1%B9%E7%9B%AE%E4%B8%8Bvuex%E7%9A%84%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;首先成功运行vue-cli项目&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>vue项目下vuex的配置</title><link>https://glows.github.io/p/vue%E9%A1%B9%E7%9B%AE%E4%B8%8Bvuex%E7%9A%84%E9%85%8D%E7%BD%AE/</link><pubDate>Wed, 29 Nov 2017 10:14:06 +0000</pubDate><guid>https://glows.github.io/p/vue%E9%A1%B9%E7%9B%AE%E4%B8%8Bvuex%E7%9A%84%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;首先成功运行vue-cli项目&lt;/p&gt;
 &lt;p&gt;安装vuex&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm instal i vuex &amp;ndash;save &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;修改配置文件&lt;/p&gt;
