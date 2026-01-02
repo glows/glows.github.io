@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Glow's Blog</title><link>https://glows.github.io/posts/</link><description>Recent content in Posts on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 16 Aug 2023 15:04:34 +0800</lastBuildDate><atom:link href="https://glows.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/posts/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/posts/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;h2 id="在react时代应该掌握的webgl库"&gt;在React时代应该掌握的WebGL库
-&lt;/h2&gt;&lt;p&gt;在这篇文章中，我们简要介绍了在Web上实现3D表现时，
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Glow's Blog</title><link>https://glows.github.io/posts/</link><description>Recent content in Posts on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 16 Aug 2023 15:04:34 +0800</lastBuildDate><atom:link href="https://glows.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/posts/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/posts/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/webgl-react.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
+&lt;/h2&gt;&lt;p&gt;在这篇文章中，我们简要介绍了在 Web 上实现 3D 表现时，
 前端工程师应该使用哪些库。请详细阅读各个库的官方文档以获取更多信息&lt;/p&gt;
 &lt;h3 id="threejs"&gt;three.js
-&lt;/h3&gt;&lt;p&gt;一个能够在网页上轻松处理3D内容的库
-除了Babylon.js等库之外，我们公司主要使用three.js。&lt;/p&gt;
-&lt;p&gt;事实是，React Three Fiber与three.js的React渲染器的集成非常出色，
+&lt;/h3&gt;&lt;p&gt;一个能够在网页上轻松处理 3D 内容的库
+除了 Babylon.js 等库之外，我们公司主要使用 three.js。&lt;/p&gt;
+&lt;p&gt;事实是，React Three Fiber 与 three.js 的 React 渲染器的集成非常出色，
 这是因为它在接下来的介绍中。&lt;/p&gt;
-&lt;p&gt;有了这个库，即使是不熟悉3D的前端工程师也能够顺利地学习并运用3D
-在Web上的表现（我去年也是这样入门的，现在已经在生产环境中使用了）&lt;/p&gt;
+&lt;p&gt;有了这个库，即使是不熟悉 3D 的前端工程师也能够顺利地学习并运用 3D
+在 Web 上的表现（我去年也是这样入门的，现在已经在生产环境中使用了）&lt;/p&gt;
 &lt;p&gt;阅读&lt;a class="link" href="https://threejs.org/manual/#en/fundamentals" target="_blank" rel="noopener"
-&gt;fundamentals&lt;/a&gt;可以帮助您理解three.js的基本概念。&lt;/p&gt;
+&gt;fundamentals&lt;/a&gt;可以帮助您理解 three.js 的基本概念。&lt;/p&gt;
 &lt;p&gt;(&lt;a class="link" href="https://github.com/mrdoob/three.js/" target="_blank" rel="noopener"
 &gt;https://github.com/mrdoob/three.js/&lt;/a&gt;)&lt;/p&gt;
-&lt;h3 id="threejs示例"&gt;three.js示例
+&lt;h3 id="threejs-示例"&gt;three.js 示例
 &lt;/h3&gt;&lt;p&gt;three.js 的优点之一是其丰富的文档和&lt;a class="link" href="https://threejs.org/examples/" target="_blank" rel="noopener"
 &gt;示例&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;在示例页面上，当使用特定关键词进行搜索时，会出现简单的示例&lt;/p&gt;
 &lt;p&gt;而且这个示例的源代码也是公开的，真是太好了!&lt;/p&gt;
 &lt;p&gt;如果你想了解一些在网页上可以实现的案例，可以关注&lt;a class="link" href="https://twitter.com/threejs" target="_blank" rel="noopener"
-&gt;Twitter账号&lt;/a&gt;，
+&gt;Twitter 账号&lt;/a&gt;，
 因为那里会有各种各样的示例。&lt;/p&gt;
 &lt;h3 id="react-three-fiber"&gt;React Three Fiber
 &lt;/h3&gt;&lt;p&gt;先前提到， three.js 渲染器是 React Three Fiber（r3f）。
-由于3D场景是通过层次结构来表示的，因此与React的表达方式非常相配&lt;/p&gt;
-&lt;p&gt;此外，项目是第一个使用Next.js、React和Three.js（React-Three-Fiber）
-开发的Web 3D Metaverse项目，因此在这个库的周围不断涌现出各种实用工具。&lt;/p&gt;
+由于 3D 场景是通过层次结构来表示的，因此与 React 的表达方式非常相配&lt;/p&gt;
+&lt;p&gt;此外，项目是第一个使用 Next.js、React 和 Three.js（React-Three-Fiber）
+开发的 Web 3D Metaverse 项目，因此在这个库的周围不断涌现出各种实用工具。&lt;/p&gt;
 &lt;p&gt;ただ、React のノリで state 使いまくると富豪的レンダリング
-然而，如果在React中过度使用state，会导致富豪式渲染（频繁执行不必要的重新渲染），
+然而，如果在 React 中过度使用 state，会导致富豪式渲染（频繁执行不必要的重新渲染），
 从而浪费机器资源，因此需要学习一些技巧（详细请参考[jotai](### jotai)）&lt;/p&gt;
 &lt;p&gt;(&lt;a class="link" href="https://github.com/pmndrs/react-three-fiber" target="_blank" rel="noopener"
 &gt;https://github.com/pmndrs/react-three-fiber&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="drei"&gt;drei
-&lt;/h3&gt;&lt;p&gt;这是r3f的助手集。如果你使用r3f，我认为你几乎会一起使用它们.
-将3D模型文件加载器转换为React Hook，以及用于获取文件useGLTF、加载状态useProgress的辅助函数，以及支持各种形状的帮助程序等等。因此，如果要在r3f中实现某些功能，
-首先可以查看drei，以尽量避免重新发明轮子。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;这是 r3f 的助手集。如果你使用 r3f，我认为你几乎会一起使用它们.
+将 3D 模型文件加载器转换为 React Hook，以及用于获取文件 useGLTF、加载状态 useProgress 的辅助函数，以及支持各种形状的帮助程序等等。因此，如果要在 r3f 中实现某些功能，
+首先可以查看 drei，以尽量避免重新发明轮子。&lt;/p&gt;
 &lt;p&gt;(&lt;a class="link" href="https://github.com/pmndrs/drei" target="_blank" rel="noopener"
 &gt;https://github.com/pmndrs/drei&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="jotai"&gt;jotai
 &lt;/h3&gt;&lt;p&gt;为了避免富豪渲染的状态管理库
-由于state可以全局访问，所以非常方便使用&lt;/p&gt;
-&lt;p&gt;特别是使用r3f时，状态的增加会给GPU带来相当大的负担，因此r3f与之非常兼容&lt;/p&gt;
+由于 state 可以全局访问，所以非常方便使用&lt;/p&gt;
+&lt;p&gt;特别是使用 r3f 时，状态的增加会给 GPU 带来相当大的负担，因此 r3f 与之非常兼容&lt;/p&gt;
 &lt;p&gt;我们在产品中也引入了这个功能，一方面是为了解决富豪渲染的问题，
-另一方面是因为我们加入了与r3f相同的&lt;a class="link" href="https://github.com/pmndrs/" target="_blank" rel="noopener"
+另一方面是因为我们加入了与 r3f 相同的&lt;a class="link" href="https://github.com/pmndrs/" target="_blank" rel="noopener"
 &gt;Poimandres&lt;/a&gt;,
-作者 daishi先生是日本人，不仅在英文官方文档中有所介绍，
-还在daishi先生的&lt;a class="link" href="https://zenn.dev/dai_shi" target="_blank" rel="noopener"
+作者 daishi 先生是日本人，不仅在英文官方文档中有所介绍，
+还在 daishi 先生的&lt;a class="link" href="https://zenn.dev/dai_shi" target="_blank" rel="noopener"
 &gt;Blog&lt;/a&gt;上写了很多内容，详细情况请阅读那里的内容&lt;/p&gt;
 &lt;p&gt;(&lt;a class="link" href="https://github.com/pmndrs/jotai" target="_blank" rel="noopener"
 &gt;https://github.com/pmndrs/jotai&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="gltfjsx"&gt;gltfjsx
-&lt;/h3&gt;&lt;p&gt;在处理3D模型时，常用的格式是glTF，它是用于将这些数据快速转换为jsx的工具.
+&lt;/h3&gt;&lt;p&gt;在处理 3D 模型时，常用的格式是 glTF，它是用于将这些数据快速转换为 jsx 的工具.
 虽然在产品中没有使用过，但是有时候会下载 glTF 模型用于验证，并快速显示和验证.
 (&lt;a class="link" href="https://github.com/pmndrs/gltfjsx" target="_blank" rel="noopener"
 &gt;https://github.com/pmndrs/gltfjsx&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="gltfpack"&gt;gltfpack
-&lt;/h3&gt;&lt;p&gt;最后是最近发现的glTF文件优化工具
+&lt;/h3&gt;&lt;p&gt;最后是最近发现的 glTF 文件优化工具
 这是一个相当疯狂的工具，它不仅可以优化文件的下载大小，
 还可以优化加载负载和渲染速度，
-似乎可以将我们最近使用的服务的可接受多边形数量增加10倍.
+似乎可以将我们最近使用的服务的可接受多边形数量增加 10 倍.
 (&lt;a class="link" href="https://github.com/zeux/meshoptimizer/tree/master/gltf" target="_blank" rel="noopener"
 &gt;https://github.com/zeux/meshoptimizer/tree/master/gltf&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id="总结"&gt;总结
-&lt;/h3&gt;&lt;p&gt;经过一段时间的开发，我积累了很多关于three.js产品的经验，
+&lt;/h3&gt;&lt;p&gt;经过一段时间的开发，我积累了很多关于 three.js 产品的经验，
 现在已经看到了下一步的发展方向。下一步，
-我们将进一步提升性能，打造更高质量的基于3D模型的服务。&lt;/p&gt;
-&lt;p&gt;我也是从一开始对3D一无所知，不知道该用什么工具开始的，
+我们将进一步提升性能，打造更高质量的基于 3D 模型的服务。&lt;/p&gt;
+&lt;p&gt;我也是从一开始对 3D 一无所知，不知道该用什么工具开始的，
 希望这篇文章能让初学者更容易入门。&lt;/p&gt;</description></item><item><title>使用TypeScript和Tauri创建一个视频转音频应用程序</title><link>https://glows.github.io/posts/use-ypescript-tauri-convert-audio/</link><pubDate>Sun, 16 Jul 2023 16:01:32 +0800</pubDate><guid>https://glows.github.io/posts/use-ypescript-tauri-convert-audio/</guid><description>&lt;h2 id="使用typescript和tauri创建一个视频转音频应用程序"&gt;使用TypeScript和Tauri创建一个视频转音频应用程序
 &lt;/h2&gt;&lt;p&gt;&lt;img src="https://glows.github.io/img/type-rust.jpeg"
 loading="lazy"
