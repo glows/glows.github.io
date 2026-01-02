@@ -3758,7 +3758,7 @@ make install
 /usr/local/nginx/sbin/nginx&lt;/p&gt;
 &lt;p&gt;10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>About | 关于我</title><link>https://glows.github.io/about-%E5%85%B3%E4%BA%8E%E6%88%91/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about-%E5%85%B3%E4%BA%8E%E6%88%91/</guid><description>&lt;h3 id="-tech-stack--技术版图"&gt;🛠 Tech Stack / 技术版图
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>About</title><link>https://glows.github.io/about/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>&lt;h3 id="-tech-stack--技术版图"&gt;🛠 Tech Stack / 技术版图
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Languages &amp;amp; Systems / 编程与系统&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Core&lt;/strong&gt;: Go, Python, TypeScript/JavaScript&lt;/li&gt;
