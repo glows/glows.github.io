@@ -3726,7 +3726,7 @@ make install
 &lt;/h3&gt;&lt;p&gt;HTML/CSS/Some&lt;br&gt;
 Javascript&lt;br&gt;
 Go&lt;br&gt;
-Python &lt;br&gt;
+Python&lt;br&gt;
 English and Japanese&lt;/p&gt;
 &lt;h3 id="i-use"&gt;I use&amp;hellip;
 &lt;/h3&gt;&lt;p&gt;MacOS&lt;br&gt;
@@ -3736,13 +3736,25 @@ Emacs&lt;br&gt;
 GitLab/Hub&lt;br&gt;
 Thanks!&lt;/p&gt;
 &lt;h3 id="biography"&gt;Biography
-&lt;/h3&gt;&lt;p&gt;Server-Side &amp;amp; Front-end Developer. &lt;br&gt;
+&lt;/h3&gt;&lt;p&gt;Server-Side &amp;amp; Front-end Developer.&lt;br&gt;
 Currently working as a Fullstack Engineer in ShenZhen.
 In my spare time I enjoy playing video games, or working on various side projects.&lt;/p&gt;
 &lt;h3 id="motto"&gt;Motto
 &lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Γνῶθι σεαυτόν (Know Thyself / 认识你自己)&lt;br&gt;
+—— 古希腊 (Ancient Greek)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Amor Fati (Love of Fate / 热爱命运)&lt;br&gt;
+—— 古罗马 (Ancient Roman)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Memento Mori (Remember Death / 谨记死亡)&lt;br&gt;
+—— 斯多葛学派 (Stoicism)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;开拓视野，冲破艰险，洞悉所有，贴近生活，寻找真爱，感受彼此 。&lt;br&gt;
-——白日梦想家&lt;/p&gt;
+—— 《白日梦想家》 (The Secret Life of Walter Mitty)&lt;/p&gt;
 &lt;/blockquote&gt;</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
