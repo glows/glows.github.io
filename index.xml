@@ -3758,39 +3758,42 @@ make install
 /usr/local/nginx/sbin/nginx&lt;/p&gt;
 &lt;p&gt;10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>about</title><link>https://glows.github.io/about/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about/</guid><description>&lt;h3 id="my-languages"&gt;My languages
-&lt;/h3&gt;&lt;p&gt;HTML/CSS/Some&lt;br&gt;
-Javascript&lt;br&gt;
-Go&lt;br&gt;
-Python&lt;br&gt;
-English and Japanese&lt;/p&gt;
-&lt;h3 id="i-use"&gt;I use&amp;hellip;
-&lt;/h3&gt;&lt;p&gt;MacOS&lt;br&gt;
-Git&lt;br&gt;
-Vim or Vscode&lt;br&gt;
-Emacs&lt;br&gt;
-GitLab/Hub&lt;br&gt;
-Thanks!&lt;/p&gt;
-&lt;h3 id="biography"&gt;Biography
-&lt;/h3&gt;&lt;p&gt;Server-Side &amp;amp; Front-end Developer.&lt;br&gt;
-Currently working as a Fullstack Engineer in ShenZhen.
-In my spare time I enjoy playing video games, or working on various side projects.&lt;/p&gt;
-&lt;h3 id="motto"&gt;Motto
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>About | 关于我</title><link>https://glows.github.io/about-%E5%85%B3%E4%BA%8E%E6%88%91/</link><pubDate>Thu, 17 May 2018 16:14:08 +0000</pubDate><guid>https://glows.github.io/about-%E5%85%B3%E4%BA%8E%E6%88%91/</guid><description>&lt;h3 id="-tech-stack--技术版图"&gt;🛠 Tech Stack / 技术版图
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Languages &amp;amp; Systems / 编程与系统&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Core&lt;/strong&gt;: Go, Python, TypeScript/JavaScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Human&lt;/strong&gt;: English, Japanese, Chinese&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI-Native&lt;/strong&gt;: Prompt Engineering, Agentic Workflows, LLM Orchestration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Tools &amp;amp; Environment / 工具与环境&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS&lt;/strong&gt;: macOS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor&lt;/strong&gt;: Cursor / VS Code (AI-Augmented) / Emacs / Vim&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI Core&lt;/strong&gt;: Claude, GPT-4o, DeepSeek&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VCS&lt;/strong&gt;: Git (GitHub/GitLab)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="-biography--个人简介"&gt;👤 Biography / 个人简介
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;AI-Augmented Fullstack Engineer / AI 增强型全栈工程师&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Based in &lt;strong&gt;ShenZhen&lt;/strong&gt;, I explore the intersection of traditional software craftsmanship and the emerging frontier of Artificial Intelligence. I believe that in the AI era, the role of an engineer shifts from a &amp;ldquo;code constructor&amp;rdquo; to an &amp;ldquo;intent translator and system architect.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;我目前在&lt;strong&gt;深圳&lt;/strong&gt;工作，致力于将传统的软件工匠精神与人工智能的前沿技术相结合。我认为在 AI 时代，工程师的角色已从“代码构建者”转变为“意图翻译官与系统架构师”。&lt;/p&gt;
+&lt;p&gt;In my spare time, I am a digital philosopher, a video game enthusiast, and a builder of side projects that aim to simplify complexity.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="-motto--座右铭"&gt;📜 Motto / 座右铭
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Γνῶθι σεαυτόν (Know Thyself / 认识你自己)&lt;br&gt;
-—— 古希腊 (Ancient Greek)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Γνῶθι σεαυτόν&lt;/strong&gt;&lt;br&gt;
+(Know Thyself / 认识你自己)&lt;br&gt;
+—— &lt;em&gt;Ancient Greek / 古希腊&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Amor Fati (Love of Fate / 热爱命运)&lt;br&gt;
-—— 古罗马 (Ancient Roman)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Amor Fati&lt;/strong&gt;&lt;br&gt;
+(Love of Fate / 热爱命运)&lt;br&gt;
+—— &lt;em&gt;Ancient Roman / 古罗马&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Memento Mori (Remember Death / 谨记死亡)&lt;br&gt;
-—— 斯多葛学派 (Stoicism)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;开拓视野，冲破艰险，洞悉所有，贴近生活，寻找真爱，感受彼此 。&lt;br&gt;
-—— 《白日梦想家》 (The Secret Life of Walter Mitty)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Memento Mori&lt;/strong&gt;&lt;br&gt;
+(Remember Death / 谨记死亡)&lt;br&gt;
+—— &lt;em&gt;Stoicism / 斯多葛学派&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description></item><item><title>categories</title><link>https://glows.github.io/categories/</link><pubDate>Thu, 17 May 2018 15:33:56 +0000</pubDate><guid>https://glows.github.io/categories/</guid><description/></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
