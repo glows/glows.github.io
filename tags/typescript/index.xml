@@ -67,7 +67,7 @@
 &lt;p&gt;使用as const是标定此变量是只读的。&lt;/p&gt;
 &lt;p&gt;有些人会问不是已经使用了const定义变量了吗？此变量就是不能修改的呀！&lt;/p&gt;
 &lt;p&gt;其实const定义的变量只是不能修改它自身，如果它是引用类型的变量，比如数组，对象，我们是可以修改它的子项的。&lt;/p&gt;
-&lt;script src="https://gist.github.com/lucas-lm/0ec811275551ac7fc59741a810fada27.js"&gt;&lt;/script&gt;</description></item><item><title>node 后端实践</title><link>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</link><pubDate>Mon, 14 Sep 2020 18:33:21 +0000</pubDate><guid>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post node 后端实践" /&gt;&lt;h2 id="koa--typescript-typeorm--mysql"&gt;Koa &amp;amp; Typescript (typeORM + mysql)
+&lt;script src="https://gist.github.com/lucas-lm/0ec811275551ac7fc59741a810fada27.js"&gt;&lt;/script&gt;</description></item><item><title>node 后端实践</title><link>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</link><pubDate>Mon, 14 Sep 2020 18:33:21 +0000</pubDate><guid>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post node 后端实践" /&gt;&lt;h2 id="koa--typescript-typeorm--mysql"&gt;Koa &amp;amp; Typescript (typeORM + mysql)
 &lt;/h2&gt;&lt;p&gt;requies:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Node.js：10.x 及以上&lt;/li&gt;

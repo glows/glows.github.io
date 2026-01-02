@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Glow's Blog</title><link>https://glows.github.io/posts/</link><description>Recent content in Posts on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 16 Aug 2023 15:04:34 +0800</lastBuildDate><atom:link href="https://glows.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/webgl-react.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Glow's Blog</title><link>https://glows.github.io/posts/</link><description>Recent content in Posts on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Wed, 16 Aug 2023 15:04:34 +0800</lastBuildDate><atom:link href="https://glows.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
 &lt;/h2&gt;&lt;p&gt;在这篇文章中，我们简要介绍了在 Web 上实现 3D 表现时，
 前端工程师应该使用哪些库。请详细阅读各个库的官方文档以获取更多信息&lt;/p&gt;
 &lt;h3 id="threejs"&gt;three.js
@@ -65,7 +65,7 @@
 现在已经看到了下一步的发展方向。下一步，
 我们将进一步提升性能，打造更高质量的基于 3D 模型的服务。&lt;/p&gt;
 &lt;p&gt;我也是从一开始对 3D 一无所知，不知道该用什么工具开始的，
-希望这篇文章能让初学者更容易入门。&lt;/p&gt;</description></item><item><title>使用TypeScript和Tauri创建一个视频转音频应用程序</title><link>https://glows.github.io/p/%E4%BD%BF%E7%94%A8typescript%E5%92%8Ctauri%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E8%BD%AC%E9%9F%B3%E9%A2%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</link><pubDate>Sun, 16 Jul 2023 16:01:32 +0800</pubDate><guid>https://glows.github.io/p/%E4%BD%BF%E7%94%A8typescript%E5%92%8Ctauri%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E8%BD%AC%E9%9F%B3%E9%A2%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tutorial.png" alt="Featured image of post 使用TypeScript和Tauri创建一个视频转音频应用程序" /&gt;&lt;h2 id="使用typescript和tauri创建一个视频转音频应用程序"&gt;使用TypeScript和Tauri创建一个视频转音频应用程序
+希望这篇文章能让初学者更容易入门。&lt;/p&gt;</description></item><item><title>使用TypeScript和Tauri创建一个视频转音频应用程序</title><link>https://glows.github.io/p/%E4%BD%BF%E7%94%A8typescript%E5%92%8Ctauri%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E8%BD%AC%E9%9F%B3%E9%A2%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</link><pubDate>Sun, 16 Jul 2023 16:01:32 +0800</pubDate><guid>https://glows.github.io/p/%E4%BD%BF%E7%94%A8typescript%E5%92%8Ctauri%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E8%BD%AC%E9%9F%B3%E9%A2%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</guid><description>&lt;img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 使用TypeScript和Tauri创建一个视频转音频应用程序" /&gt;&lt;h2 id="使用typescript和tauri创建一个视频转音频应用程序"&gt;使用TypeScript和Tauri创建一个视频转音频应用程序
 &lt;/h2&gt;&lt;p&gt;&lt;img src="https://glows.github.io/img/type-rust.jpeg"
 loading="lazy"
 alt="声音处理"
@@ -1139,7 +1139,7 @@ Golang提供良好的支持与日期和时间的工作。在 Golang，我们不�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>OpenCV With Network Cameras</title><link>https://glows.github.io/p/opencv-with-network-cameras/</link><pubDate>Tue, 27 Apr 2021 15:14:40 +0000</pubDate><guid>https://glows.github.io/p/opencv-with-network-cameras/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tech.png" alt="Featured image of post OpenCV With Network Cameras" /&gt;&lt;h2 id="opencv-with-network-cameras"&gt;OpenCV with Network Cameras
+&lt;/div&gt;</description></item><item><title>OpenCV With Network Cameras</title><link>https://glows.github.io/p/opencv-with-network-cameras/</link><pubDate>Tue, 27 Apr 2021 15:14:40 +0000</pubDate><guid>https://glows.github.io/p/opencv-with-network-cameras/</guid><description>&lt;img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post OpenCV With Network Cameras" /&gt;&lt;h2 id="opencv-with-network-cameras"&gt;OpenCV with Network Cameras
 &lt;/h2&gt;&lt;h3 id="how-do-i-access-an-ip-camera"&gt;How do I access an IP Camera?
 &lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
 &lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
@@ -1268,7 +1268,7 @@ Golang提供良好的支持与日期和时间的工作。在 Golang，我们不�
 &lt;p&gt;使用as const是标定此变量是只读的。&lt;/p&gt;
 &lt;p&gt;有些人会问不是已经使用了const定义变量了吗？此变量就是不能修改的呀！&lt;/p&gt;
 &lt;p&gt;其实const定义的变量只是不能修改它自身，如果它是引用类型的变量，比如数组，对象，我们是可以修改它的子项的。&lt;/p&gt;
-&lt;script src="https://gist.github.com/lucas-lm/0ec811275551ac7fc59741a810fada27.js"&gt;&lt;/script&gt;</description></item><item><title>sql 基本命令</title><link>https://glows.github.io/p/sql-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link><pubDate>Mon, 12 Oct 2020 14:22:08 +0000</pubDate><guid>https://glows.github.io/p/sql-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post sql 基本命令" /&gt;&lt;p&gt;1、显示数据库列表。
+&lt;script src="https://gist.github.com/lucas-lm/0ec811275551ac7fc59741a810fada27.js"&gt;&lt;/script&gt;</description></item><item><title>sql 基本命令</title><link>https://glows.github.io/p/sql-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link><pubDate>Mon, 12 Oct 2020 14:22:08 +0000</pubDate><guid>https://glows.github.io/p/sql-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid><description>&lt;img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post sql 基本命令" /&gt;&lt;p&gt;1、显示数据库列表。
 show databases;
 2、显示库中的数据表：
 use mysql;
@@ -1294,7 +1294,7 @@ select * from 表名&lt;/p&gt;
 &lt;p&gt;create database xxxdb;&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="https://gist.github.com/hofmannsven/9164408" target="_blank" rel="noopener"
 &gt;MySQL Getting started&lt;/a&gt;: &lt;a class="link" href="https://gist.github.com/hofmannsven/9164408" target="_blank" rel="noopener"
-&gt;https://gist.github.com/hofmannsven/9164408&lt;/a&gt;&lt;/p&gt;</description></item><item><title>node 后端实践</title><link>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</link><pubDate>Mon, 14 Sep 2020 18:33:21 +0000</pubDate><guid>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post node 后端实践" /&gt;&lt;h2 id="koa--typescript-typeorm--mysql"&gt;Koa &amp;amp; Typescript (typeORM + mysql)
+&gt;https://gist.github.com/hofmannsven/9164408&lt;/a&gt;&lt;/p&gt;</description></item><item><title>node 后端实践</title><link>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</link><pubDate>Mon, 14 Sep 2020 18:33:21 +0000</pubDate><guid>https://glows.github.io/p/node-%E5%90%8E%E7%AB%AF%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post node 后端实践" /&gt;&lt;h2 id="koa--typescript-typeorm--mysql"&gt;Koa &amp;amp; Typescript (typeORM + mysql)
 &lt;/h2&gt;&lt;p&gt;requies:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Node.js：10.x 及以上&lt;/li&gt;
@@ -1413,7 +1413,7 @@ select * from 表名&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>网页录音</title><link>https://glows.github.io/p/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3/</link><pubDate>Wed, 19 Aug 2020 10:57:35 +0000</pubDate><guid>https://glows.github.io/p/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 网页录音" /&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;/div&gt;</description></item><item><title>网页录音</title><link>https://glows.github.io/p/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3/</link><pubDate>Wed, 19 Aug 2020 10:57:35 +0000</pubDate><guid>https://glows.github.io/p/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3/</guid><description>&lt;img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 网页录音" /&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
 &lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;span class="lnt"&gt;2
@@ -1426,7 +1426,7 @@ select * from 表名&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;或者参考第三方库&lt;a class="link" href="https://github.com/xiangyuecn/Recorder" target="_blank" rel="noopener"
 &gt;Recorder&lt;/a&gt;, github: &lt;a class="link" href="https://github.com/xiangyuecn/Recorder" target="_blank" rel="noopener"
 &gt;https://github.com/xiangyuecn/Recorder&lt;/a&gt;， &lt;a class="link" href="https://github.com/mattdiamond/Recorderjs?spm=a2c6h.14275010.0.0.210973f37lgtPf" target="_blank" rel="noopener"
-&gt;recorderjs&lt;/a&gt;&lt;/p&gt;</description></item><item><title>WebSocket 使用</title><link>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</link><pubDate>Wed, 19 Aug 2020 10:03:07 +0000</pubDate><guid>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post WebSocket 使用" /&gt;&lt;h2 id="websocket-封装"&gt;WebSocket 封装
+&gt;recorderjs&lt;/a&gt;&lt;/p&gt;</description></item><item><title>WebSocket 使用</title><link>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</link><pubDate>Wed, 19 Aug 2020 10:03:07 +0000</pubDate><guid>https://glows.github.io/p/websocket-%E4%BD%BF%E7%94%A8/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post WebSocket 使用" /&gt;&lt;h2 id="websocket-封装"&gt;WebSocket 封装
 &lt;/h2&gt;&lt;p&gt;WebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信，位于OSI模型的应用层。&lt;/p&gt;
 &lt;p&gt;WebSocket使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在WebSocket API中，浏览器和服务器只需要完成一次握手，两者之间就可以创建持久性的连接，并进行双向数据传输。&lt;/p&gt;
 &lt;p&gt;WebSocket协议规范将ws（WebSocket）和wss（WebSocket Secure）定义为两个新的统一资源标识符（URI）方案，分别对应明文和加密连接。&lt;/p&gt;
@@ -2544,7 +2544,7 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Bellman-Ford algorithm can also be used for finding a negative cycle.&lt;/p&gt;
-&lt;p&gt;Negative cycle application: arbitrage detection.&lt;/p&gt;</description></item><item><title>常见数据结构</title><link>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Wed, 15 Apr 2020 14:41:47 +0000</pubDate><guid>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post 常见数据结构" /&gt;&lt;p&gt;回到最初，计算机科学&lt;/p&gt;
+&lt;p&gt;Negative cycle application: arbitrage detection.&lt;/p&gt;</description></item><item><title>常见数据结构</title><link>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Wed, 15 Apr 2020 14:41:47 +0000</pubDate><guid>https://glows.github.io/p/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 常见数据结构" /&gt;&lt;p&gt;回到最初，计算机科学&lt;/p&gt;
 &lt;p&gt;基础学科内容，比如：网络知识、数据结构算法
 编程思想&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -2845,7 +2845,7 @@ We can use Bellman-Ford algorithm as long as there is no negative cycle in the g
 &lt;p&gt;简单点来说，这个结构的作用大多是为了方便搜索字符串，该树有以下几个特点&lt;/p&gt;
 &lt;p&gt;根节点代表空字符串，每个节点都有 N（假如搜索英文字符，就有 26 条） 条链接，每条链接代表一个字符
 节点不存储字符，只有路径才存储，这点和其他的树结构不同
-从根节点开始到任意一个节点，将沿途经过的字符连接起来就是该节点对应的字符串&lt;/p&gt;</description></item><item><title>React-Hooks 指南</title><link>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</link><pubDate>Wed, 12 Feb 2020 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post React-Hooks 指南" /&gt;&lt;h2 id="react-hooks-含义"&gt;React Hooks 含义
+从根节点开始到任意一个节点，将沿途经过的字符连接起来就是该节点对应的字符串&lt;/p&gt;</description></item><item><title>React-Hooks 指南</title><link>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</link><pubDate>Wed, 12 Feb 2020 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/react-hooks-%E6%8C%87%E5%8D%97/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post React-Hooks 指南" /&gt;&lt;h2 id="react-hooks-含义"&gt;React Hooks 含义
 &lt;/h2&gt;&lt;p&gt;为函数组件提供钩子以实现外部功能，如添加状态&lt;/p&gt;
 &lt;h3 id="react-默认提供的四个最常用的钩子"&gt;React 默认提供的四个最常用的钩子
 &lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -3124,7 +3124,7 @@ return &lt;div&gt;{this.state.someThings}&lt;/div&gt;
 &lt;/h2&gt;&lt;p&gt;前后端路由差别
 1.后端每次路由请求都是重新访问服务器
 2.前端路由实际上只是JS根据URL来操作DOM元素，
-根据每个页面需要的去服务端请求数据，返回数据后和模板进行组合。&lt;/p&gt;</description></item><item><title>函数式编程</title><link>https://glows.github.io/p/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link><pubDate>Tue, 29 Jan 2019 14:30:41 +0000</pubDate><guid>https://glows.github.io/p/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post 函数式编程" /&gt;&lt;h2 id="与面向对象的区别"&gt;与面向对象的区别
+根据每个页面需要的去服务端请求数据，返回数据后和模板进行组合。&lt;/p&gt;</description></item><item><title>函数式编程</title><link>https://glows.github.io/p/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link><pubDate>Tue, 29 Jan 2019 14:30:41 +0000</pubDate><guid>https://glows.github.io/p/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid><description>&lt;img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 函数式编程" /&gt;&lt;h2 id="与面向对象的区别"&gt;与面向对象的区别
 &lt;/h2&gt;&lt;p&gt;与面向对象方法将问题分解成多组&amp;quot;名词&amp;quot;或对象不同，函数式方法将相同的问题分解成多组&amp;quot;动词&amp;quot;或者函数。&lt;/p&gt;
 &lt;p&gt;与面向对象类似的是，函数式编程也通过&amp;quot;粘结&amp;quot;或&amp;quot;组合&amp;quot;其他函数的方式构建更大的函数，以实现更抽象的行为。&lt;/p&gt;
 &lt;p&gt;函数式：通过把功能拆解成一个个小函数组件，再用函数讲各个组件结合完成需求。&lt;/p&gt;
@@ -3154,7 +3154,7 @@ Applicative编程函数作为参数的编程方式 &lt;br&gt;
 面向类型&lt;br&gt;
 事件编程&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>解决VSCode保存时自动格式化</title><link>https://glows.github.io/p/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</link><pubDate>Wed, 15 Aug 2018 14:57:24 +0000</pubDate><guid>https://glows.github.io/p/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tech.png" alt="Featured image of post 解决VSCode保存时自动格式化" /&gt;&lt;p&gt;把JS-CS-HTML Formatter这个插件禁用&lt;/p&gt;</description></item><item><title>理解CSS属性：touch-action</title><link>https://glows.github.io/p/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</link><pubDate>Thu, 09 Aug 2018 11:15:23 +0000</pubDate><guid>https://glows.github.io/p/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 理解CSS属性：touch-action" /&gt;&lt;p&gt;CSS属性 touch-action 用于指定某个给定的区域是否允许用户操作，以及如何响应用户操作（比如浏览器自带的划动、缩放等）。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>解决VSCode保存时自动格式化</title><link>https://glows.github.io/p/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</link><pubDate>Wed, 15 Aug 2018 14:57:24 +0000</pubDate><guid>https://glows.github.io/p/%E8%A7%A3%E5%86%B3vscode%E4%BF%9D%E5%AD%98%E6%97%B6%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tutorial.png" alt="Featured image of post 解决VSCode保存时自动格式化" /&gt;&lt;p&gt;把JS-CS-HTML Formatter这个插件禁用&lt;/p&gt;</description></item><item><title>理解CSS属性：touch-action</title><link>https://glows.github.io/p/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</link><pubDate>Thu, 09 Aug 2018 11:15:23 +0000</pubDate><guid>https://glows.github.io/p/%E7%90%86%E8%A7%A3css%E5%B1%9E%E6%80%A7touch-action/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 理解CSS属性：touch-action" /&gt;&lt;p&gt;CSS属性 touch-action 用于指定某个给定的区域是否允许用户操作，以及如何响应用户操作（比如浏览器自带的划动、缩放等）。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
 &lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
@@ -3278,7 +3278,7 @@ pinch-zoom
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post Vue改变对象的属性值视图不更新的问题" /&gt;&lt;p&gt;最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>Vue改变对象的属性值视图不更新的问题</title><link>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 25 Jul 2018 10:37:01 +0000</pubDate><guid>https://glows.github.io/p/vue%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%80%BC%E8%A7%86%E5%9B%BE%E4%B8%8D%E6%9B%B4%E6%96%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post Vue改变对象的属性值视图不更新的问题" /&gt;&lt;p&gt;最近项目在使用vue，遇到几次修改了对象的属性后，页面并不重新渲染，场景如下：&lt;/p&gt;
 &lt;p&gt;查看官方文档后了解到：&lt;strong&gt;受到javascript的限制，Vue不能检测到对象属性的添加或删除。因为Vue利用的是Object的defineProperty()方法，在初始化实列时将属性转为getter/setter，所以属性必须在data对象上才能让vue转换它。&lt;/strong&gt;
 后通过查找资料修改为使用$set来设定修改值，js如下：
 我们可以使用 Vue.set(object, key, value) 方法将响应属性添加到数组里的对象上。
@@ -3533,10 +3533,10 @@ Python提供多种数据类型来存放数据项集合，主要包括序列（�
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# rpm -qa # 查看所有安装的软件包&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>React与Redux</title><link>https://glows.github.io/p/react%E4%B8%8Eredux/</link><pubDate>Thu, 28 Jun 2018 14:09:12 +0000</pubDate><guid>https://glows.github.io/p/react%E4%B8%8Eredux/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post React与Redux" /&gt;&lt;h1 id="react与redux"&gt;React与Redux
+&lt;/div&gt;</description></item><item><title>React与Redux</title><link>https://glows.github.io/p/react%E4%B8%8Eredux/</link><pubDate>Thu, 28 Jun 2018 14:09:12 +0000</pubDate><guid>https://glows.github.io/p/react%E4%B8%8Eredux/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post React与Redux" /&gt;&lt;h1 id="react与redux"&gt;React与Redux
 &lt;/h1&gt;&lt;p&gt;Redux 的设计思想很简单，就两句话。
 （1）Web 应用是一个状态机，视图与状态是一一对应的。
-（2）所有的状态，保存在一个对象里面。&lt;/p&gt;</description></item><item><title>vue问题收集</title><link>https://glows.github.io/p/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</link><pubDate>Wed, 20 Jun 2018 11:43:39 +0000</pubDate><guid>https://glows.github.io/p/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post vue问题收集" /&gt;&lt;p&gt;1、Why is Vue.js Chrome Devtools not detecting Vue.js?
+（2）所有的状态，保存在一个对象里面。&lt;/p&gt;</description></item><item><title>vue问题收集</title><link>https://glows.github.io/p/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</link><pubDate>Wed, 20 Jun 2018 11:43:39 +0000</pubDate><guid>https://glows.github.io/p/vue%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post vue问题收集" /&gt;&lt;p&gt;1、Why is Vue.js Chrome Devtools not detecting Vue.js?
 打开本地文件vueDevtools 无法检测到Vue.js,
 需要打开Chrome vueDevtools配置允许本地文件访问
 One alternative is to set up a local web server, as the OP already stated.
@@ -3661,7 +3661,7 @@ The other - which IMHO is faster and less harassing - is letting the extension h
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ sudo docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;3、Splash is now available at 0.0.0.0 at ports 8050 (http), 8051 (https) and 5023 (telnet).&lt;/p&gt;</description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/p/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/p/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post 搭建gogs遇到的问题" /&gt;&lt;p&gt;关键词：git gogs&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;3、Splash is now available at 0.0.0.0 at ports 8050 (http), 8051 (https) and 5023 (telnet).&lt;/p&gt;</description></item><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/p/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/p/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 搭建gogs遇到的问题" /&gt;&lt;p&gt;关键词：git gogs&lt;/p&gt;
 &lt;h3 id="mysql数据库"&gt;mysql数据库
 &lt;/h3&gt;&lt;p&gt;客户端找不到 caching_sha2_password 插件，于是登录不上，本来是要这种插件的，但是其实
 ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘root’; 就行
@@ -3722,7 +3722,7 @@ make install
 /usr/local/nginx/sbin/nginx&lt;/p&gt;
 &lt;p&gt;10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>reactjs&amp;redux一些问题</title><link>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 17 May 2018 11:12:16 +0000</pubDate><guid>https://glows.github.io/p/reactjsredux%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post reactjs&amp;redux一些问题" /&gt;&lt;h2 id="reactjsredux一些问题"&gt;reactjs&amp;amp;redux一些问题
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;缩进貌似会引起编译出错,遇到一次,不明觉厉;&lt;/p&gt;
@@ -3758,7 +3758,7 @@ hello:{ data.world } = &lt;span&gt;hello:&lt;/span&gt;&lt;span&gt;world&lt;/span
 Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &lt;p&gt;. See OrderPayInfoView &amp;gt; p &amp;gt; … &amp;gt; div.c&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>JS函数式编程记录</title><link>https://glows.github.io/p/js%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 11 May 2018 17:15:06 +0000</pubDate><guid>https://glows.github.io/p/js%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post JS函数式编程记录 " /&gt;&lt;h2 id="js函数式编程记录"&gt;JS函数式编程记录
+&lt;p&gt;#JavaScript #React&lt;/p&gt;</description></item><item><title>JS函数式编程记录</title><link>https://glows.github.io/p/js%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 11 May 2018 17:15:06 +0000</pubDate><guid>https://glows.github.io/p/js%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post JS函数式编程记录 " /&gt;&lt;h2 id="js函数式编程记录"&gt;JS函数式编程记录
 &lt;/h2&gt;&lt;h3 id="第一部分-组合"&gt;第一部分 组合
 &lt;/h3&gt;&lt;h4 id="组合"&gt;组合
 &lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -3945,7 +3945,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>柯里化函数与多个连续箭头函数</title><link>https://glows.github.io/p/%E6%9F%AF%E9%87%8C%E5%8C%96%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E4%B8%AA%E8%BF%9E%E7%BB%AD%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</link><pubDate>Thu, 10 May 2018 15:27:36 +0000</pubDate><guid>https://glows.github.io/p/%E6%9F%AF%E9%87%8C%E5%8C%96%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E4%B8%AA%E8%BF%9E%E7%BB%AD%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post 柯里化函数与多个连续箭头函数" /&gt;&lt;h2 id="柯里化函数与多个连续箭头函数"&gt;柯里化函数与多个连续箭头函数
+&lt;/div&gt;</description></item><item><title>柯里化函数与多个连续箭头函数</title><link>https://glows.github.io/p/%E6%9F%AF%E9%87%8C%E5%8C%96%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E4%B8%AA%E8%BF%9E%E7%BB%AD%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</link><pubDate>Thu, 10 May 2018 15:27:36 +0000</pubDate><guid>https://glows.github.io/p/%E6%9F%AF%E9%87%8C%E5%8C%96%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%9A%E4%B8%AA%E8%BF%9E%E7%BB%AD%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</guid><description>&lt;img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 柯里化函数与多个连续箭头函数" /&gt;&lt;h2 id="柯里化函数与多个连续箭头函数"&gt;柯里化函数与多个连续箭头函数
 &lt;/h2&gt;&lt;h3 id="柯里化"&gt;柯里化
 &lt;/h3&gt;&lt;p&gt;在计算机科学中，柯里化（英语：Currying），又译为卡瑞化或加里化，
 是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，
@@ -4050,7 +4050,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;add2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;===&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>ECMAScript(ES6)新语法</title><link>https://glows.github.io/p/ecmascriptes6%E6%96%B0%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 07 May 2018 11:50:10 +0000</pubDate><guid>https://glows.github.io/p/ecmascriptes6%E6%96%B0%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/ai.png" alt="Featured image of post ECMAScript(ES6)新语法 " /&gt;&lt;h1 id="ecmascriptes6新语法"&gt;ECMAScript(ES6)新语法
+&lt;/div&gt;</description></item><item><title>ECMAScript(ES6)新语法</title><link>https://glows.github.io/p/ecmascriptes6%E6%96%B0%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 07 May 2018 11:50:10 +0000</pubDate><guid>https://glows.github.io/p/ecmascriptes6%E6%96%B0%E8%AF%AD%E6%B3%95/</guid><description>&lt;img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post ECMAScript(ES6)新语法 " /&gt;&lt;h1 id="ecmascriptes6新语法"&gt;ECMAScript(ES6)新语法
 &lt;/h1&gt;&lt;p&gt;01.课程介绍-ECMAScript 新功能&lt;/p&gt;
 &lt;p&gt;02.块的作用域-let&lt;/p&gt;
 &lt;p&gt;03.恒量-const&lt;/p&gt;
@@ -4179,7 +4179,7 @@ Warning: validateDOMNesting(…): &lt;div&gt; cannot appear as a descendant of &
 import export
 32.导出与导入默认&lt;/p&gt;
 &lt;p&gt;export default&lt;/p&gt;
-&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>React.js 记录</title><link>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 04 May 2018 11:34:48 +0000</pubDate><guid>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post React.js 记录" /&gt;&lt;h1 id="reactjs-记录"&gt;React.js 记录
+&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>React.js 记录</title><link>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</link><pubDate>Fri, 04 May 2018 11:34:48 +0000</pubDate><guid>https://glows.github.io/p/react.js-%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post React.js 记录" /&gt;&lt;h1 id="reactjs-记录"&gt;React.js 记录
 &lt;/h1&gt;&lt;h2 id="概要"&gt;概要
 &lt;/h2&gt;&lt;p&gt;用了一段时间的 Reactjs，其实大部分的框架原理和 Vuejs 都很相似，包括响应式、足够轻量级、基于 Virtual-DOM 等特性。从整体上来看，Vuejs 是基于模版进行应用构建的，在中小型应用中有一定的优势。而 Reactjs 则需要我们在 JS 中使用 JSX 手动的来创建 DOM。&lt;/p&gt;
 &lt;p&gt;开始一个新的 Reactjs 项目，我们通过自动化的脚手架创建工具 create-react-app 来创建一个初始化的 Reactjs 工程。&lt;/p&gt;
@@ -4189,7 +4189,7 @@ import export
 &lt;/h3&gt;&lt;p&gt;所有的React组件必须像纯函数那样使用它们的props。&lt;/p&gt;
 &lt;h2 id="组件通讯"&gt;组件通讯
 &lt;/h2&gt;&lt;p&gt;当你遇到需要同时获取多个子组件数据，或者两个组件之间需要相互通讯的情况时，把子组件的 state 数据提升至其共同的父组件当中保存。之后父组件可以通过 props 将状态数据传递到子组件当中。这样应用当中的状态数据就能够更方便地交流共享了。&lt;/p&gt;
-&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>笔记之django &amp; vuejs 构建web项目</title><link>https://glows.github.io/p/%E7%AC%94%E8%AE%B0%E4%B9%8Bdjango-vuejs-%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE/</link><pubDate>Sat, 28 Apr 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/%E7%AC%94%E8%AE%B0%E4%B9%8Bdjango-vuejs-%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 笔记之django &amp; vuejs 构建web项目" /&gt;&lt;h1 id="笔记之-django--vuejs-构建-web-项目"&gt;笔记之 django &amp;amp; vuejs 构建 web 项目
+&lt;p&gt;p.s. 未完成&lt;/p&gt;</description></item><item><title>笔记之django &amp; vuejs 构建web项目</title><link>https://glows.github.io/p/%E7%AC%94%E8%AE%B0%E4%B9%8Bdjango-vuejs-%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE/</link><pubDate>Sat, 28 Apr 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/%E7%AC%94%E8%AE%B0%E4%B9%8Bdjango-vuejs-%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 笔记之django &amp; vuejs 构建web项目" /&gt;&lt;h1 id="笔记之-django--vuejs-构建-web-项目"&gt;笔记之 django &amp;amp; vuejs 构建 web 项目
 &lt;/h1&gt;&lt;h2 id="一-背景"&gt;一、 背景
 &lt;/h2&gt;&lt;p&gt;在工作中我们经常须要构件一些基于 web 的项目，例如内部测试平台、运维系统等。本篇主要介绍如何使用后端 Django + 前端 Vue.js 的技术栈快速地搭建起一套 web 项目的框架。&lt;/p&gt;
 &lt;p&gt;为什么使用 Django 和 Vue.js?&lt;/p&gt;
@@ -4444,7 +4444,7 @@ app.js&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;},&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>wepy框架开发小程序</title><link>https://glows.github.io/p/wepy%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link><pubDate>Thu, 01 Mar 2018 15:55:38 +0000</pubDate><guid>https://glows.github.io/p/wepy%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post wepy框架开发小程序" /&gt;&lt;h3 id="wepy-尝试使用wepyrequest-可以发起请求但是获取不到response-值"&gt;wepy 尝试使用wepy.request 可以发起请求但是获取不到response 值？
+&lt;/div&gt;</description></item><item><title>wepy框架开发小程序</title><link>https://glows.github.io/p/wepy%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link><pubDate>Thu, 01 Mar 2018 15:55:38 +0000</pubDate><guid>https://glows.github.io/p/wepy%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post wepy框架开发小程序" /&gt;&lt;h3 id="wepy-尝试使用wepyrequest-可以发起请求但是获取不到response-值"&gt;wepy 尝试使用wepy.request 可以发起请求但是获取不到response 值？
 &lt;/h3&gt;&lt;p&gt;答: 需要 promise 化
 当前内置两个中间件：&lt;/p&gt;
 &lt;p&gt;requestfix: 修复小程序请求并发问题。
@@ -4452,7 +4452,7 @@ promisify：使用wepy.xxx的方式请求小程序原生API都将Promise化。&l
 &lt;p&gt;使用方法如下:&lt;/p&gt;
 &lt;p&gt;this.use(&amp;lsquo;requestfix&amp;rsquo;);
 this.use(&amp;lsquo;promisify&amp;rsquo;);&lt;/p&gt;
-&lt;p&gt;参考 [https://github.com/Tencent/wepy/wiki/wepy%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8Promise]&lt;/p&gt;</description></item><item><title>看Neflix和YouTube TV教程</title><link>https://glows.github.io/p/%E7%9C%8Bneflix%E5%92%8Cyoutube-tv%E6%95%99%E7%A8%8B/</link><pubDate>Mon, 26 Feb 2018 09:44:31 +0000</pubDate><guid>https://glows.github.io/p/%E7%9C%8Bneflix%E5%92%8Cyoutube-tv%E6%95%99%E7%A8%8B/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tutorial.png" alt="Featured image of post 看Neflix和YouTube TV教程" /&gt;</description></item><item><title>new year,new idea</title><link>https://glows.github.io/p/new-yearnew-idea/</link><pubDate>Sun, 25 Feb 2018 09:39:27 +0000</pubDate><guid>https://glows.github.io/p/new-yearnew-idea/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tech.png" alt="Featured image of post new year,new idea" /&gt;</description></item><item><title>小程序开发记录</title><link>https://glows.github.io/p/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link><pubDate>Tue, 06 Feb 2018 10:38:39 +0000</pubDate><guid>https://glows.github.io/p/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 小程序开发记录" /&gt;&lt;h2 id="小程序开发记录"&gt;小程序开发记录
+&lt;p&gt;参考 [https://github.com/Tencent/wepy/wiki/wepy%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8Promise]&lt;/p&gt;</description></item><item><title>看Neflix和YouTube TV教程</title><link>https://glows.github.io/p/%E7%9C%8Bneflix%E5%92%8Cyoutube-tv%E6%95%99%E7%A8%8B/</link><pubDate>Mon, 26 Feb 2018 09:44:31 +0000</pubDate><guid>https://glows.github.io/p/%E7%9C%8Bneflix%E5%92%8Cyoutube-tv%E6%95%99%E7%A8%8B/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tutorial.png" alt="Featured image of post 看Neflix和YouTube TV教程" /&gt;</description></item><item><title>new year,new idea</title><link>https://glows.github.io/p/new-yearnew-idea/</link><pubDate>Sun, 25 Feb 2018 09:39:27 +0000</pubDate><guid>https://glows.github.io/p/new-yearnew-idea/</guid><description>&lt;img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post new year,new idea" /&gt;</description></item><item><title>小程序开发记录</title><link>https://glows.github.io/p/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</link><pubDate>Tue, 06 Feb 2018 10:38:39 +0000</pubDate><guid>https://glows.github.io/p/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post 小程序开发记录" /&gt;&lt;h2 id="小程序开发记录"&gt;小程序开发记录
 &lt;/h2&gt;&lt;p&gt;例如，用户点击某个按钮的时候，JS 会记录一些状态到 JS 变量里边，同时通过 DOM API 操控 DOM 的属性或者行为，进而引起界面一些变化。当项目越来越大的时候，你的代码会充斥着非常多的界面交互逻辑和程序的各种状态变量，显然这不是一个很好的开发模式，因此就有了 MVVM 的开发模式(例如 React, Vue)，提倡把渲染和逻辑分离。简单来说就是不要再让 JS 直接操控 DOM，JS只需要管理状态即可，然后再通过一种模板语法来描述状态和界面结构的关系即可。 小程序的框架也是用到了这个思路，如果你需要把一个 Hello World 的字符串显示在界面上。&lt;/p&gt;
 &lt;hr&gt;
 &lt;!-- more --&gt;
@@ -4522,7 +4522,7 @@ skyvow/vux(小程序组件库) Github: &lt;a class="link" href="https://github.c
 &gt;https://github.com/skyvow/wux&lt;/a&gt;
 xiaolin3303/wx-charts(小程序图标) Github: &lt;a class="link" href="https://github.com/xiaolin3303/wx-charts" target="_blank" rel="noopener"
 &gt;https://github.com/xiaolin3303/wx-charts&lt;/a&gt;
-作者：以乐之名&lt;/p&gt;</description></item><item><title>webpack初探</title><link>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</link><pubDate>Thu, 01 Feb 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post webpack初探" /&gt;&lt;h2 id="基本设置"&gt;基本设置
+作者：以乐之名&lt;/p&gt;</description></item><item><title>webpack初探</title><link>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</link><pubDate>Thu, 01 Feb 2018 14:22:34 +0000</pubDate><guid>https://glows.github.io/p/webpack%E5%88%9D%E6%8E%A2/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post webpack初探" /&gt;&lt;h2 id="基本设置"&gt;基本设置
 &lt;/h2&gt;&lt;p&gt;入口文件&lt;/p&gt;
 &lt;p&gt;多入口&lt;/p&gt;
 &lt;h2 id="设置hot-module-replacementhmr"&gt;设置Hot Module Replacement(HMR)
@@ -4534,7 +4534,7 @@ by Route
 节省用户带宽&lt;/p&gt;
 &lt;p&gt;This “Webpack Composition” technique was taken from Webpack Academy&lt;/p&gt;
 &lt;p&gt;BONUS 红利&lt;/p&gt;
-&lt;p&gt;webpack-bundle-analyzer&lt;/p&gt;</description></item><item><title>Javascript基础数据结构</title><link>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Tue, 30 Jan 2018 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post Javascript基础数据结构" /&gt;&lt;h2 id="数据结构和类型"&gt;数据结构和类型
+&lt;p&gt;webpack-bundle-analyzer&lt;/p&gt;</description></item><item><title>Javascript基础数据结构</title><link>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link><pubDate>Tue, 30 Jan 2018 10:41:47 +0000</pubDate><guid>https://glows.github.io/p/javascript%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post Javascript基础数据结构" /&gt;&lt;h2 id="数据结构和类型"&gt;数据结构和类型
 &lt;/h2&gt;&lt;p&gt;JavaScript语言可以识别下面 7 种不同类型的值：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;六种 原型 数据类型:&lt;/li&gt;
@@ -4839,7 +4839,7 @@ by Route
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;catch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Vuejs过渡动效(赋设计以生命)</title><link>https://glows.github.io/p/vuejs%E8%BF%87%E6%B8%A1%E5%8A%A8%E6%95%88%E8%B5%8B%E8%AE%BE%E8%AE%A1%E4%BB%A5%E7%94%9F%E5%91%BD/</link><pubDate>Thu, 18 Jan 2018 10:51:19 +0000</pubDate><guid>https://glows.github.io/p/vuejs%E8%BF%87%E6%B8%A1%E5%8A%A8%E6%95%88%E8%B5%8B%E8%AE%BE%E8%AE%A1%E4%BB%A5%E7%94%9F%E5%91%BD/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post Vuejs过渡动效(赋设计以生命)" /&gt;&lt;blockquote&gt;好的程序员是那种过单行道马路都要往两边看的人
+&lt;/div&gt;</description></item><item><title>Vuejs过渡动效(赋设计以生命)</title><link>https://glows.github.io/p/vuejs%E8%BF%87%E6%B8%A1%E5%8A%A8%E6%95%88%E8%B5%8B%E8%AE%BE%E8%AE%A1%E4%BB%A5%E7%94%9F%E5%91%BD/</link><pubDate>Thu, 18 Jan 2018 10:51:19 +0000</pubDate><guid>https://glows.github.io/p/vuejs%E8%BF%87%E6%B8%A1%E5%8A%A8%E6%95%88%E8%B5%8B%E8%AE%BE%E8%AE%A1%E4%BB%A5%E7%94%9F%E5%91%BD/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post Vuejs过渡动效(赋设计以生命)" /&gt;&lt;blockquote&gt;好的程序员是那种过单行道马路都要往两边看的人
 ——Doug Linder
 &lt;/blockquote&gt;
 &lt;p&gt;一个好的交互应该是顺畅的、礼貌的、理智的&lt;/p&gt;
@@ -5134,7 +5134,7 @@ Python&lt;/p&gt;</description></item><item><title>瓦·斯皮瓦克：如何构�
 &lt;p&gt;转载出处：
 How to Build the Global Mind
 &lt;a class="link" href="http://www.novaspivack.com/uncategorized/how-to-build-the-global-mind" target="_blank" rel="noopener"
-&gt;http://www.novaspivack.com/uncategorized/how-to-build-the-global-mind&lt;/a&gt;&lt;/p&gt;</description></item><item><title>下个世纪，智能机器人会取代人类吗？</title><link>https://glows.github.io/p/%E4%B8%8B%E4%B8%AA%E4%B8%96%E7%BA%AA%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%BA%BA%E7%B1%BB%E5%90%97/</link><pubDate>Wed, 10 Jan 2018 17:19:44 +0000</pubDate><guid>https://glows.github.io/p/%E4%B8%8B%E4%B8%AA%E4%B8%96%E7%BA%AA%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%BA%BA%E7%B1%BB%E5%90%97/</guid><description>&lt;img src="https://glows.github.io/img/defaults/ai.png" alt="Featured image of post 下个世纪，智能机器人会取代人类吗？" /&gt;&lt;h2 id="转载凯文凯利下个世纪智能机器人会取代人类吗"&gt;(转载)凯文·凯利：下个世纪，智能机器人会取代人类吗？
+&gt;http://www.novaspivack.com/uncategorized/how-to-build-the-global-mind&lt;/a&gt;&lt;/p&gt;</description></item><item><title>下个世纪，智能机器人会取代人类吗？</title><link>https://glows.github.io/p/%E4%B8%8B%E4%B8%AA%E4%B8%96%E7%BA%AA%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%BA%BA%E7%B1%BB%E5%90%97/</link><pubDate>Wed, 10 Jan 2018 17:19:44 +0000</pubDate><guid>https://glows.github.io/p/%E4%B8%8B%E4%B8%AA%E4%B8%96%E7%BA%AA%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%BA%BA%E7%B1%BB%E5%90%97/</guid><description>&lt;img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 下个世纪，智能机器人会取代人类吗？" /&gt;&lt;h2 id="转载凯文凯利下个世纪智能机器人会取代人类吗"&gt;(转载)凯文·凯利：下个世纪，智能机器人会取代人类吗？
 &lt;/h2&gt;&lt;p&gt;前几天是人工智能之父阿兰·图灵的100周年诞辰。考虑到纪念图灵的文章已经很多了，所以本周俺转载几篇人工智能相关的文章。
 下面这篇出自IT界预言帝凯文·凯利。他任主编的《全球概览》杂志让乔布斯推崇备至（乔布斯的名言“Stay Hungry Stay Foolish”就是从该杂志看来滴）；他创办的《连线》杂志在全球IT界举足轻重。&lt;/p&gt;
 &lt;p&gt;================华丽的分割线================&lt;/p&gt;
@@ -5156,7 +5156,7 @@ How to Build the Global Mind
 &lt;p&gt;转载出处：
 Will Spiritual Robots Replace Humanity by 2100?
 &lt;a class="link" href="http://www.kk.org/thetechnium/archives/2006/03/will_spiritual.php" target="_blank" rel="noopener"
-&gt;http://www.kk.org/thetechnium/archives/2006/03/will_spiritual.php&lt;/a&gt;&lt;/p&gt;</description></item><item><title>比尔·乔伊：为什么未来不需要我们人类</title><link>https://glows.github.io/p/%E6%AF%94%E5%B0%94%E4%B9%94%E4%BC%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%AA%E6%9D%A5%E4%B8%8D%E9%9C%80%E8%A6%81%E6%88%91%E4%BB%AC%E4%BA%BA%E7%B1%BB/</link><pubDate>Wed, 10 Jan 2018 17:14:31 +0000</pubDate><guid>https://glows.github.io/p/%E6%AF%94%E5%B0%94%E4%B9%94%E4%BC%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%AA%E6%9D%A5%E4%B8%8D%E9%9C%80%E8%A6%81%E6%88%91%E4%BB%AC%E4%BA%BA%E7%B1%BB/</guid><description>&lt;img src="https://glows.github.io/img/defaults/code.png" alt="Featured image of post 比尔·乔伊：为什么未来不需要我们人类" /&gt;&lt;h2 id="转载为什么未来不需要我们人类"&gt;(转载)为什么未来不需要我们人类
+&gt;http://www.kk.org/thetechnium/archives/2006/03/will_spiritual.php&lt;/a&gt;&lt;/p&gt;</description></item><item><title>比尔·乔伊：为什么未来不需要我们人类</title><link>https://glows.github.io/p/%E6%AF%94%E5%B0%94%E4%B9%94%E4%BC%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%AA%E6%9D%A5%E4%B8%8D%E9%9C%80%E8%A6%81%E6%88%91%E4%BB%AC%E4%BA%BA%E7%B1%BB/</link><pubDate>Wed, 10 Jan 2018 17:14:31 +0000</pubDate><guid>https://glows.github.io/p/%E6%AF%94%E5%B0%94%E4%B9%94%E4%BC%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%AA%E6%9D%A5%E4%B8%8D%E9%9C%80%E8%A6%81%E6%88%91%E4%BB%AC%E4%BA%BA%E7%B1%BB/</guid><description>&lt;img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post 比尔·乔伊：为什么未来不需要我们人类" /&gt;&lt;h2 id="转载为什么未来不需要我们人类"&gt;(转载)为什么未来不需要我们人类
 &lt;/h2&gt;&lt;h3 id="比尔乔伊"&gt;比尔·乔伊
 &lt;/h3&gt;&lt;p&gt;在21世纪，我们威力无比的三种科技：机器人、基因工程和纳米技术正在使人类成为濒危物种。&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -5317,7 +5317,7 @@ Will Spiritual Robots Replace Humanity by 2100?
 &lt;p&gt;转载出处：
 Why the future doesn&amp;rsquo;t need us?
 &lt;a class="link" href="http://www.wired.com/wired/archive/8.04/joy.html" target="_blank" rel="noopener"
-&gt;http://www.wired.com/wired/archive/8.04/joy.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Node.js Web开发</title><link>https://glows.github.io/p/node.js-web%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 25 Dec 2017 16:58:28 +0000</pubDate><guid>https://glows.github.io/p/node.js-web%E5%BC%80%E5%8F%91/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post Node.js Web开发" /&gt;&lt;h2 id="概览"&gt;概览
+&gt;http://www.wired.com/wired/archive/8.04/joy.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Node.js Web开发</title><link>https://glows.github.io/p/node.js-web%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 25 Dec 2017 16:58:28 +0000</pubDate><guid>https://glows.github.io/p/node.js-web%E5%BC%80%E5%8F%91/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post Node.js Web开发" /&gt;&lt;h2 id="概览"&gt;概览
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Node.js&lt;/li&gt;
 &lt;li&gt;Express&lt;/li&gt;
@@ -5512,7 +5512,7 @@ Api获取：&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>learning</title><link>https://glows.github.io/p/learning/</link><pubDate>Mon, 25 Dec 2017 16:14:32 +0000</pubDate><guid>https://glows.github.io/p/learning/</guid><description>&lt;img src="https://glows.github.io/img/defaults/tutorial.png" alt="Featured image of post learning" /&gt;&lt;h2 id="learning"&gt;Learning
+&lt;/div&gt;</description></item><item><title>learning</title><link>https://glows.github.io/p/learning/</link><pubDate>Mon, 25 Dec 2017 16:14:32 +0000</pubDate><guid>https://glows.github.io/p/learning/</guid><description>&lt;img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post learning" /&gt;&lt;h2 id="learning"&gt;Learning
 &lt;/h2&gt;&lt;p&gt;Hey, Wake up!&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了；那不是成熟，而是精神的早衰和个性的夭亡！ 真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。 ——《在世纪的转折点上》尼采（哲学家）&lt;/p&gt;
@@ -5632,7 +5632,7 @@ Api获取：&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>jQuery</title><link>https://glows.github.io/p/jquery/</link><pubDate>Tue, 24 May 2016 14:39:45 +0000</pubDate><guid>https://glows.github.io/p/jquery/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post jQuery" /&gt;&lt;ol&gt;
+&lt;/div&gt;</description></item><item><title>jQuery</title><link>https://glows.github.io/p/jquery/</link><pubDate>Tue, 24 May 2016 14:39:45 +0000</pubDate><guid>https://glows.github.io/p/jquery/</guid><description>&lt;img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post jQuery" /&gt;&lt;ol&gt;
 &lt;li&gt;了解jQuery&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
@@ -5779,7 +5779,7 @@ Api获取：&lt;/li&gt;
 &lt;li&gt;removeClass(classValue): 移除指定class&lt;/li&gt;
 &lt;li&gt;val() / val(value): 读写标签的value&lt;/li&gt;
 &lt;li&gt;html() / html(htmlString): 读写标签体文本&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>JavaScript模块规范</title><link>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post JavaScript模块规范" /&gt;&lt;h2 id="--javascript"&gt;Commonjs、AMD、CMD、es6 modules
+&lt;/ul&gt;</description></item><item><title>JavaScript模块规范</title><link>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glows.github.io/p/javascript%E6%A8%A1%E5%9D%97%E8%A7%84%E8%8C%83/</guid><description>&lt;img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Featured image of post JavaScript模块规范" /&gt;&lt;h2 id="--javascript"&gt;Commonjs、AMD、CMD、es6 modules
 date: 2018-05-24 10:37:24
 tags:
 - javascript
