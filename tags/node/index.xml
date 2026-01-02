@@ -1,6 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>node on Glow's Blog</title><link>https://glows.github.io/tags/node/</link><description>Recent content in node on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Mon, 25 Dec 2017 16:58:28 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/node/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js Web开发</title><link>https://glows.github.io/posts/node-js-web%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 25 Dec 2017 16:58:28 +0000</pubDate><guid>https://glows.github.io/posts/node-js-web%E5%BC%80%E5%8F%91/</guid><description>概览 Node.js Express mongoDB jQuery Semantic UI Visual Code Google 功能需求 首页文章显示 注册登录功能 文章编辑发表 评论 文章删除 一、 创建项目，执行如下代码：
-npm init 1、新建 index.js 作为项目入口文件， 使用MVC架构。
-引入框架和组件，添加中间件（如connect-flash、） 设置模板目录设置模板引擎为 ejs
-2、创建路由文件夹 &amp;ldquo;routes&amp;rdquo; 和文件 &amp;ldquo;/routes/index.js&amp;rdquo;, 核心代码编辑如下：
-module.exports = function (app) { app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; { res.send(&amp;#34;hello, express&amp;#34;); }) app.use(&amp;#39;/posts&amp;#39;, require(&amp;#39;./posts&amp;#39;)); // routes文件夹下 模块路由 app.use(function(req, res){ if(!res.headerSent){ res.render(&amp;#39;404&amp;#39;); } }); }; 模块路由代码示例：
-// GET /posts 所有用户或者特定用户的文章页 // eg: GET /posts?author=xxx router.get(&amp;#39;/&amp;#39;, function(req, res, next) { // res.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node on Glow's Blog</title><link>https://glows.github.io/tags/node/</link><description>Recent content in Node on Glow's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Mon, 25 Dec 2017 16:58:28 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/node/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js Web开发</title><link>https://glows.github.io/posts/node-js-web%E5%BC%80%E5%8F%91/</link><pubDate>Mon, 25 Dec 2017 16:58:28 +0000</pubDate><guid>https://glows.github.io/posts/node-js-web%E5%BC%80%E5%8F%91/</guid><description>&lt;h2 id="概览"&gt;概览&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;Express&lt;/li&gt;
+&lt;li&gt;mongoDB&lt;/li&gt;
+&lt;li&gt;jQuery&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://semantic-ui.com/"&gt;Semantic UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Visual Code&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.google.com/ncr" title="Google"&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="功能需求"&gt;功能需求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;首页文章显示&lt;/li&gt;
+&lt;li&gt;注册登录功能&lt;/li&gt;
+&lt;li&gt;文章编辑发表&lt;/li&gt;
+&lt;li&gt;评论&lt;/li&gt;
+&lt;li&gt;文章删除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- more --&gt;
+&lt;h2 id="一"&gt;一、&lt;/h2&gt;
+&lt;p&gt;创建项目，执行如下代码：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;npm init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;1、新建 index.js 作为项目入口文件， 使用MVC架构。&lt;br&gt;
+引入框架和组件，添加中间件（如connect-flash、） 设置模板目录设置模板引擎为 ejs&lt;br&gt;
+2、创建路由文件夹 &amp;ldquo;routes&amp;rdquo; 和文件 &amp;ldquo;/routes/index.js&amp;rdquo;, 核心代码编辑如下：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;module.exports = function (app) {
+ app.get(&amp;#39;/&amp;#39;, (req, res) =&amp;gt; {
+ res.send(&amp;#34;hello, express&amp;#34;);
+})
+ app.use(&amp;#39;/posts&amp;#39;, require(&amp;#39;./posts&amp;#39;)); // routes文件夹下 模块路由
+ app.use(function(req, res){
+ if(!res.headerSent){
+ res.render(&amp;#39;404&amp;#39;);
+ }
+ });
+ };
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;模块路由代码示例：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;// GET /posts 所有用户或者特定用户的文章页
+// eg: GET /posts?author=xxx
+router.get(&amp;#39;/&amp;#39;, function(req, res, next) {
+ // res.send(&amp;#34;Hello world&amp;#34; );
+ var author = req.query.author
+
+ PostModel.getPosts(author)
+ .then(function (posts){
+ res.render(&amp;#39;posts&amp;#39;, {
+ posts: posts
+ });
+ })
+ .catch(next);
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3、使用mongolass组件连接数据库,实现增删改查&lt;/p&gt;</description></item></channel></rss>

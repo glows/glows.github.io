@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithms on Glow's Blog</title><link>https://glows.github.io/tags/algorithms/</link><description>Recent content in Algorithms on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Fri, 01 May 2020 09:00:00 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithms - Graphs</title><link>https://glows.github.io/posts/2020-05-01-algorithms-graphs/</link><pubDate>Fri, 01 May 2020 09:00:00 +0000</pubDate><guid>https://glows.github.io/posts/2020-05-01-algorithms-graphs/</guid><description>Undirected Graphs Some problems Path Shortest path Cycle Ehler tour: A cycle that uses each edge excatly once. Hamilton tour: A cycle that uses each vertex exactly once classical NP-complete problem. Connectivity MST: Biconnectivity: A vertex whose removal disconnects the graph Planarity Graph isomorphism: Are two graphs identical? No one knows so far. A lonstanding open problem Representations Real-world graphs tend to be sparse (huge number of vertices, small average vertex degree).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithms on Glow's Blog</title><link>https://glows.github.io/tags/algorithms/</link><description>Recent content in Algorithms on Glow's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Fri, 01 May 2020 09:00:00 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithms - Graphs</title><link>https://glows.github.io/posts/2020-05-01-algorithms-graphs/</link><pubDate>Fri, 01 May 2020 09:00:00 +0000</pubDate><guid>https://glows.github.io/posts/2020-05-01-algorithms-graphs/</guid><description>&lt;h2 id="undirected-graphs"&gt;Undirected Graphs&lt;/h2&gt;
+&lt;h3 id="some-problems"&gt;Some problems&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Path&lt;/li&gt;
+&lt;li&gt;Shortest path&lt;/li&gt;
+&lt;li&gt;Cycle&lt;/li&gt;
+&lt;li&gt;Ehler tour: A cycle that uses each edge excatly once.&lt;/li&gt;
+&lt;li&gt;Hamilton tour: A cycle that uses each vertex exactly once
+&lt;ul&gt;
+&lt;li&gt;classical NP-complete problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connectivity&lt;/li&gt;
+&lt;li&gt;MST:&lt;/li&gt;
+&lt;li&gt;Biconnectivity: A vertex whose removal disconnects the graph&lt;/li&gt;
+&lt;li&gt;Planarity&lt;/li&gt;
+&lt;li&gt;Graph isomorphism: Are two graphs identical?
+&lt;ul&gt;
+&lt;li&gt;No one knows so far. A lonstanding open problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="representations"&gt;Representations&lt;/h3&gt;
+&lt;p&gt;Real-world graphs tend to be &lt;strong&gt;sparse&lt;/strong&gt; (huge number of vertices, small average vertex degree).&lt;/p&gt;</description></item></channel></rss>

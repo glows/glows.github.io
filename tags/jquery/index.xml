@@ -1,1 +1,148 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jQuery on Glow's Blog</title><link>https://glows.github.io/tags/jquery/</link><description>Recent content in jQuery on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Tue, 24 May 2016 14:39:45 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml"/><item><title>jQuery</title><link>https://glows.github.io/posts/jquery/</link><pubDate>Tue, 24 May 2016 14:39:45 +0000</pubDate><guid>https://glows.github.io/posts/jquery/</guid><description>了解jQuery 是什么: What? 一个JS函数库: write less, do more 封装简化DOM操作(CRUD) / Ajax 为什么用它: why? 强大选择器: 方便快速查找DOM元素 隐式遍历(迭代): 一次操作多个元素 读写合一: 读数据/写数据用的是一个函数 链式调用: 可以通过.不断调用jQuery对象的方法 事件处理 DOM操作(CUD) 样式操作 动画 浏览器兼容 如何使用: How? 引入jQuery库 本地引入与CDN远程引入 测试版与生产版(压缩版) 使用jQuery 使用jQuery函数: $/jQuery 使用jQuery对象: $xxx(执行$()得到的) jQuery的2把利器 jQuery函数: $/jQuery jQuery向外暴露的就是jQuery函数, 可以直接使用 当成一般函数使用人: $(param) param是function: 相当于window.onload = function(文档加载完成的监听) param是选择器字符串: 查找所有匹配的DOM元素, 返回包含所有DOM元素的jQuery对象 param是DOM元素: 将DOM元素对象包装为jQuery对象返回 $(this) param是标签字符串: 创建标签DOM元素对象并包装为jQuery对象返回 当成对象使用: $.xxx each(obj/arr, function(key, value){}) trim(str) jQuery对象 包含所有匹配的n个DOM元素的伪数组对象 执行$()返回的就是jQuery对象 基本行为: length/size(): 得到dom元素的个数 each(function(index, domEle){}): 遍历所有dom元素 index(): 得到当前dom元素在所有兄弟中的下标 选择器 是什么?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JQuery on Glow's Blog</title><link>https://glows.github.io/tags/jquery/</link><description>Recent content in JQuery on Glow's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Tue, 24 May 2016 14:39:45 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/jquery/index.xml" rel="self" type="application/rss+xml"/><item><title>jQuery</title><link>https://glows.github.io/posts/jquery/</link><pubDate>Tue, 24 May 2016 14:39:45 +0000</pubDate><guid>https://glows.github.io/posts/jquery/</guid><description>&lt;ol&gt;
+&lt;li&gt;了解jQuery&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;是什么: What?
+&lt;ul&gt;
+&lt;li&gt;一个JS函数库: write less, do more&lt;/li&gt;
+&lt;li&gt;封装简化DOM操作(CRUD) / Ajax&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为什么用它: why?
+&lt;ul&gt;
+&lt;li&gt;强大选择器: 方便快速查找DOM元素&lt;/li&gt;
+&lt;li&gt;隐式遍历(迭代): 一次操作多个元素&lt;/li&gt;
+&lt;li&gt;读写合一: 读数据/写数据用的是一个函数&lt;/li&gt;
+&lt;li&gt;链式调用: 可以通过.不断调用jQuery对象的方法&lt;/li&gt;
+&lt;li&gt;事件处理&lt;/li&gt;
+&lt;li&gt;DOM操作(CUD)&lt;/li&gt;
+&lt;li&gt;样式操作&lt;/li&gt;
+&lt;li&gt;动画&lt;/li&gt;
+&lt;li&gt;浏览器兼容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如何使用: How?
+&lt;ul&gt;
+&lt;li&gt;引入jQuery库
+&lt;ul&gt;
+&lt;li&gt;本地引入与CDN远程引入&lt;/li&gt;
+&lt;li&gt;测试版与生产版(压缩版)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用jQuery
+&lt;ul&gt;
+&lt;li&gt;使用jQuery函数: $/jQuery&lt;/li&gt;
+&lt;li&gt;使用jQuery对象: $xxx(执行$()得到的)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;jQuery的2把利器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;jQuery函数: $/jQuery
+&lt;ul&gt;
+&lt;li&gt;jQuery向外暴露的就是jQuery函数, 可以直接使用&lt;/li&gt;
+&lt;li&gt;当成一般函数使用人: $(param)
+&lt;ul&gt;
+&lt;li&gt;param是function: 相当于window.onload = function(文档加载完成的监听)&lt;/li&gt;
+&lt;li&gt;param是选择器字符串: 查找所有匹配的DOM元素, 返回包含所有DOM元素的jQuery对象&lt;/li&gt;
+&lt;li&gt;param是DOM元素: 将DOM元素对象包装为jQuery对象返回 $(this)&lt;/li&gt;
+&lt;li&gt;param是标签字符串: 创建标签DOM元素对象并包装为jQuery对象返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;当成对象使用: $.xxx
+&lt;ul&gt;
+&lt;li&gt;each(obj/arr, function(key, value){})&lt;/li&gt;
+&lt;li&gt;trim(str)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;jQuery对象
+&lt;ul&gt;
+&lt;li&gt;包含所有匹配的n个DOM元素的伪数组对象&lt;/li&gt;
+&lt;li&gt;执行$()返回的就是jQuery对象&lt;/li&gt;
+&lt;li&gt;基本行为:
+&lt;ul&gt;
+&lt;li&gt;length/size(): 得到dom元素的个数&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;each(function(index, domEle){}): 遍历所有dom元素&lt;/li&gt;
+&lt;li&gt;index(): 得到当前dom元素在所有兄弟中的下标&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;选择器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;是什么?
+&lt;ul&gt;
+&lt;li&gt;有特定语法规则(css选择器)的字符串&lt;/li&gt;
+&lt;li&gt;用来查找某个/些DOM元素: $(selector)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;分类
+&lt;ul&gt;
+&lt;li&gt;基本
+&lt;ul&gt;
+&lt;li&gt;#id&lt;/li&gt;
+&lt;li&gt;tagName/*&lt;/li&gt;
+&lt;li&gt;.class&lt;/li&gt;
+&lt;li&gt;selector1,selector2,selector3: 并集&lt;/li&gt;
+&lt;li&gt;selector1selector2selector3: 交集&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;层次
+&lt;ul&gt;
+&lt;li&gt;找子孙后代, 兄弟元素&lt;/li&gt;
+&lt;li&gt;selector1&amp;gt;selector2: 子元素&lt;/li&gt;
+&lt;li&gt;selector1 selector2: 后代元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;过滤
+&lt;ul&gt;
+&lt;li&gt;在原有匹配元素中筛选出其中一些&lt;/li&gt;
+&lt;li&gt;:first&lt;/li&gt;
+&lt;li&gt;:last&lt;/li&gt;
+&lt;li&gt;:eq(index)&lt;/li&gt;
+&lt;li&gt;:lt&lt;/li&gt;
+&lt;li&gt;:gt&lt;/li&gt;
+&lt;li&gt;:odd&lt;/li&gt;
+&lt;li&gt;:even&lt;/li&gt;
+&lt;li&gt;:not(selector)&lt;/li&gt;
+&lt;li&gt;:hidden&lt;/li&gt;
+&lt;li&gt;:visible&lt;/li&gt;
+&lt;li&gt;[attrName]&lt;/li&gt;
+&lt;li&gt;[attrName=value]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;表单
+&lt;ul&gt;
+&lt;li&gt;:input&lt;/li&gt;
+&lt;li&gt;:text&lt;/li&gt;
+&lt;li&gt;:checkbox&lt;/li&gt;
+&lt;li&gt;:radio&lt;/li&gt;
+&lt;li&gt;:checked: 选中的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;属性/文本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;操作标签的属性, 标签体文本&lt;/li&gt;
+&lt;li&gt;attr(name) / attr(name, value): 读写非布尔值的标签属性&lt;/li&gt;
+&lt;li&gt;prop(name) / prop(name, value): 读写布尔值的标签属性&lt;/li&gt;
+&lt;li&gt;removeAttr(name)/removeProp(name): 删除属性&lt;/li&gt;
+&lt;li&gt;addClass(classValue): 添加class&lt;/li&gt;
+&lt;li&gt;removeClass(classValue): 移除指定class&lt;/li&gt;
+&lt;li&gt;val() / val(value): 读写标签的value&lt;/li&gt;
+&lt;li&gt;html() / html(htmlString): 读写标签体文本&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
