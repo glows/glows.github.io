@@ -1,34 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Glow's Blog</title><link>https://glows.github.io/tags/docker/</link><description>Recent content in Docker on Glow's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Tue, 29 May 2018 14:03:46 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>docker使用指南</title><link>https://glows.github.io/posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link><pubDate>Tue, 29 May 2018 14:03:46 +0000</pubDate><guid>https://glows.github.io/posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid><description>&lt;image src= "https://images.unsplash.com/photo-1520218750893-2be45c7cbf63?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=fc8274401d0f66d11be0cd3f5438e9a6&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" width="510" height="300"/&gt; 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Glow's Blog</title><link>https://glows.github.io/tags/docker/</link><description>Recent content in Docker on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Tue, 29 May 2018 14:03:46 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>docker使用指南</title><link>https://glows.github.io/posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link><pubDate>Tue, 29 May 2018 14:03:46 +0000</pubDate><guid>https://glows.github.io/posts/docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid><description>&lt;image src= "https://images.unsplash.com/photo-1520218750893-2be45c7cbf63?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=fc8274401d0f66d11be0cd3f5438e9a6&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" width="510" height="300"/&gt;
 &lt;!--more --&gt;
 &lt;p&gt;命令提示：&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;docker --version Docker version 
-docker-compose --version 
-docker-machine --version 
-docker ps
-docker version
-docker info
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;首先 Windows 下启动docker machine(更多命令 &lt;code&gt;docker-machine -h&lt;/code&gt;), 使用&lt;code&gt;dokcer-machine ls&lt;/code&gt; 查看已安装的机器&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;docker-machine start [machine name]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;docker-machine env [machine name]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行成功，会出现如下的代码：&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;@FOR /f &amp;#34;tokens=*&amp;#34; %i IN (&amp;#39;docker-machine env box&amp;#39;) DO @%i
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;按提示拷贝在shell中执行&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker --version Docker version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker-compose --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker-machine --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker ps
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker info
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;首先 Windows 下启动docker machine(更多命令 &lt;code&gt;docker-machine -h&lt;/code&gt;), 使用&lt;code&gt;dokcer-machine ls&lt;/code&gt; 查看已安装的机器&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker-machine start [machine name]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;执行&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker-machine env [machine name]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;运行成功，会出现如下的代码：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;@FOR /f &amp;#34;tokens=*&amp;#34; %i IN (&amp;#39;docker-machine env box&amp;#39;) DO @%i
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;按提示拷贝在shell中执行&lt;/p&gt;
 &lt;p&gt;下一步，输入&lt;code&gt;docker version&lt;/code&gt;便会显示有Client和Server,如下&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;Client:
- Version: 17.10.0-ce
- API version: 1.33
- Go version: go1.8.3
- Git commit: f4ffd25
- Built: Tue Oct 17 19:00:02 2017
- OS/Arch: windows/amd64
-
-Server:
- Version: 17.12.0-ce
- API version: 1.35 (minimum version 1.12)
- Go version: go1.9.2
- Git commit: c97c6d6
- Built: Wed Dec 27 20:12:29 2017
- OS/Arch: linux/amd64
- Experimental: false
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使用&lt;code&gt;docker images&lt;/code&gt;查看已安装的容器image。&lt;/p&gt;</description></item></channel></rss>
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Client:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Version: 17.10.0-ce
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; API version: 1.33
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Go version: go1.8.3
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Git commit: f4ffd25
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Built: Tue Oct 17 19:00:02 2017
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; OS/Arch: windows/amd64
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Server:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Version: 17.12.0-ce
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; API version: 1.35 (minimum version 1.12)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Go version: go1.9.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Git commit: c97c6d6
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Built: Wed Dec 27 20:12:29 2017
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; OS/Arch: linux/amd64
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Experimental: false
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用&lt;code&gt;docker images&lt;/code&gt;查看已安装的容器image。&lt;/p&gt;
+&lt;p&gt;下一步运行镜像，&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker run [image name]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果本地没有对应的镜像，docker会自动从dockerhub pull回本地。
+也可运行命令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; docker pull [image name]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;例如安装splash&lt;/p&gt;
+&lt;p&gt;1、Pull the image:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ sudo docker pull scrapinghub/splash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;2、Start the container:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$ sudo docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;3、Splash is now available at 0.0.0.0 at ports 8050 (http), 8051 (https) and 5023 (telnet).&lt;/p&gt;</description></item></channel></rss>

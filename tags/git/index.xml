@@ -1,1 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Glow's Blog</title><link>https://glows.github.io/tags/git/</link><description>Recent content in Git on Glow's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>glows</copyright><lastBuildDate>Mon, 21 May 2018 10:25:55 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;关键词：git gogs&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Glow's Blog</title><link>https://glows.github.io/tags/git/</link><description>Recent content in Git on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Mon, 21 May 2018 10:25:55 +0000</lastBuildDate><atom:link href="https://glows.github.io/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建gogs遇到的问题</title><link>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Mon, 21 May 2018 10:25:55 +0000</pubDate><guid>https://glows.github.io/posts/%E6%90%AD%E5%BB%BAgogs%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;关键词：git gogs&lt;/p&gt;
+&lt;h3 id="mysql数据库"&gt;mysql数据库
+&lt;/h3&gt;&lt;p&gt;客户端找不到 caching_sha2_password 插件，于是登录不上，本来是要这种插件的，但是其实
+ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘root’; 就行
+因为客户端支持的这种native加密方式，然后还是连接不上？这时候改一下登录密码就行&lt;/p&gt;
+&lt;h2 id="搭建gogs遇到的坑"&gt;搭建gogs遇到的坑
+&lt;/h2&gt;&lt;p&gt;1.无法连接ssh，显示connection refuse。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;原因是“custom/conf/app.ini”没有开启ssh功能，改为以下配置就行了
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;START_SSH_SERVER = true&lt;/p&gt;
+&lt;p&gt;2.配置了ssh后，gogs无法启动，错误信息是：Fail to start SSH server: listen tcp 0.0.0.0:22: bind: permission denied
+这个错误是用于服务器使用了端口22，所以要更改服务器gogs的端口号，
+SSH_PORT = 1111&lt;/p&gt;
+&lt;p&gt;3.使用ssh提示没有权限
+这是由于没有添加公共钥的原因，按下面方法添加即可&lt;/p&gt;
+&lt;p&gt;在本机生成公钥&lt;/p&gt;
+&lt;p&gt;ssh-keygen -t rsa -b 4096 -C &amp;ldquo;&lt;a class="link" href="mailto:your_email@example.com" &gt;your_email@example.com&lt;/a&gt;&amp;rdquo;
+拷贝公钥里面的内容 cat /home/user/.ssh/id_rsa.pub，在gogs的用户设置里面的“SSH 密钥”栏目就可以添加了。
+git config &amp;ndash;global user.name &amp;ldquo;Your Name&amp;rdquo;
+git config &amp;ndash;global user.email &amp;ldquo;&lt;a class="link" href="mailto:email@example.com" &gt;email@example.com&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;4.gogs无法开机启动&lt;/p&gt;
+&lt;p&gt;按照常规的方式添加脚本到 “/etc/init.d/”下竟然没有开机启动。在网上发现其他方式可以实现，主要是修改&amp;quot;/etc/rc.local&amp;quot;文件，在最后一行添加以下内容&lt;/p&gt;
+&lt;p&gt;/bin/su - git -c &amp;ldquo;/usr/bin/nohup /home/soft/gogs/gogs web&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;5.在使用gogs的时候遇到各种各样的奇怪问题不知道怎样入手
+gogs是有日志系统，通过查看日志文件就能知道哪里出错了，日志的路径在/gogs/log/，动态查看日志使用下面的命令很方便&lt;/p&gt;
+&lt;p&gt;tail -F /gogs/log/serv.log&lt;/p&gt;
+&lt;p&gt;tail -F /gogs/log/gogs.log&lt;/p&gt;
+&lt;p&gt;6.gogs默认使用本地配置，但是在vps上不知道怎样配置。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 使用vpn使服务器和本地处于同一网段，再利用： “http://0.0.0.0:3000” ，进行配置。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;7.如何通过公网ip访问搭建在vps上的gogs&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 只需要配置“custom/conf/app.ini”文件“ROOT_URL“
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ROOT_URL = http://vps的ip地址/&lt;/p&gt;
+&lt;p&gt;8.如何通过域名访问gogs网站
+需要利用nginx反向代理就可以实现，简单来说是通过访问vps的网址会指向nginx，而nginx又将访问间接指向gogs。&lt;/p&gt;
+&lt;p&gt;通过配置nginx的配置文件可以实现“/usr/local/nginx/conf/nginx.conf”，修改如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; location / {
+proxy_pass http://127.0.0.1:3000/;
+proxy_redirect default;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;9.centos上面没有安装nginx，通过命令也无法安装（解决不了依赖关系）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 最好的方法是通过yum install来安装nginx，但是安装不了只能自己编译nginx了。编译方式如下：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;yum install gcc-c++
+yum install -y pcre pcre-devel
+yum install -y zlib zlib-devel
+yum install -y openssl openssl-devel&lt;/p&gt;
+&lt;p&gt;wget &lt;a class="link" href="https://nginx.org/download/nginx-1.12.2.tar.gz" target="_blank" rel="noopener"
+&gt;https://nginx.org/download/nginx-1.12.2.tar.gz&lt;/a&gt;
+tar -zxvf &lt;a class="link" href="https://nginx.org/download/nginx-1.12.2.tar.gz" target="_blank" rel="noopener"
+&gt;https://nginx.org/download/nginx-1.12.2.tar.gz&lt;/a&gt;
+cd nginx-1.12.2
+./configure
+make
+make install
+最后在&amp;quot;/etc/rc.local/&amp;ldquo;添加开机启动项
+/usr/local/nginx/sbin/nginx&lt;/p&gt;
+&lt;p&gt;10.无法使用git clone，提示代码仓库不存在，可是在vps上面是看到这个仓库的&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 反复修改配置文件，利用log跟踪问题所在，但是问题一直解决不了。最后通过删除gogs，重新解压一个就解决问题了。
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
