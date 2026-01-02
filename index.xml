@@ -34,7 +34,7 @@
 &lt;p&gt;The &amp;ldquo;Silicon Stoa&amp;rdquo; is not a place of cold calculation, but a space where ancient wisdom and modern technology meet to define what it means to be a rational being in a complex universe.&lt;/p&gt;
 &lt;p&gt;“硅基廊下”不是一个冰冷计算的场所，而是一个古老智慧与现代技术交汇的空间，在这里，我们重新定义在复杂的宇宙中作为一个理性存在意味着什么。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Author: Glow / 作者：Glow&lt;/em&gt;&lt;/p&gt;</description></item><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/defaults/web.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
+&lt;p&gt;&lt;em&gt;Author: Glow / 作者：Glow&lt;/em&gt;&lt;/p&gt;</description></item><item><title>WebGL Libraries to Keep in Mind During the React Era</title><link>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</link><pubDate>Wed, 16 Aug 2023 15:04:34 +0800</pubDate><guid>https://glows.github.io/p/webgl-libraries-to-keep-in-mind-during-the-react-era/</guid><description>&lt;img src="https://glows.github.io/img/webgl-react.png" alt="Featured image of post WebGL Libraries to Keep in Mind During the React Era" /&gt;&lt;h2 id="在-react-时代应该掌握的-webgl-库"&gt;在 React 时代应该掌握的 WebGL 库
 &lt;/h2&gt;&lt;p&gt;在这篇文章中，我们简要介绍了在 Web 上实现 3D 表现时，
 前端工程师应该使用哪些库。请详细阅读各个库的官方文档以获取更多信息&lt;/p&gt;
 &lt;h3 id="threejs"&gt;three.js
