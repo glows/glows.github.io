@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDK on Glow's Blog</title><link>https://glows.github.io/tags/sdk/</link><description>Recent content in SDK on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Tue, 06 Jan 2026 03:38:00 +0800</lastBuildDate><atom:link href="https://glows.github.io/tags/sdk/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 AI Agent 选型指南：从对话模式迈向“智能体工作流”的工程实践</title><link>https://glows.github.io/p/2026-ai-agent-%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97%E4%BB%8E%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%BC%8F%E8%BF%88%E5%90%91%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link><pubDate>Tue, 06 Jan 2026 03:38:00 +0800</pubDate><guid>https://glows.github.io/p/2026-ai-agent-%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97%E4%BB%8E%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%BC%8F%E8%BF%88%E5%90%91%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://glows.github.io/img/defaults/ai-agent-2026.png" alt="Featured image of post 2026 AI Agent 选型指南：从对话模式迈向“智能体工作流”的工程实践" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;导读&lt;/strong&gt;：2024 年是 RAG 的基石之年，而 2025-2026 年则标志着 &lt;strong&gt;Agentic Workflow（智能体工作流）&lt;/strong&gt; 的全面爆发。我们正处于从简单的“提示词工程”向复杂的“数字化组装线”演进的关键节点趋势中。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://glows.github.io/img/defaults/ai-agent-2026.png"
+loading="lazy"
+alt="2026 AI Agent Workflow"
+&gt;&lt;/p&gt;
 &lt;p&gt;面对日益复杂的 Agent 开发生态，如何选择最能承载业务逻辑的“数字大脑”？本文将对 2026 年最具代表性的 6 款 Agent SDK 进行深度横向评测，为您的工程选型提供决策参考。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="一-2026-q1-快速选型矩阵"&gt;一、 2026 Q1 快速选型矩阵
