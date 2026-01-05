@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SDK on Glow's Blog</title><link>https://glows.github.io/tags/sdk/</link><description>Recent content in SDK on Glow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>glows</copyright><lastBuildDate>Tue, 06 Jan 2026 03:38:00 +0800</lastBuildDate><atom:link href="https://glows.github.io/tags/sdk/index.xml" rel="self" type="application/rss+xml"/><item><title>2026 AI Agent 选型指南：从对话模式迈向“智能体工作流”的工程实践</title><link>https://glows.github.io/p/2026-ai-agent-%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97%E4%BB%8E%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%BC%8F%E8%BF%88%E5%90%91%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link><pubDate>Tue, 06 Jan 2026 03:38:00 +0800</pubDate><guid>https://glows.github.io/p/2026-ai-agent-%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97%E4%BB%8E%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%BC%8F%E8%BF%88%E5%90%91%E6%99%BA%E8%83%BD%E4%BD%93%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid><description>&lt;img src="https://glows.github.io/img/defaults/ai-agent-2026.png" alt="Featured image of post 2026 AI Agent 选型指南：从对话模式迈向“智能体工作流”的工程实践" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;导读&lt;/strong&gt;：2024 年是 RAG 的基石之年，而 2025-2026 年则标志着 &lt;strong&gt;Agentic Workflow（智能体工作流）&lt;/strong&gt; 的全面爆发。我们正处于从简单的“提示词工程”向复杂的“数字化组装线”演进的关键节点趋势中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;面对日益复杂的 Agent 开发生态，如何选择最能承载业务逻辑的“数字大脑”？本文将对 2026 年最具代表性的 6 款 Agent SDK 进行深度横向评测，为您的工程选型提供决策参考。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="一-2026-q1-快速选型矩阵"&gt;一、 2026 Q1 快速选型矩阵
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;SDK 体系&lt;/th&gt;
+&lt;th style="text-align: left"&gt;核心定位&lt;/th&gt;
+&lt;th style="text-align: left"&gt;关键技术栈&lt;/th&gt;
+&lt;th style="text-align: left"&gt;核心工程优势&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Vercel AI SDK&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;UI 驱动型 SaaS&lt;/td&gt;
+&lt;td style="text-align: left"&gt;TypeScript / Next.js&lt;/td&gt;
+&lt;td style="text-align: left"&gt;极致的 RSC 渲染与流式结构化输出&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Mastra.ai&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;全栈生产级编排&lt;/td&gt;
+&lt;td style="text-align: left"&gt;TypeScript&lt;/td&gt;
+&lt;td style="text-align: left"&gt;极其轻量的边缘运行时支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Google ADK&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;企业级多代理协同&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Go&lt;/strong&gt; / Python&lt;/td&gt;
+&lt;td style="text-align: left"&gt;A2A 协议下的原生服务治理与安全性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Amazon Strands&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;边缘计算与工具调用&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Python / TS&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Nova Act 驱动的原生浏览器自动化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Claude Agent SDK&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;推理密集型任务&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Python / TS&lt;/td&gt;
+&lt;td style="text-align: left"&gt;动态上下文压缩（Context Compaction）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;LangGraph&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;复杂状态机管理&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Python / TS&lt;/td&gt;
+&lt;td style="text-align: left"&gt;强一致性的循环逻辑与“人机协作”节点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="二-核心-sdk-深度技术解析"&gt;二、 核心 SDK 深度技术解析
+&lt;/h2&gt;&lt;h3 id="1-极致-web-交互vercel-ai-sdk"&gt;1. 极致 Web 交互：Vercel AI SDK
+&lt;/h3&gt;&lt;p&gt;对于追求用户体验的 SaaS 开发者，&lt;a class="link" href="https://ai-sdk.dev/" target="_blank" rel="noopener"
+&gt;Vercel AI SDK&lt;/a&gt; 依然是不可撼动的行业标杆。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2026 技术演进&lt;/strong&gt;：核心突破在于对 &lt;strong&gt;Streaming Objects（流式结构化对象）&lt;/strong&gt; 的原生支持。它不再仅仅传输文本，而是允许 AI 根据推理步长，动态注入并渲染前端 React 组件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工程建议&lt;/strong&gt;：适用于需要高度可视化、即时推断反馈的前端密集型场景。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-企业级协同基石google-adk"&gt;2. 企业级协同基石：Google ADK
+&lt;/h3&gt;&lt;p&gt;Google 的 &lt;a class="link" href="https://github.com/google/adk-python" target="_blank" rel="noopener"
+&gt;Agent Development Kit&lt;/a&gt; 在 2026 年通过对 A2A 协议的适配，极大地降低了异构智能体之间的通讯壁垒。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心功能亮点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rewind（确定性回溯）&lt;/strong&gt;：允许开发者将 Agent 状态精确恢复至任意历史 Checkpoint，彻底解决长序列回复的调试难题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A2A (Agent-to-Agent)&lt;/strong&gt;：基于标准化通讯格式，实现跨厂商智能体的解耦调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：对&lt;strong&gt;强类型安全（Go）&lt;/strong&gt;、高并发吞吐量及系统可观测性有严格要求的企业级中台。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-轻量化与工具化amazon-strands-sdk"&gt;3. 轻量化与工具化：Amazon Strands SDK
+&lt;/h3&gt;&lt;p&gt;Amazon 的 &lt;a class="link" href="https://strandsagents.com/latest/" target="_blank" rel="noopener"
+&gt;Strands SDK&lt;/a&gt; 在 2026 年重点发力“边缘智能”与“自主工具”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;技术突破&lt;/strong&gt;：&lt;strong&gt;Strands for the Edge&lt;/strong&gt; 允许 SLM（小语言模型）在无网络环境下执行初步规划，并通过 &lt;strong&gt;Nova Act&lt;/strong&gt; 原子操作工具直接接管浏览器 DOM，模拟人类操作完成复杂任务。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：自动化测试、RPA 升级版、IoT 设备控制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="4-逻辑深度派claude-agent-sdk"&gt;4. 逻辑深度派：Claude Agent SDK
+&lt;/h3&gt;&lt;p&gt;Anthropic 的 &lt;a class="link" href="https://platform.claude.com/docs/en/agent-sdk/overview" target="_blank" rel="noopener"
+&gt;Claude Agent SDK&lt;/a&gt; 旨在极致释放模型推理潜能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心优势&lt;/strong&gt;：&lt;strong&gt;上下文动态压缩（Context Compaction）&lt;/strong&gt;。在处理跨度数周的长周期任务时，SDK 能智能识别并保留决策链路中的关键节点，剔除多余的原始数据，确保“长序列任务”不跑题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：法律文档审计、软件架构自动演进、深度科研分析。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5-状态拓扑专家langgraph"&gt;5. 状态拓扑专家：LangGraph
+&lt;/h3&gt;&lt;p&gt;作为 LangChain 生态的“逻辑骨架”，&lt;a class="link" href="https://www.langchain.com/langgraph" target="_blank" rel="noopener"
+&gt;LangGraph&lt;/a&gt; 彻底解决了传统线性 DAG 的局限。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构范式&lt;/strong&gt;：将任务抽象为有向图（Graph），原生支持&lt;strong&gt;循环（Loops）&lt;/strong&gt;、&lt;strong&gt;错误自愈（Self-Correction）&lt;strong&gt;以及&lt;/strong&gt;高级人工审核（Human-in-the-loop）&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：复杂金融决策、需高频策略修正的电商供应链预测。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="三-2026-年-agent-开发核心趋势"&gt;三、 2026 年 Agent 开发核心趋势
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;MCP (Model Context Protocol) 成为协议标准&lt;/strong&gt;：统一了 Tools 与模型间的通信接口，实现了“一处编写工具，处处框架调用”的通用性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工程重心的转移&lt;/strong&gt;：从“如何让 Agent 说话”转变为“如何让 Agent 稳定执行”。&lt;strong&gt;可观测性（OpenTelemetry）&lt;/strong&gt;、**状态落盘（State Persistence）**已成为 SDK 的标配功能。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言工程阵阵阵地&lt;/strong&gt;：Python 虽强，但 &lt;strong&gt;Go&lt;/strong&gt; 和 &lt;strong&gt;TypeScript&lt;/strong&gt; 在高性能生产环境中的占比已在 2026 年快速攀升，预示着 Agent 应用正从“实验 Demo”走向“关键业务逻辑”。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="四-选型决策总结"&gt;四、 选型决策总结
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;追求交付效率与 UI 美学&lt;/strong&gt;：首选 &lt;strong&gt;Vercel AI SDK&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;处理非线性、需强人工干预的业务流&lt;/strong&gt;：非 &lt;strong&gt;LangGraph&lt;/strong&gt; 莫属。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;构建跨组织、高性能的智能体集群&lt;/strong&gt;：&lt;strong&gt;Google ADK&lt;/strong&gt; 是最佳工程选择。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;单点推理深度与超长上下文任务&lt;/strong&gt;：优先考虑 &lt;strong&gt;Claude Agent SDK&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description></item></channel></rss>
